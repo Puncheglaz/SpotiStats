@@ -27,18 +27,20 @@ class City:
 
         with conn.cursor() as cur:
             cur.execute(f'SELECT id FROM {City.TABLE_NAME} WHERE name = %s AND country = %s AND region = %s',
-                name, country, region)
-            id = cur.fetchone()[0]
+                (name, country, region))
+            id = cur.fetchone()
 
         if id == None:
             try:
                 with conn.cursor() as cur:
                     cur.execute(f'INSERT INTO {City.TABLE_NAME} (name, country, region) VALUES (%s, %s, %s) RETURNING id',
-                        name, country, region)
-                    id = cur.fetchone()[0]
+                        (name, country, region))
+                    id = cur.fetchone()
             except Exception as e:
                 print(e)
                 return None
+
+        id = id[0]
 
         City.cache_by_id[id] = (name, country, region)
         City.cache_by_name[name_key] = id
@@ -52,7 +54,7 @@ class City:
             return name
 
         with conn.cursor() as cur:
-            cur.execute(f'SELECT name, country, region FROM {City.TABLE_NAME} WHERE id = %s', id)
+            cur.execute(f'SELECT name, country, region FROM {City.TABLE_NAME} WHERE id = %s', (id,))
             name = cur.fetchone()
 
         if name != None:

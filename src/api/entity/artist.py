@@ -1,6 +1,6 @@
-from detail.entity.city import City
-from detail.entity.genre import Genre
-from detail.entity.track import Track
+from entity.city import City
+from entity.genre import Genre
+from entity.track import Track
 
 class Artist:
 
@@ -21,17 +21,34 @@ class Artist:
         self.genres = None
 
     @staticmethod
-    def save(conn, spotify_id, name, followers, popularity, monthly_listeners = None, world_rank = None):
+    def save(conn, spotify_id, name, followers, popularity, monthly_listeners = None, world_rank = None, genres = []):
         try:
             with conn.cursor() as cur:
                 cur.execute(f'''
                         INSERT INTO {Artist.TABLE_NAME} (spotify_id, name, followers, popularity, monthly_listeners, world_rank)
-                        VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT (spotify_id) DO NOTHING
-                    ''', spotify_id, name, followers, popularity, monthly_listeners, world_rank)
-                return True
+                        VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT (spotify_id) DO NOTHING RETURNING id
+                    ''', (spotify_id, name, followers, popularity, monthly_listeners, world_rank))
+
+                id = cur.fetchone()
+
+                if id == None:
+                    cur.execute(f'SELECT id FROM {Artist.TABLE_NAME} WHERE spotify_id = %s', (spotify_id,))
+                    id = cur.fetchone()
+
+                id = id[0]
+
+                for genre in genres:
+                    genre_id = Genre.get_id(conn, genre)
+                    cur.execute(f'''
+                            INSERT INTO {Artist.TABLE_NAME__GENRE} (artist_id, genre_id)
+                            VALUES (%s, %s) ON CONFLICT (artist_id, genre_id) DO NOTHING
+                        ''', (id, genre_id))
+
+                return id
+
         except Exception as e:
             print(e)
-            return False
+            return None
 
     @staticmethod
     def update(conn, spotify_id, followers = None, popularity = None, monthly_listeners = None, world_rank = None):
@@ -44,7 +61,7 @@ class Artist:
                           monthly_listeners = COALESCE(%s, monthly_listeners),
                           world_rank = COALESCE(%s, world_rank)
                         WHERE spotify_id = %s
-                    ''', followers, popularity, monthly_listeners, world_rank, spotify_id)
+                    ''', (followers, popularity, monthly_listeners, world_rank, spotify_id))
                 return True
         except Exception as e:
             print(e)
@@ -58,7 +75,7 @@ class Artist:
             cur.execute(f'''
                     SELECT spotify_id, name, followers, popularity, monthly_listeners, world_rank
                     FROM {Artist.TABLE_NAME} WHERE id = %s
-                ''', id)
+                ''', (id,))
             result = cur.fetchone()
 
         if not result: return None
@@ -76,7 +93,7 @@ class Artist:
                     FROM {Artist.TABLE_NAME__CITY}
                     JOIN {City.TABLE_NAME} ON {Artist.TABLE_NAME__CITY}.city_id = {City.TABLE_NAME}.id
                     WHERE {Artist.TABLE_NAME__CITY}.artist_id = %s
-                ''', self.id)
+                ''', (self.id,))
             result = [City(*entry) for entry in cur.fetchall()]
 
         return result
@@ -88,7 +105,7 @@ class Artist:
                     FROM {Artist.TABLE_NAME__GENRE}
                     JOIN {Genre.TABLE_NAME} ON {Artist.TABLE_NAME__GENRE}.genre_id = {Genre.TABLE_NAME}.id
                     WHERE {Artist.TABLE_NAME__GENRE}.artist_id = %s
-                ''', self.id)
+                ''', (self.id,))
             result = [Genre(*entry) for entry in cur.fetchall()]
 
         return result
@@ -108,7 +125,7 @@ class Artist:
                     FROM {Artist.TABLE_NAME__TRACK}
                     JOIN {Track.TABLE_NAME} ON {Artist.TABLE_NAME__TRACK}.track_id = {Track.TABLE_NAME}.id
                     WHERE {Artist.TABLE_NAME__TRACK}.artist_id = %s
-                ''', self.id)
+                ''', (self.id,))
             result = [Track(*entry) for entry in cur.fetchall()]
 
         return result

@@ -19,17 +19,19 @@ class AlbumType:
             return id
 
         with conn.cursor() as cur:
-            cur.execute(f'SELECT id FROM {AlbumType.TABLE_NAME} WHERE name = %s', name)
-            id = cur.fetchone()[0]
+            cur.execute(f'SELECT id FROM {AlbumType.TABLE_NAME} WHERE name = %s', (name,))
+            id = cur.fetchone()
 
         if id == None:
             try:
                 with conn.cursor() as cur:
-                    cur.execute(f'INSERT INTO {AlbumType.TABLE_NAME} (name) VALUES (%s) RETURNING id', name)
-                    id = cur.fetchone()[0]
+                    cur.execute(f'INSERT INTO {AlbumType.TABLE_NAME} (name) VALUES (%s) RETURNING id', (name,))
+                    id = cur.fetchone()
             except Exception as e:
                 print(e)
                 return None
+
+        id = id[0]
 
         AlbumType.cache_by_id[id] = name
         AlbumType.cache_by_name[name] = id
@@ -43,7 +45,7 @@ class AlbumType:
             return name
 
         with conn.cursor() as cur:
-            cur.execute(f'SELECT name FROM {AlbumType.TABLE_NAME} WHERE id = %s', id)
+            cur.execute(f'SELECT name FROM {AlbumType.TABLE_NAME} WHERE id = %s', (id,))
             name = cur.fetchone()[0]
 
         if name != None:
