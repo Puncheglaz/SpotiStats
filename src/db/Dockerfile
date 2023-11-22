@@ -1,0 +1,5 @@
+FROM postgres:16.1
+
+EXPOSE 5432
+VOLUME /pgdata
+ENV POSTGRES_PASSWORD pgpwd
