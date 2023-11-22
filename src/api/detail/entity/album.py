@@ -17,9 +17,7 @@ class Album:
             with conn.cursor() as cur:
                 cur.execute(f'''
                         INSERT INTO {Album.TABLE_NAME} (spotify_id, album_type_id, name, release_date, label, popularity)
-                        VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT (spotify_id) DO UPDATE
-                        SET (spotify_id, album_type_id, name, release_date, label, popularity) =
-                            (EXCLUDED.spotify_id, EXCLUDED.album_type_id, EXCLUDED.name, EXCLUDED.release_date, EXCLUDED.label, EXCLUDED.popularity)
+                        VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT (spotify_id) DO NOTHING
                     ''', spotify_id, album_type_id, name, release_date, label, popularity)
                 return True
         except Exception as e:

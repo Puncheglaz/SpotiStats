@@ -18,10 +18,7 @@ class Track:
             with conn.cursor() as cur:
                 cur.execute(f'''
                         INSERT INTO {Track.TABLE_NAME} (spotify_id, name, duration_ms, explicit, popularity, features, plays)
-                        VALUES (%s, %s, %s, %s, %s, %s, %s) ON CONFLICT (spotify_id) DO UPDATE
-                        SET (spotify_id, name, duration_ms, explicit, popularity, features, plays) =
-                            (EXCLUDED.spotify_id, EXCLUDED.name, EXCLUDED.duration_ms EXCLUDED.explicit,
-                            EXCLUDED.popularity, EXCLUDED.features, EXCLUDED.plays)
+                        VALUES (%s, %s, %s, %s, %s, %s, %s) ON CONFLICT (spotify_id) DO NOTHING
                     ''', spotify_id, name, duration_ms, explicit, popularity, features, plays)
                 return True
         except Exception as e:
