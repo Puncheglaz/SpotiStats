@@ -4,6 +4,8 @@ from flask import Flask, request
 import psycopg2
 import traceback
 import action.saveArtist
+import action.getAverageFollowersPerGenres
+import action.getTracksPerYearForGenre
 import config
 
 app = Flask(__name__)
@@ -33,6 +35,19 @@ def saveArtist():
     if request.method == 'POST':
         data = request.get_json()
         return action.saveArtist.execute(conn, data)
+
+@app.route('/getAverageFollowersPerGenres', methods=['GET'])
+@error_handler
+def getAverageFollowersPerGenres():
+    if request.method == 'GET':
+        return action.getAverageFollowersPerGenres.execute(conn, None)
+
+@app.route('/getTracksPerYearForGenre', methods=['GET'])
+@error_handler
+def getTracksPerYearForGenre():
+    if request.method == 'GET':
+        genre = request.args.get('genre')
+        return action.getTracksPerYearForGenre.execute(conn, genre)
 
 if __name__ == '__main__':
     app.run(debug = True)
