@@ -1,6 +1,7 @@
 #!/bin/env python3
 
 from flask import Flask, request
+from flask_cors import CORS
 import psycopg2
 import traceback
 import action.saveArtist
@@ -9,6 +10,7 @@ import action.getTracksPerYearForGenre
 import config
 
 app = Flask(__name__)
+cors = CORS(app)
 
 conn = psycopg2.connect(
         host = config.DB_HOST,
