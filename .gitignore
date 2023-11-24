@@ -431,5 +431,3 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
-
-variables.js
