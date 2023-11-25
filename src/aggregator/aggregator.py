@@ -1,6 +1,7 @@
 import json
 import time
 import requests
+import datetime
 from auth_credentials import client_id, client_secret, client_headers, client_extensions, token_type, access_token
 from classes.artist import Artist
 from classes.album import Album
@@ -14,6 +15,9 @@ token_data = {
 
 
 def main():
+
+    print(f'                                         [T] Time: {datetime.datetime.now()}')
+
     timeout = 0.5
 
     request_count = 0
@@ -33,7 +37,7 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"[Request {request_count} - {response.status_code}]")
+        print(f"                                       [*] Request {request_count} - {response.status_code}]")
 
         print(response.status_code)
         if response.status_code != 200:
@@ -45,7 +49,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"[Request {request_count} - {response.status_code}]")
+            print(f"                                       [*] Request {request_count} - {response.status_code}]")
 
             headers['Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
 
@@ -56,7 +60,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"[Request {request_count} - {response.status_code}]")
+            print(f"                                       [*] Request {request_count} - {response.status_code}]")
 
         artist_info_data = response.json()
         print(f"Artist Name: {artist_info_data.get('name')}")
@@ -86,7 +90,7 @@ def main():
         # )
         # time.sleep(timeout)
         # request_count += 1
-        # print(f"[Request {request_count} - {response.status_code}]")
+        # print(f"                                       [*] Request {request_count} - {response.status_code}]")
         #
         # artist_stats_data = response.json().get('data').get('artistUnion').get('stats')
         # print(f"Monthly Listeners: {artist_stats_data.get('monthlyListeners')}")
@@ -109,7 +113,7 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"[Request {request_count} - {response.status_code}]")
+        print(f"                                       [*] Request {request_count} - {response.status_code}]")
 
         artist_albums_ids = list()
         artist_albums = response.json().get('items')
@@ -126,7 +130,7 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"[Request {request_count} - {response.status_code}]")
+        print(f"                                       [*] Request {request_count} - {response.status_code}]")
 
         artist_albums = response.json().get('items')
         for album in artist_albums:
@@ -153,7 +157,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"[Request {request_count} - {response.status_code}]")
+            print(f"                                       [*] Request {request_count} - {response.status_code}]")
 
             album_data = response.json().get('albums')
             for album in album_data:
@@ -179,7 +183,6 @@ def main():
 
                 albums_json.append(album_for_json)
 
-                albums_tracks_json = list()
                 album_tracks_ids = list()
                 album_tracks = album.get('tracks').get('items')
                 for track in album_tracks:
@@ -205,7 +208,7 @@ def main():
                         track.get('duration_ms'),
                         track.get('explicit')
                     )
-                    albums_tracks_json.append(track_for_json)
+                    tracks_json.append(track_for_json)
 
                 total_tracks_ids = len(album_tracks_ids)
                 print(f'Total tracks: {total_tracks_ids}')
@@ -225,14 +228,14 @@ def main():
                     )
                     time.sleep(timeout)
                     request_count += 1
-                    print(f"[Request {request_count} - {response.status_code}]")
+                    print(f"                                       [*] Request {request_count} - {response.status_code}]")
 
                     tracks_data = response.json().get('tracks')
                     for track_obj in tracks_data:
                         print(f"Track ID: {track_obj.get('id')}")
                         print(f"Track Popularity: {track_obj.get('popularity')}")
 
-                        for tracks_i in albums_tracks_json:
+                        for tracks_i in tracks_json:
                             if tracks_i.track_id == track_obj.get('id'):
                                 tracks_i.popularity = track_obj.get('popularity')
 
@@ -251,7 +254,7 @@ def main():
                     )
                     time.sleep(timeout)
                     request_count += 1
-                    print(f"[Request {request_count} - {response.status_code}]")
+                    print(f"                                       [*] Request {request_count} - {response.status_code}]")
 
                     features_data = response.json().get('audio_features')
                     for features_track in features_data:
@@ -269,7 +272,7 @@ def main():
                         print(f"Track Time signature: {features_track.get('time_signature')}")
                         print(f"Track Valence: {features_track.get('valence')}")
 
-                        for tracks_j in albums_tracks_json:
+                        for tracks_j in tracks_json:
                             if tracks_j.track_id == features_track.get('id'):
                                 tracks_j.acousticness = features_track.get('acousticness')
                                 tracks_j.danceability = features_track.get('danceability')
@@ -285,16 +288,16 @@ def main():
                                 tracks_j.valence = features_track.get('valence')
                                 # To Do: Track Playcount
 
-                tracks_json.append(albums_tracks_json)
-
         artist_for_json.albums = albums_json
         artist_for_json.tracks = tracks_json
 
-        print(artist_for_json)
+        # print(artist_for_json)
         json_string = json.dumps(artist_for_json, indent=4, ensure_ascii=False, default=lambda x: x.__dict__)
-        print(json_string)
-        with open(f'resources/artist-{artist_id}.json', 'w', encoding='utf-8') as file:
+        # print(json_string)
+        with open(f'resources/artists/artist-{artist_id}.json', 'w', encoding='utf-8') as file:
             file.write(json_string)
+
+        print(f'                                         [T] Time: {datetime.datetime.now()}')
 
 
 if __name__ == '__main__':
