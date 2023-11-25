@@ -290,3 +290,7 @@ sketch
 # Ignore all local history of files
 .history
 .ionide
+
+#Project Files
+auth_credentials.py
+get_token.py
