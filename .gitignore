@@ -291,7 +291,6 @@ sketch
 .history
 .ionide
 
-
 ### Node ###
 # Logs
 logs
@@ -431,3 +430,7 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+
+#Project Files
+auth_credentials.py
+get_token.py
