@@ -12,7 +12,7 @@ RUN pip install -r /app/requirements.txt
 # Copy files to the container
 COPY save_artist.py .
 COPY server_vars.py .
-COPY resources/artists/artist-1.json ./resources/artists/artist-1.json
+COPY resources/artists/ ./resources/artists/
 
 # Command to run application
 CMD ["python", "save_artist.py"]
