@@ -2,7 +2,7 @@
     "artist_id": "0M2HHtY3OOQzIZxrHkbJLT",
     "name": "M|O|O|N",
     "popularity": 44,
-    "followers": 129280,
+    "followers": 129917,
     "genres": [
         "synthwave"
     ],
@@ -167,7 +167,8 @@
             "speechiness": 0.0385,
             "tempo": 99.992,
             "time_signature": 4,
-            "valence": 0.376
+            "valence": 0.376,
+            "playcount": "127912"
         },
         {
             "track_name": "Grift",
@@ -192,7 +193,8 @@
             "speechiness": 0.0708,
             "tempo": 122.006,
             "time_signature": 4,
-            "valence": 0.621
+            "valence": 0.621,
+            "playcount": "353146"
         },
         {
             "track_name": "Carin's Locked Groove",
@@ -217,7 +219,8 @@
             "speechiness": 0.154,
             "tempo": 130.109,
             "time_signature": 4,
-            "valence": 0.108
+            "valence": 0.108,
+            "playcount": "53625"
         },
         {
             "track_name": "To Have Trust In You",
@@ -242,7 +245,8 @@
             "speechiness": 0.1,
             "tempo": 74.636,
             "time_signature": 4,
-            "valence": 0.422
+            "valence": 0.422,
+            "playcount": "65825"
         },
         {
             "track_name": "Come Alone",
@@ -267,7 +271,8 @@
             "speechiness": 0.083,
             "tempo": 118.045,
             "time_signature": 4,
-            "valence": 0.77
+            "valence": 0.77,
+            "playcount": "186048"
         },
         {
             "track_name": "Mains Hum",
@@ -292,7 +297,8 @@
             "speechiness": 0.0573,
             "tempo": 122.924,
             "time_signature": 4,
-            "valence": 0.583
+            "valence": 0.583,
+            "playcount": "57632"
         },
         {
             "track_name": "LS7 Swap",
@@ -317,7 +323,8 @@
             "speechiness": 0.0545,
             "tempo": 132.013,
             "time_signature": 4,
-            "valence": 0.411
+            "valence": 0.411,
+            "playcount": "39111"
         },
         {
             "track_name": "Sometimes Love",
@@ -342,7 +349,8 @@
             "speechiness": 0.0564,
             "tempo": 170.043,
             "time_signature": 4,
-            "valence": 0.795
+            "valence": 0.795,
+            "playcount": "40353"
         },
         {
             "track_name": "Patapon",
@@ -367,7 +375,8 @@
             "speechiness": 0.0544,
             "tempo": 129.003,
             "time_signature": 4,
-            "valence": 0.18
+            "valence": 0.18,
+            "playcount": "34205"
         },
         {
             "track_name": "Would U?",
@@ -392,7 +401,8 @@
             "speechiness": 0.0646,
             "tempo": 131.981,
             "time_signature": 4,
-            "valence": 0.777
+            "valence": 0.777,
+            "playcount": "46683"
         },
         {
             "track_name": "Locked",
@@ -417,7 +427,8 @@
             "speechiness": 0.0645,
             "tempo": 127.008,
             "time_signature": 4,
-            "valence": 0.327
+            "valence": 0.327,
+            "playcount": "30188"
         },
         {
             "track_name": "justavoice8_21_17.wav",
@@ -442,7 +453,8 @@
             "speechiness": 0.0411,
             "tempo": 124.996,
             "time_signature": 4,
-            "valence": 0.107
+            "valence": 0.107,
+            "playcount": "96326"
         },
         {
             "track_name": "savemesomeofdat7_14_17v2.wav",
@@ -467,7 +479,8 @@
             "speechiness": 0.0479,
             "tempo": 124.024,
             "time_signature": 4,
-            "valence": 0.132
+            "valence": 0.132,
+            "playcount": "57170"
         },
         {
             "track_name": "a lil surfer baby6_30_17-1.wav",
@@ -492,7 +505,8 @@
             "speechiness": 0.0595,
             "tempo": 132.128,
             "time_signature": 4,
-            "valence": 0.265
+            "valence": 0.265,
+            "playcount": "53785"
         },
         {
             "track_name": "NEWIDEA6_1_17.wav",
@@ -517,7 +531,8 @@
             "speechiness": 0.0609,
             "tempo": 130.017,
             "time_signature": 4,
-            "valence": 0.565
+            "valence": 0.565,
+            "playcount": "32837"
         },
         {
             "track_name": "90guy5_31_17v2.wav",
@@ -542,7 +557,8 @@
             "speechiness": 0.0635,
             "tempo": 89.975,
             "time_signature": 4,
-            "valence": 0.391
+            "valence": 0.391,
+            "playcount": "38839"
         },
         {
             "track_name": "bells5_31_17.wav",
@@ -567,7 +583,8 @@
             "speechiness": 0.0363,
             "tempo": 108.978,
             "time_signature": 4,
-            "valence": 0.111
+            "valence": 0.111,
+            "playcount": "24941"
         },
         {
             "track_name": "takeitdownWITHOUT3_23_17.wav",
@@ -592,7 +609,8 @@
             "speechiness": 0.0567,
             "tempo": 129.999,
             "time_signature": 4,
-            "valence": 0.345
+            "valence": 0.345,
+            "playcount": "38493"
         },
         {
             "track_name": "baleric nonsensenew2_15_17-1.wav",
@@ -617,7 +635,8 @@
             "speechiness": 0.0615,
             "tempo": 126.01,
             "time_signature": 3,
-            "valence": 0.111
+            "valence": 0.111,
+            "playcount": "22030"
         },
         {
             "track_name": "fleur2_2_17.wav",
@@ -642,7 +661,8 @@
             "speechiness": 0.0411,
             "tempo": 129.995,
             "time_signature": 4,
-            "valence": 0.771
+            "valence": 0.771,
+            "playcount": "24682"
         },
         {
             "track_name": "3amideasnew1_16_17.wav",
@@ -667,7 +687,8 @@
             "speechiness": 0.0845,
             "tempo": 122.006,
             "time_signature": 4,
-            "valence": 0.373
+            "valence": 0.373,
+            "playcount": "32941"
         },
         {
             "track_name": "another1new12_30_16.wav",
@@ -692,7 +713,8 @@
             "speechiness": 0.0332,
             "tempo": 130.016,
             "time_signature": 4,
-            "valence": 0.653
+            "valence": 0.653,
+            "playcount": "66720"
         },
         {
             "track_name": "ucant4_6_16.wav",
@@ -717,7 +739,8 @@
             "speechiness": 0.0621,
             "tempo": 121.972,
             "time_signature": 4,
-            "valence": 0.0397
+            "valence": 0.0397,
+            "playcount": "26994"
         },
         {
             "track_name": "OTHERweirdchordshit4_5_16.wav",
@@ -742,7 +765,8 @@
             "speechiness": 0.033,
             "tempo": 135.004,
             "time_signature": 4,
-            "valence": 0.163
+            "valence": 0.163,
+            "playcount": "21165"
         },
         {
             "track_name": "arp2600jam.wav",
@@ -767,7 +791,8 @@
             "speechiness": 0.13,
             "tempo": 126.038,
             "time_signature": 4,
-            "valence": 0.0355
+            "valence": 0.0355,
+            "playcount": "28838"
         },
         {
             "track_name": "crystalsreprise2_2_15.wav",
@@ -792,7 +817,8 @@
             "speechiness": 0.895,
             "tempo": 191.225,
             "time_signature": 4,
-            "valence": 0.318
+            "valence": 0.318,
+            "playcount": "42454"
         },
         {
             "track_name": "acidsketch2.wav",
@@ -817,7 +843,8 @@
             "speechiness": 0.065,
             "tempo": 125.994,
             "time_signature": 4,
-            "valence": 0.372
+            "valence": 0.372,
+            "playcount": "15518"
         },
         {
             "track_name": "acidsketch1.wav",
@@ -842,7 +869,8 @@
             "speechiness": 0.0786,
             "tempo": 126.051,
             "time_signature": 4,
-            "valence": 0.333
+            "valence": 0.333,
+            "playcount": "17501"
         },
         {
             "track_name": "interlude11_14_14.wav",
@@ -867,7 +895,8 @@
             "speechiness": 0.121,
             "tempo": 138.835,
             "time_signature": 4,
-            "valence": 0.0686
+            "valence": 0.0686,
+            "playcount": "13316"
         },
         {
             "track_name": "chvmpisadumbname10_26_14.wav",
@@ -892,7 +921,8 @@
             "speechiness": 0.114,
             "tempo": 129.945,
             "time_signature": 4,
-            "valence": 0.215
+            "valence": 0.215,
+            "playcount": "13496"
         },
         {
             "track_name": "bigthing6_22_14.wav",
@@ -917,7 +947,8 @@
             "speechiness": 0.0618,
             "tempo": 170.98,
             "time_signature": 5,
-            "valence": 0.0314
+            "valence": 0.0314,
+            "playcount": "14864"
         },
         {
             "track_name": "thing4omar6_2_14.wav",
@@ -942,7 +973,8 @@
             "speechiness": 0.0821,
             "tempo": 118.029,
             "time_signature": 4,
-            "valence": 0.0395
+            "valence": 0.0395,
+            "playcount": "19277"
         },
         {
             "track_name": "Pilot",
@@ -967,7 +999,8 @@
             "speechiness": 0.0345,
             "tempo": 110.113,
             "time_signature": 4,
-            "valence": 0.416
+            "valence": 0.416,
+            "playcount": "327480"
         },
         {
             "track_name": "Time",
@@ -992,7 +1025,8 @@
             "speechiness": 0.0294,
             "tempo": 103.874,
             "time_signature": 4,
-            "valence": 0.0842
+            "valence": 0.0842,
+            "playcount": "1245870"
         },
         {
             "track_name": "Jon F",
@@ -1017,7 +1051,8 @@
             "speechiness": 0.0361,
             "tempo": 130.002,
             "time_signature": 4,
-            "valence": 0.648
+            "valence": 0.648,
+            "playcount": "242250"
         },
         {
             "track_name": "Episode One",
@@ -1042,7 +1077,8 @@
             "speechiness": 0.0513,
             "tempo": 121.255,
             "time_signature": 4,
-            "valence": 0.0866
+            "valence": 0.0866,
+            "playcount": "145273"
         },
         {
             "track_name": "Medium Cool",
@@ -1067,7 +1103,8 @@
             "speechiness": 0.0441,
             "tempo": 116.031,
             "time_signature": 4,
-            "valence": 0.0378
+            "valence": 0.0378,
+            "playcount": "333000"
         },
         {
             "track_name": "Alicia",
@@ -1092,7 +1129,8 @@
             "speechiness": 0.0326,
             "tempo": 115.013,
             "time_signature": 4,
-            "valence": 0.63
+            "valence": 0.63,
+            "playcount": "309590"
         },
         {
             "track_name": "The Fens",
@@ -1117,7 +1155,8 @@
             "speechiness": 0.0685,
             "tempo": 117.998,
             "time_signature": 4,
-            "valence": 0.138
+            "valence": 0.138,
+            "playcount": "194019"
         },
         {
             "track_name": "Episode Two",
@@ -1142,7 +1181,8 @@
             "speechiness": 0.148,
             "tempo": 78.67,
             "time_signature": 4,
-            "valence": 0.425
+            "valence": 0.425,
+            "playcount": "123862"
         },
         {
             "track_name": "Leaning In",
@@ -1167,7 +1207,8 @@
             "speechiness": 0.0315,
             "tempo": 121.994,
             "time_signature": 4,
-            "valence": 0.175
+            "valence": 0.175,
+            "playcount": "696193"
         },
         {
             "track_name": "Finale",
@@ -1192,7 +1233,8 @@
             "speechiness": 0.0307,
             "tempo": 96.658,
             "time_signature": 4,
-            "valence": 0.156
+            "valence": 0.156,
+            "playcount": "141058"
         },
         {
             "track_name": "To Live and Lie in LA",
@@ -1217,7 +1259,8 @@
             "speechiness": 0.0656,
             "tempo": 117.006,
             "time_signature": 4,
-            "valence": 0.605
+            "valence": 0.605,
+            "playcount": "17812"
         },
         {
             "track_name": "Smoke Machine",
@@ -1242,7 +1285,8 @@
             "speechiness": 0.0363,
             "tempo": 129.05,
             "time_signature": 4,
-            "valence": 0.53
+            "valence": 0.53,
+            "playcount": "3252"
         },
         {
             "track_name": "Happiness is for Beautiful People",
@@ -1267,7 +1311,8 @@
             "speechiness": 0.36,
             "tempo": 121.009,
             "time_signature": 4,
-            "valence": 0.0672
+            "valence": 0.0672,
+            "playcount": "5142"
         },
         {
             "track_name": "A Song for Fred",
@@ -1292,7 +1337,8 @@
             "speechiness": 0.0648,
             "tempo": 122.998,
             "time_signature": 4,
-            "valence": 0.36
+            "valence": 0.36,
+            "playcount": "3192"
         },
         {
             "track_name": "Broker Fee",
@@ -1317,7 +1363,8 @@
             "speechiness": 0.0596,
             "tempo": 155.029,
             "time_signature": 4,
-            "valence": 0.554
+            "valence": 0.554,
+            "playcount": "188890"
         },
         {
             "track_name": "Attachment",
@@ -1342,7 +1389,8 @@
             "speechiness": 0.0456,
             "tempo": 150.01,
             "time_signature": 4,
-            "valence": 0.664
+            "valence": 0.664,
+            "playcount": "34275"
         },
         {
             "track_name": "Bleach",
@@ -1367,7 +1415,8 @@
             "speechiness": 0.0403,
             "tempo": 142.015,
             "time_signature": 4,
-            "valence": 0.877
+            "valence": 0.877,
+            "playcount": "58962"
         },
         {
             "track_name": "Never Work",
@@ -1392,7 +1441,8 @@
             "speechiness": 0.101,
             "tempo": 142.959,
             "time_signature": 4,
-            "valence": 0.304
+            "valence": 0.304,
+            "playcount": "31185"
         },
         {
             "track_name": "Come Alone",
@@ -1417,7 +1467,8 @@
             "speechiness": 0.0819,
             "tempo": 118.05,
             "time_signature": 4,
-            "valence": 0.764
+            "valence": 0.764,
+            "playcount": "186048"
         },
         {
             "track_name": "Grift",
@@ -1442,7 +1493,8 @@
             "speechiness": 0.0708,
             "tempo": 122.006,
             "time_signature": 4,
-            "valence": 0.621
+            "valence": 0.621,
+            "playcount": "353146"
         },
         {
             "track_name": "Alicia - Single Version",
@@ -1467,7 +1519,8 @@
             "speechiness": 0.0338,
             "tempo": 115.017,
             "time_signature": 4,
-            "valence": 0.496
+            "valence": 0.496,
+            "playcount": "1224997"
         },
         {
             "track_name": "Alicia - Juan Maclean Remix",
@@ -1492,7 +1545,8 @@
             "speechiness": 0.0432,
             "tempo": 115.0,
             "time_signature": 4,
-            "valence": 0.558
+            "valence": 0.558,
+            "playcount": "114821"
         },
         {
             "track_name": "Alicia - Sage Caswell Rezone",
@@ -1517,7 +1571,8 @@
             "speechiness": 0.0536,
             "tempo": 127.006,
             "time_signature": 4,
-            "valence": 0.266
+            "valence": 0.266,
+            "playcount": "58125"
         },
         {
             "track_name": "Alicia - David Scott Stone Remix",
@@ -1542,7 +1597,8 @@
             "speechiness": 0.0554,
             "tempo": 111.993,
             "time_signature": 4,
-            "valence": 0.433
+            "valence": 0.433,
+            "playcount": "100257"
         },
         {
             "track_name": "Timestamp",
@@ -1568,7 +1624,8 @@
             "speechiness": 0.0969,
             "tempo": 179.437,
             "time_signature": 4,
-            "valence": 0.145
+            "valence": 0.145,
+            "playcount": "1226724"
         },
         {
             "track_name": "Chlorophyll",
@@ -1593,7 +1650,8 @@
             "speechiness": 0.0401,
             "tempo": 109.788,
             "time_signature": 4,
-            "valence": 0.0556
+            "valence": 0.0556,
+            "playcount": "31853"
         },
         {
             "track_name": "Rubber",
@@ -1618,7 +1676,8 @@
             "speechiness": 0.0556,
             "tempo": 99.975,
             "time_signature": 4,
-            "valence": 0.148
+            "valence": 0.148,
+            "playcount": "23724"
         },
         {
             "track_name": "Quixotic",
@@ -1643,7 +1702,8 @@
             "speechiness": 0.052,
             "tempo": 118.012,
             "time_signature": 4,
-            "valence": 0.34
+            "valence": 0.34,
+            "playcount": "7321032"
         },
         {
             "track_name": "Follow Me",
@@ -1668,7 +1728,8 @@
             "speechiness": 0.101,
             "tempo": 110.004,
             "time_signature": 4,
-            "valence": 0.0758
+            "valence": 0.0758,
+            "playcount": "809138"
         },
         {
             "track_name": "Certainty",
@@ -1693,7 +1754,8 @@
             "speechiness": 0.141,
             "tempo": 110.0,
             "time_signature": 4,
-            "valence": 0.0719
+            "valence": 0.0719,
+            "playcount": "930052"
         },
         {
             "track_name": "Case Logic",
@@ -1718,7 +1780,8 @@
             "speechiness": 0.146,
             "tempo": 120.022,
             "time_signature": 3,
-            "valence": 0.2
+            "valence": 0.2,
+            "playcount": "692911"
         },
         {
             "track_name": "Dust",
@@ -1743,7 +1806,8 @@
             "speechiness": 0.0449,
             "tempo": 100.007,
             "time_signature": 4,
-            "valence": 0.241
+            "valence": 0.241,
+            "playcount": "27635381"
         },
         {
             "track_name": "Plus Four",
@@ -1768,7 +1832,8 @@
             "speechiness": 0.0367,
             "tempo": 117.993,
             "time_signature": 4,
-            "valence": 0.036
+            "valence": 0.036,
+            "playcount": "1438401"
         },
         {
             "track_name": "Warehouse (feat. Glass Teeth)",
@@ -1794,7 +1859,8 @@
             "speechiness": 0.0368,
             "tempo": 123.005,
             "time_signature": 4,
-            "valence": 0.269
+            "valence": 0.269,
+            "playcount": "1366045"
         },
         {
             "track_name": "Delay",
@@ -1819,7 +1885,8 @@
             "speechiness": 0.039,
             "tempo": 127.993,
             "time_signature": 4,
-            "valence": 0.353
+            "valence": 0.353,
+            "playcount": "3154029"
         },
         {
             "track_name": "Paris",
@@ -1844,7 +1911,8 @@
             "speechiness": 0.0463,
             "tempo": 99.992,
             "time_signature": 4,
-            "valence": 0.161
+            "valence": 0.161,
+            "playcount": "13992117"
         },
         {
             "track_name": "Crystals",
@@ -1869,7 +1937,8 @@
             "speechiness": 0.191,
             "tempo": 104.998,
             "time_signature": 4,
-            "valence": 0.0373
+            "valence": 0.0373,
+            "playcount": "15444222"
         },
         {
             "track_name": "Hydrogen",
@@ -1894,7 +1963,8 @@
             "speechiness": 0.0524,
             "tempo": 125.936,
             "time_signature": 4,
-            "valence": 0.0447
+            "valence": 0.0447,
+            "playcount": "27351699"
         },
         {
             "track_name": "Release",
@@ -1919,7 +1989,42 @@
             "speechiness": 0.0608,
             "tempo": 108.006,
             "time_signature": 4,
-            "valence": 0.0735
+            "valence": 0.0735,
+            "playcount": "5882347"
+        }
+    ],
+    "monthly_listeners": 382907,
+    "world_rank": 0,
+    "top_cities": [
+        {
+            "numberOfListeners": 5681,
+            "city": "Warsaw",
+            "country": "PL",
+            "region": "14"
+        },
+        {
+            "numberOfListeners": 4342,
+            "city": "Santiago",
+            "country": "CL",
+            "region": "RM"
+        },
+        {
+            "numberOfListeners": 4274,
+            "city": "Paris",
+            "country": "FR",
+            "region": "IDF"
+        },
+        {
+            "numberOfListeners": 4031,
+            "city": "Kyiv",
+            "country": "UA",
+            "region": "30"
+        },
+        {
+            "numberOfListeners": 3660,
+            "city": "London",
+            "country": "GB",
+            "region": "ENG"
         }
     ]
 }

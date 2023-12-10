@@ -1,27 +1,26 @@
 import json
+import time
 import random
 import requests
 from server_vars import server_address, server_port
 
-with open(f'resources/artists/artist-1.json', 'r', encoding='utf-8') as file:
-    data = json.load(file)
+ids = ['00FQb4jTyendYWaN8pK0wa', '0M2HHtY3OOQzIZxrHkbJLT']
 
-    data['artist_id'] = str(random.randint(0, 100000000)) + chr(random.randint(60, 100))
-    data['name'] += str(random.randint(0, 100))
-    print(data)
+for artist_id in ids:
+    with open(f'resources/artists/artist-{artist_id}.json', 'r', encoding='utf-8') as file:
+        data = json.load(file)
 
-    header = {
-        'Content-Type': 'application/json'
-    }
+        header = {
+            'Content-Type': 'application/json'
+        }
 
-    json_string = json.dumps(
-        data,
-        indent=4,
-        ensure_ascii=False
-    )
-    response = requests.post(
-        f'http://{server_address}:{server_port}/saveArtist',
-        headers=header,
-        data=json_string
-    )
-    print(response.text)
+        json_string = json.dumps(
+            data
+        )
+        response = requests.post(
+            f'http://{server_address}:{server_port}/saveArtist',
+            headers=header,
+            data=json_string
+        )
+        print(f"{response.text} - Status Code: {response.status_code}")
+        time.sleep(1)
