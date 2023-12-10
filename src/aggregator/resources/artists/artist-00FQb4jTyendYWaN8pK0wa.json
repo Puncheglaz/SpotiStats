@@ -2,7 +2,7 @@
     "artist_id": "00FQb4jTyendYWaN8pK0wa",
     "name": "Lana Del Rey",
     "popularity": 88,
-    "followers": 29880352,
+    "followers": 30537634,
     "genres": [
         "art pop",
         "pop"
@@ -582,7 +582,8 @@
             "speechiness": 0.0361,
             "tempo": 121.218,
             "time_signature": 4,
-            "valence": 0.143
+            "valence": 0.143,
+            "playcount": "28704146"
         },
         {
             "track_name": "Did you know that there's a tunnel under Ocean Blvd",
@@ -607,7 +608,8 @@
             "speechiness": 0.0305,
             "tempo": 119.94,
             "time_signature": 4,
-            "valence": 0.0562
+            "valence": 0.0562,
+            "playcount": "84701133"
         },
         {
             "track_name": "Sweet",
@@ -632,7 +634,8 @@
             "speechiness": 0.0293,
             "tempo": 126.725,
             "time_signature": 4,
-            "valence": 0.0695
+            "valence": 0.0695,
+            "playcount": "22012964"
         },
         {
             "track_name": "A&W",
@@ -657,7 +660,8 @@
             "speechiness": 0.143,
             "tempo": 161.468,
             "time_signature": 4,
-            "valence": 0.139
+            "valence": 0.139,
+            "playcount": "113238263"
         },
         {
             "track_name": "Judah Smith Interlude",
@@ -682,7 +686,8 @@
             "speechiness": 0.102,
             "tempo": 77.111,
             "time_signature": 4,
-            "valence": 0.368
+            "valence": 0.368,
+            "playcount": "10290621"
         },
         {
             "track_name": "Candy Necklace (feat. Jon Batiste)",
@@ -708,7 +713,8 @@
             "speechiness": 0.0395,
             "tempo": 116.295,
             "time_signature": 4,
-            "valence": 0.0799
+            "valence": 0.0799,
+            "playcount": "29311354"
         },
         {
             "track_name": "Jon Batiste Interlude",
@@ -733,7 +739,8 @@
             "speechiness": 0.034,
             "tempo": 103.496,
             "time_signature": 4,
-            "valence": 0.0653
+            "valence": 0.0653,
+            "playcount": "9573818"
         },
         {
             "track_name": "Kintsugi",
@@ -758,7 +765,8 @@
             "speechiness": 0.042,
             "tempo": 116.091,
             "time_signature": 4,
-            "valence": 0.173
+            "valence": 0.173,
+            "playcount": "14846921"
         },
         {
             "track_name": "Fingertips",
@@ -783,7 +791,8 @@
             "speechiness": 0.0418,
             "tempo": 124.232,
             "time_signature": 3,
-            "valence": 0.0786
+            "valence": 0.0786,
+            "playcount": "14513711"
         },
         {
             "track_name": "Paris, Texas (feat. SYML)",
@@ -809,7 +818,8 @@
             "speechiness": 0.034,
             "tempo": 169.69,
             "time_signature": 3,
-            "valence": 0.185
+            "valence": 0.185,
+            "playcount": "70200157"
         },
         {
             "track_name": "Grandfather please stand on the shoulders of my father while he's deep-sea fishing (feat. RIOPY)",
@@ -835,7 +845,8 @@
             "speechiness": 0.0321,
             "tempo": 79.608,
             "time_signature": 4,
-            "valence": 0.0818
+            "valence": 0.0818,
+            "playcount": "16430607"
         },
         {
             "track_name": "Let The Light In (feat. Father John Misty)",
@@ -861,7 +872,8 @@
             "speechiness": 0.0277,
             "tempo": 132.427,
             "time_signature": 4,
-            "valence": 0.202
+            "valence": 0.202,
+            "playcount": "119490108"
         },
         {
             "track_name": "Margaret (feat. Bleachers)",
@@ -887,7 +899,8 @@
             "speechiness": 0.033,
             "tempo": 102.412,
             "time_signature": 4,
-            "valence": 0.216
+            "valence": 0.216,
+            "playcount": "35280426"
         },
         {
             "track_name": "Fishtail",
@@ -912,7 +925,8 @@
             "speechiness": 0.045,
             "tempo": 89.042,
             "time_signature": 4,
-            "valence": 0.0659
+            "valence": 0.0659,
+            "playcount": "22378929"
         },
         {
             "track_name": "Peppers (feat. Tommy Genesis)",
@@ -938,7 +952,8 @@
             "speechiness": 0.19,
             "tempo": 156.738,
             "time_signature": 4,
-            "valence": 0.35
+            "valence": 0.35,
+            "playcount": "88764015"
         },
         {
             "track_name": "Taco Truck x VB",
@@ -963,7 +978,8 @@
             "speechiness": 0.0591,
             "tempo": 157.862,
             "time_signature": 4,
-            "valence": 0.0395
+            "valence": 0.0395,
+            "playcount": "31345066"
         },
         {
             "track_name": "Text Book",
@@ -988,7 +1004,8 @@
             "speechiness": 0.0427,
             "tempo": 119.396,
             "time_signature": 3,
-            "valence": 0.102
+            "valence": 0.102,
+            "playcount": "38629265"
         },
         {
             "track_name": "Blue Banisters",
@@ -1013,7 +1030,8 @@
             "speechiness": 0.041,
             "tempo": 90.945,
             "time_signature": 1,
-            "valence": 0.172
+            "valence": 0.172,
+            "playcount": "45370561"
         },
         {
             "track_name": "Arcadia",
@@ -1038,7 +1056,8 @@
             "speechiness": 0.0323,
             "tempo": 91.455,
             "time_signature": 4,
-            "valence": 0.158
+            "valence": 0.158,
+            "playcount": "49959271"
         },
         {
             "track_name": "Interlude - The Trio",
@@ -1063,7 +1082,8 @@
             "speechiness": 0.0372,
             "tempo": 102.845,
             "time_signature": 4,
-            "valence": 0.119
+            "valence": 0.119,
+            "playcount": "18355580"
         },
         {
             "track_name": "Black Bathing Suit",
@@ -1088,7 +1108,8 @@
             "speechiness": 0.0738,
             "tempo": 113.936,
             "time_signature": 4,
-            "valence": 0.283
+            "valence": 0.283,
+            "playcount": "25952984"
         },
         {
             "track_name": "If You Lie Down With Me",
@@ -1113,7 +1134,8 @@
             "speechiness": 0.036,
             "tempo": 122.101,
             "time_signature": 4,
-            "valence": 0.187
+            "valence": 0.187,
+            "playcount": "56618929"
         },
         {
             "track_name": "Beautiful",
@@ -1138,7 +1160,8 @@
             "speechiness": 0.043,
             "tempo": 78.021,
             "time_signature": 4,
-            "valence": 0.237
+            "valence": 0.237,
+            "playcount": "17648027"
         },
         {
             "track_name": "Violets for Roses",
@@ -1163,7 +1186,8 @@
             "speechiness": 0.0301,
             "tempo": 88.021,
             "time_signature": 4,
-            "valence": 0.14
+            "valence": 0.14,
+            "playcount": "29908542"
         },
         {
             "track_name": "Dealer",
@@ -1188,7 +1212,8 @@
             "speechiness": 0.0279,
             "tempo": 130.08,
             "time_signature": 4,
-            "valence": 0.381
+            "valence": 0.381,
+            "playcount": "161227016"
         },
         {
             "track_name": "Thunder",
@@ -1213,7 +1238,8 @@
             "speechiness": 0.0291,
             "tempo": 73.862,
             "time_signature": 4,
-            "valence": 0.237
+            "valence": 0.237,
+            "playcount": "40179415"
         },
         {
             "track_name": "Wildflower Wildfire",
@@ -1238,7 +1264,8 @@
             "speechiness": 0.0277,
             "tempo": 105.745,
             "time_signature": 3,
-            "valence": 0.222
+            "valence": 0.222,
+            "playcount": "35171628"
         },
         {
             "track_name": "Nectar Of The Gods",
@@ -1263,7 +1290,8 @@
             "speechiness": 0.0342,
             "tempo": 101.758,
             "time_signature": 4,
-            "valence": 0.122
+            "valence": 0.122,
+            "playcount": "17314956"
         },
         {
             "track_name": "Living Legend",
@@ -1288,7 +1316,8 @@
             "speechiness": 0.0318,
             "tempo": 126.595,
             "time_signature": 4,
-            "valence": 0.166
+            "valence": 0.166,
+            "playcount": "24808043"
         },
         {
             "track_name": "Cherry Blossom",
@@ -1313,7 +1342,8 @@
             "speechiness": 0.0348,
             "tempo": 111.11,
             "time_signature": 4,
-            "valence": 0.216
+            "valence": 0.216,
+            "playcount": "19178648"
         },
         {
             "track_name": "Sweet Carolina",
@@ -1338,7 +1368,8 @@
             "speechiness": 0.0569,
             "tempo": 79.727,
             "time_signature": 5,
-            "valence": 0.0758
+            "valence": 0.0758,
+            "playcount": "25574572"
         },
         {
             "track_name": "White Dress",
@@ -1363,7 +1394,8 @@
             "speechiness": 0.0351,
             "tempo": 122.792,
             "time_signature": 4,
-            "valence": 0.158
+            "valence": 0.158,
+            "playcount": "52051927"
         },
         {
             "track_name": "Chemtrails Over The Country Club",
@@ -1388,7 +1420,8 @@
             "speechiness": 0.0643,
             "tempo": 201.025,
             "time_signature": 3,
-            "valence": 0.429
+            "valence": 0.429,
+            "playcount": "189842834"
         },
         {
             "track_name": "Tulsa Jesus Freak",
@@ -1413,7 +1446,8 @@
             "speechiness": 0.0489,
             "tempo": 137.199,
             "time_signature": 4,
-            "valence": 0.273
+            "valence": 0.273,
+            "playcount": "44370761"
         },
         {
             "track_name": "Let Me Love You Like A Woman",
@@ -1438,7 +1472,8 @@
             "speechiness": 0.111,
             "tempo": 66.932,
             "time_signature": 4,
-            "valence": 0.131
+            "valence": 0.131,
+            "playcount": "81093876"
         },
         {
             "track_name": "Wild At Heart",
@@ -1463,7 +1498,8 @@
             "speechiness": 0.0389,
             "tempo": 120.702,
             "time_signature": 1,
-            "valence": 0.27
+            "valence": 0.27,
+            "playcount": "27388106"
         },
         {
             "track_name": "Dark But Just A Game",
@@ -1488,7 +1524,8 @@
             "speechiness": 0.0916,
             "tempo": 80.434,
             "time_signature": 4,
-            "valence": 0.124
+            "valence": 0.124,
+            "playcount": "31599127"
         },
         {
             "track_name": "Not All Who Wander Are Lost",
@@ -1513,7 +1550,8 @@
             "speechiness": 0.0368,
             "tempo": 167.992,
             "time_signature": 4,
-            "valence": 0.139
+            "valence": 0.139,
+            "playcount": "21690504"
         },
         {
             "track_name": "Yosemite",
@@ -1538,7 +1576,8 @@
             "speechiness": 0.0309,
             "tempo": 106.068,
             "time_signature": 4,
-            "valence": 0.278
+            "valence": 0.278,
+            "playcount": "23906915"
         },
         {
             "track_name": "Breaking Up Slowly",
@@ -1564,7 +1603,8 @@
             "speechiness": 0.0445,
             "tempo": 97.4,
             "time_signature": 5,
-            "valence": 0.221
+            "valence": 0.221,
+            "playcount": "23479383"
         },
         {
             "track_name": "Dance Till We Die",
@@ -1589,7 +1629,8 @@
             "speechiness": 0.0432,
             "tempo": 126.227,
             "time_signature": 4,
-            "valence": 0.244
+            "valence": 0.244,
+            "playcount": "18128608"
         },
         {
             "track_name": "For Free",
@@ -1616,7 +1657,8 @@
             "speechiness": 0.0331,
             "tempo": 114.043,
             "time_signature": 3,
-            "valence": 0.203
+            "valence": 0.203,
+            "playcount": "15280898"
         },
         {
             "track_name": "Norman fucking Rockwell",
@@ -1641,7 +1683,8 @@
             "speechiness": 0.0346,
             "tempo": 78.287,
             "time_signature": 1,
-            "valence": 0.143
+            "valence": 0.143,
+            "playcount": "255383066"
         },
         {
             "track_name": "Mariners Apartment Complex",
@@ -1666,7 +1709,8 @@
             "speechiness": 0.028,
             "tempo": 76.054,
             "time_signature": 4,
-            "valence": 0.159
+            "valence": 0.159,
+            "playcount": "200967258"
         },
         {
             "track_name": "Venice Bitch",
@@ -1691,7 +1735,8 @@
             "speechiness": 0.0294,
             "tempo": 77.826,
             "time_signature": 4,
-            "valence": 0.312
+            "valence": 0.312,
+            "playcount": "152439661"
         },
         {
             "track_name": "Fuck it I love you",
@@ -1716,7 +1761,8 @@
             "speechiness": 0.0359,
             "tempo": 129.974,
             "time_signature": 4,
-            "valence": 0.175
+            "valence": 0.175,
+            "playcount": "196738210"
         },
         {
             "track_name": "Doin' Time",
@@ -1741,7 +1787,8 @@
             "speechiness": 0.0355,
             "tempo": 144.982,
             "time_signature": 4,
-            "valence": 0.523
+            "valence": 0.523,
+            "playcount": "583678806"
         },
         {
             "track_name": "Love song",
@@ -1766,7 +1813,8 @@
             "speechiness": 0.0367,
             "tempo": 63.425,
             "time_signature": 4,
-            "valence": 0.288
+            "valence": 0.288,
+            "playcount": "135918453"
         },
         {
             "track_name": "Cinnamon Girl",
@@ -1791,7 +1839,8 @@
             "speechiness": 0.036,
             "tempo": 91.781,
             "time_signature": 5,
-            "valence": 0.135
+            "valence": 0.135,
+            "playcount": "386617267"
         },
         {
             "track_name": "How to disappear",
@@ -1816,7 +1865,8 @@
             "speechiness": 0.0352,
             "tempo": 78.997,
             "time_signature": 3,
-            "valence": 0.065
+            "valence": 0.065,
+            "playcount": "146839434"
         },
         {
             "track_name": "California",
@@ -1841,7 +1891,8 @@
             "speechiness": 0.0317,
             "tempo": 123.758,
             "time_signature": 4,
-            "valence": 0.195
+            "valence": 0.195,
+            "playcount": "101781839"
         },
         {
             "track_name": "The Next Best American Record",
@@ -1866,7 +1917,8 @@
             "speechiness": 0.0315,
             "tempo": 108.083,
             "time_signature": 4,
-            "valence": 0.118
+            "valence": 0.118,
+            "playcount": "59871596"
         },
         {
             "track_name": "The greatest",
@@ -1891,7 +1943,8 @@
             "speechiness": 0.0359,
             "tempo": 79.142,
             "time_signature": 3,
-            "valence": 0.196
+            "valence": 0.196,
+            "playcount": "108758854"
         },
         {
             "track_name": "Bartender",
@@ -1916,7 +1969,8 @@
             "speechiness": 0.0391,
             "tempo": 131.773,
             "time_signature": 3,
-            "valence": 0.494
+            "valence": 0.494,
+            "playcount": "58263253"
         },
         {
             "track_name": "Happiness is a butterfly",
@@ -1941,7 +1995,8 @@
             "speechiness": 0.0401,
             "tempo": 70.499,
             "time_signature": 4,
-            "valence": 0.156
+            "valence": 0.156,
+            "playcount": "276595695"
         },
         {
             "track_name": "hope is a dangerous thing for a woman like me to have - but I have it",
@@ -1966,7 +2021,8 @@
             "speechiness": 0.0635,
             "tempo": 86.675,
             "time_signature": 4,
-            "valence": 0.278
+            "valence": 0.278,
+            "playcount": "167943737"
         },
         {
             "track_name": "Love",
@@ -1991,7 +2047,8 @@
             "speechiness": 0.0277,
             "tempo": 98.994,
             "time_signature": 4,
-            "valence": 0.234
+            "valence": 0.234,
+            "playcount": "305107588"
         },
         {
             "track_name": "Lust For Life (with The Weeknd)",
@@ -2017,7 +2074,8 @@
             "speechiness": 0.0542,
             "tempo": 99.982,
             "time_signature": 4,
-            "valence": 0.262
+            "valence": 0.262,
+            "playcount": "318087450"
         },
         {
             "track_name": "13 Beaches",
@@ -2042,7 +2100,8 @@
             "speechiness": 0.0364,
             "tempo": 144.204,
             "time_signature": 4,
-            "valence": 0.25
+            "valence": 0.25,
+            "playcount": "114731354"
         },
         {
             "track_name": "Cherry",
@@ -2067,7 +2126,8 @@
             "speechiness": 0.0494,
             "tempo": 94.261,
             "time_signature": 3,
-            "valence": 0.342
+            "valence": 0.342,
+            "playcount": "250589680"
         },
         {
             "track_name": "White Mustang",
@@ -2092,7 +2152,8 @@
             "speechiness": 0.0444,
             "tempo": 114.801,
             "time_signature": 4,
-            "valence": 0.223
+            "valence": 0.223,
+            "playcount": "132061544"
         },
         {
             "track_name": "Summer Bummer (feat. A$AP Rocky & Playboi Carti)",
@@ -2119,7 +2180,8 @@
             "speechiness": 0.126,
             "tempo": 134.981,
             "time_signature": 4,
-            "valence": 0.137
+            "valence": 0.137,
+            "playcount": "148499050"
         },
         {
             "track_name": "Groupie Love (feat. A$AP Rocky)",
@@ -2145,7 +2207,8 @@
             "speechiness": 0.0398,
             "tempo": 175.894,
             "time_signature": 4,
-            "valence": 0.195
+            "valence": 0.195,
+            "playcount": "99238655"
         },
         {
             "track_name": "In My Feelings",
@@ -2170,7 +2233,8 @@
             "speechiness": 0.0802,
             "tempo": 89.933,
             "time_signature": 4,
-            "valence": 0.309
+            "valence": 0.309,
+            "playcount": "125597652"
         },
         {
             "track_name": "Coachella - Woodstock In My Mind",
@@ -2195,7 +2259,8 @@
             "speechiness": 0.0998,
             "tempo": 129.835,
             "time_signature": 4,
-            "valence": 0.413
+            "valence": 0.413,
+            "playcount": "56723245"
         },
         {
             "track_name": "God Bless America - And All The Beautiful Women In It",
@@ -2220,7 +2285,8 @@
             "speechiness": 0.0637,
             "tempo": 87.96,
             "time_signature": 4,
-            "valence": 0.244
+            "valence": 0.244,
+            "playcount": "41115040"
         },
         {
             "track_name": "When The World Was At War We Kept Dancing",
@@ -2245,7 +2311,8 @@
             "speechiness": 0.0343,
             "tempo": 116.031,
             "time_signature": 4,
-            "valence": 0.185
+            "valence": 0.185,
+            "playcount": "49296584"
         },
         {
             "track_name": "Beautiful People Beautiful Problems (feat. Stevie Nicks)",
@@ -2271,7 +2338,8 @@
             "speechiness": 0.0325,
             "tempo": 122.919,
             "time_signature": 4,
-            "valence": 0.128
+            "valence": 0.128,
+            "playcount": "71619238"
         },
         {
             "track_name": "Tomorrow Never Came (feat. Sean Ono Lennon)",
@@ -2297,7 +2365,8 @@
             "speechiness": 0.0346,
             "tempo": 138.019,
             "time_signature": 4,
-            "valence": 0.177
+            "valence": 0.177,
+            "playcount": "70661736"
         },
         {
             "track_name": "Heroin",
@@ -2322,7 +2391,8 @@
             "speechiness": 0.0388,
             "tempo": 118.721,
             "time_signature": 4,
-            "valence": 0.0952
+            "valence": 0.0952,
+            "playcount": "77551169"
         },
         {
             "track_name": "Change",
@@ -2347,7 +2417,8 @@
             "speechiness": 0.0409,
             "tempo": 85.672,
             "time_signature": 4,
-            "valence": 0.303
+            "valence": 0.303,
+            "playcount": "44661145"
         },
         {
             "track_name": "Get Free",
@@ -2372,7 +2443,8 @@
             "speechiness": 0.0718,
             "tempo": 203.944,
             "time_signature": 4,
-            "valence": 0.0392
+            "valence": 0.0392,
+            "playcount": "103907771"
         },
         {
             "track_name": "Honeymoon",
@@ -2397,7 +2469,8 @@
             "speechiness": 0.036,
             "tempo": 74.847,
             "time_signature": 3,
-            "valence": 0.173
+            "valence": 0.173,
+            "playcount": "67496921"
         },
         {
             "track_name": "Music To Watch Boys To",
@@ -2422,7 +2495,8 @@
             "speechiness": 0.0367,
             "tempo": 132.016,
             "time_signature": 4,
-            "valence": 0.134
+            "valence": 0.134,
+            "playcount": "119143895"
         },
         {
             "track_name": "Terrence Loves You",
@@ -2447,7 +2521,8 @@
             "speechiness": 0.0314,
             "tempo": 102.031,
             "time_signature": 1,
-            "valence": 0.0898
+            "valence": 0.0898,
+            "playcount": "47801220"
         },
         {
             "track_name": "God Knows I Tried",
@@ -2472,7 +2547,8 @@
             "speechiness": 0.0275,
             "tempo": 81.017,
             "time_signature": 3,
-            "valence": 0.111
+            "valence": 0.111,
+            "playcount": "49904787"
         },
         {
             "track_name": "High By The Beach",
@@ -2497,7 +2573,8 @@
             "speechiness": 0.0346,
             "tempo": 131.988,
             "time_signature": 4,
-            "valence": 0.0968
+            "valence": 0.0968,
+            "playcount": "249274807"
         },
         {
             "track_name": "Freak",
@@ -2522,7 +2599,8 @@
             "speechiness": 0.033,
             "tempo": 93.984,
             "time_signature": 4,
-            "valence": 0.109
+            "valence": 0.109,
+            "playcount": "122583834"
         },
         {
             "track_name": "Art Deco",
@@ -2547,7 +2625,8 @@
             "speechiness": 0.0533,
             "tempo": 148.345,
             "time_signature": 5,
-            "valence": 0.0596
+            "valence": 0.0596,
+            "playcount": "197488357"
         },
         {
             "track_name": "Burnt Norton - Interlude",
@@ -2572,7 +2651,8 @@
             "speechiness": 0.0359,
             "tempo": 85.765,
             "time_signature": 3,
-            "valence": 0.523
+            "valence": 0.523,
+            "playcount": "24858946"
         },
         {
             "track_name": "Religion",
@@ -2597,7 +2677,8 @@
             "speechiness": 0.0366,
             "tempo": 135.689,
             "time_signature": 4,
-            "valence": 0.175
+            "valence": 0.175,
+            "playcount": "61394064"
         },
         {
             "track_name": "Salvatore",
@@ -2622,7 +2703,8 @@
             "speechiness": 0.0344,
             "tempo": 117.68,
             "time_signature": 4,
-            "valence": 0.115
+            "valence": 0.115,
+            "playcount": "143925815"
         },
         {
             "track_name": "The Blackest Day",
@@ -2647,7 +2729,8 @@
             "speechiness": 0.0331,
             "tempo": 107.752,
             "time_signature": 4,
-            "valence": 0.162
+            "valence": 0.162,
+            "playcount": "79923266"
         },
         {
             "track_name": "24",
@@ -2672,7 +2755,8 @@
             "speechiness": 0.0356,
             "tempo": 98.181,
             "time_signature": 4,
-            "valence": 0.0853
+            "valence": 0.0853,
+            "playcount": "34099017"
         },
         {
             "track_name": "Swan Song",
@@ -2697,7 +2781,8 @@
             "speechiness": 0.0294,
             "tempo": 81.765,
             "time_signature": 4,
-            "valence": 0.0392
+            "valence": 0.0392,
+            "playcount": "37593301"
         },
         {
             "track_name": "Don't Let Me Be Misunderstood",
@@ -2722,7 +2807,8 @@
             "speechiness": 0.0327,
             "tempo": 80.386,
             "time_signature": 4,
-            "valence": 0.063
+            "valence": 0.063,
+            "playcount": "30931447"
         },
         {
             "track_name": "Cruel World",
@@ -2747,7 +2833,8 @@
             "speechiness": 0.0339,
             "tempo": 122.164,
             "time_signature": 4,
-            "valence": 0.177
+            "valence": 0.177,
+            "playcount": "88936747"
         },
         {
             "track_name": "Ultraviolence",
@@ -2772,7 +2859,8 @@
             "speechiness": 0.038,
             "tempo": 79.262,
             "time_signature": 3,
-            "valence": 0.0899
+            "valence": 0.0899,
+            "playcount": "232989819"
         },
         {
             "track_name": "Shades Of Cool",
@@ -2797,7 +2885,8 @@
             "speechiness": 0.0302,
             "tempo": 137.918,
             "time_signature": 3,
-            "valence": 0.0878
+            "valence": 0.0878,
+            "playcount": "161335436"
         },
         {
             "track_name": "Brooklyn Baby",
@@ -2822,7 +2911,8 @@
             "speechiness": 0.0407,
             "tempo": 107.747,
             "time_signature": 4,
-            "valence": 0.0949
+            "valence": 0.0949,
+            "playcount": "552732411"
         },
         {
             "track_name": "West Coast",
@@ -2847,7 +2937,8 @@
             "speechiness": 0.0396,
             "tempo": 123.167,
             "time_signature": 4,
-            "valence": 0.461
+            "valence": 0.461,
+            "playcount": "566352709"
         },
         {
             "track_name": "Sad Girl",
@@ -2872,7 +2963,8 @@
             "speechiness": 0.0364,
             "tempo": 119.479,
             "time_signature": 4,
-            "valence": 0.258
+            "valence": 0.258,
+            "playcount": "206408947"
         },
         {
             "track_name": "Pretty When You Cry",
@@ -2897,7 +2989,8 @@
             "speechiness": 0.0417,
             "tempo": 109.436,
             "time_signature": 4,
-            "valence": 0.197
+            "valence": 0.197,
+            "playcount": "216316441"
         },
         {
             "track_name": "Money Power Glory",
@@ -2922,7 +3015,8 @@
             "speechiness": 0.0451,
             "tempo": 136.762,
             "time_signature": 5,
-            "valence": 0.288
+            "valence": 0.288,
+            "playcount": "125643359"
         },
         {
             "track_name": "Fucked My Way Up To The Top",
@@ -2947,7 +3041,8 @@
             "speechiness": 0.0554,
             "tempo": 129.839,
             "time_signature": 4,
-            "valence": 0.182
+            "valence": 0.182,
+            "playcount": "94805344"
         },
         {
             "track_name": "Old Money",
@@ -2972,7 +3067,8 @@
             "speechiness": 0.0332,
             "tempo": 108.115,
             "time_signature": 1,
-            "valence": 0.154
+            "valence": 0.154,
+            "playcount": "142853369"
         },
         {
             "track_name": "The Other Woman",
@@ -2997,7 +3093,8 @@
             "speechiness": 0.0317,
             "tempo": 111.67,
             "time_signature": 4,
-            "valence": 0.175
+            "valence": 0.175,
+            "playcount": "191997565"
         },
         {
             "track_name": "Black Beauty",
@@ -3022,7 +3119,8 @@
             "speechiness": 0.0436,
             "tempo": 119.898,
             "time_signature": 4,
-            "valence": 0.103
+            "valence": 0.103,
+            "playcount": "90807190"
         },
         {
             "track_name": "Guns And Roses",
@@ -3047,7 +3145,8 @@
             "speechiness": 0.0448,
             "tempo": 108.928,
             "time_signature": 4,
-            "valence": 0.343
+            "valence": 0.343,
+            "playcount": "40904686"
         },
         {
             "track_name": "Florida Kilos",
@@ -3072,7 +3171,8 @@
             "speechiness": 0.0388,
             "tempo": 200.781,
             "time_signature": 4,
-            "valence": 0.579
+            "valence": 0.579,
+            "playcount": "105131950"
         },
         {
             "track_name": "Ride",
@@ -3097,7 +3197,8 @@
             "speechiness": 0.034,
             "tempo": 93.763,
             "time_signature": 4,
-            "valence": 0.189
+            "valence": 0.189,
+            "playcount": "323367799"
         },
         {
             "track_name": "American",
@@ -3122,7 +3223,8 @@
             "speechiness": 0.0359,
             "tempo": 143.983,
             "time_signature": 4,
-            "valence": 0.18
+            "valence": 0.18,
+            "playcount": "89810762"
         },
         {
             "track_name": "Cola",
@@ -3147,7 +3249,8 @@
             "speechiness": 0.0478,
             "tempo": 110.063,
             "time_signature": 4,
-            "valence": 0.121
+            "valence": 0.121,
+            "playcount": "143944124"
         },
         {
             "track_name": "Body Electric",
@@ -3172,7 +3275,8 @@
             "speechiness": 0.0593,
             "tempo": 167.7,
             "time_signature": 3,
-            "valence": 0.104
+            "valence": 0.104,
+            "playcount": "77666202"
         },
         {
             "track_name": "Blue Velvet",
@@ -3197,7 +3301,8 @@
             "speechiness": 0.028,
             "tempo": 84.809,
             "time_signature": 4,
-            "valence": 0.251
+            "valence": 0.251,
+            "playcount": "71851783"
         },
         {
             "track_name": "Gods & Monsters",
@@ -3222,7 +3327,8 @@
             "speechiness": 0.0656,
             "tempo": 189.767,
             "time_signature": 4,
-            "valence": 0.339
+            "valence": 0.339,
+            "playcount": "131888775"
         },
         {
             "track_name": "Yayo",
@@ -3247,7 +3353,8 @@
             "speechiness": 0.0294,
             "tempo": 71.925,
             "time_signature": 4,
-            "valence": 0.145
+            "valence": 0.145,
+            "playcount": "63724054"
         },
         {
             "track_name": "Bel Air",
@@ -3272,7 +3379,8 @@
             "speechiness": 0.0298,
             "tempo": 83.56,
             "time_signature": 4,
-            "valence": 0.303
+            "valence": 0.303,
+            "playcount": "60997367"
         },
         {
             "track_name": "Born To Die",
@@ -3297,7 +3405,8 @@
             "speechiness": 0.0424,
             "tempo": 171.564,
             "time_signature": 4,
-            "valence": 0.4
+            "valence": 0.4,
+            "playcount": "589542211"
         },
         {
             "track_name": "Off To The Races",
@@ -3322,7 +3431,8 @@
             "speechiness": 0.0594,
             "tempo": 160.09,
             "time_signature": 4,
-            "valence": 0.129
+            "valence": 0.129,
+            "playcount": "209876779"
         },
         {
             "track_name": "Blue Jeans - Remastered 2011",
@@ -3347,7 +3457,8 @@
             "speechiness": 0.0629,
             "tempo": 117.956,
             "time_signature": 4,
-            "valence": 0.493
+            "valence": 0.493,
+            "playcount": "415287880"
         },
         {
             "track_name": "Video Games",
@@ -3372,7 +3483,8 @@
             "speechiness": 0.0311,
             "tempo": 82.29,
             "time_signature": 5,
-            "valence": 0.168
+            "valence": 0.168,
+            "playcount": "798410614"
         },
         {
             "track_name": "Diet Mountain Dew",
@@ -3397,7 +3509,8 @@
             "speechiness": 0.0881,
             "tempo": 175.728,
             "time_signature": 4,
-            "valence": 0.605
+            "valence": 0.605,
+            "playcount": "416454529"
         },
         {
             "track_name": "National Anthem",
@@ -3422,7 +3535,8 @@
             "speechiness": 0.215,
             "tempo": 84.951,
             "time_signature": 4,
-            "valence": 0.423
+            "valence": 0.423,
+            "playcount": "383023318"
         },
         {
             "track_name": "Dark Paradise",
@@ -3447,7 +3561,8 @@
             "speechiness": 0.0649,
             "tempo": 120.041,
             "time_signature": 4,
-            "valence": 0.403
+            "valence": 0.403,
+            "playcount": "375565257"
         },
         {
             "track_name": "Radio",
@@ -3472,7 +3587,8 @@
             "speechiness": 0.0893,
             "tempo": 75.139,
             "time_signature": 4,
-            "valence": 0.167
+            "valence": 0.167,
+            "playcount": "440141121"
         },
         {
             "track_name": "Carmen",
@@ -3497,7 +3613,8 @@
             "speechiness": 0.0317,
             "tempo": 100.017,
             "time_signature": 4,
-            "valence": 0.038
+            "valence": 0.038,
+            "playcount": "163233899"
         },
         {
             "track_name": "Million Dollar Man",
@@ -3522,7 +3639,8 @@
             "speechiness": 0.0566,
             "tempo": 195.767,
             "time_signature": 3,
-            "valence": 0.532
+            "valence": 0.532,
+            "playcount": "143440140"
         },
         {
             "track_name": "Summertime Sadness",
@@ -3547,7 +3665,8 @@
             "speechiness": 0.0333,
             "tempo": 111.949,
             "time_signature": 4,
-            "valence": 0.201
+            "valence": 0.201,
+            "playcount": "1186074220"
         },
         {
             "track_name": "This Is What Makes Us Girls",
@@ -3572,7 +3691,8 @@
             "speechiness": 0.104,
             "tempo": 138.04,
             "time_signature": 4,
-            "valence": 0.423
+            "valence": 0.423,
+            "playcount": "137905577"
         },
         {
             "track_name": "Born To Die",
@@ -3597,7 +3717,8 @@
             "speechiness": 0.0378,
             "tempo": 85.767,
             "time_signature": 4,
-            "valence": 0.395
+            "valence": 0.395,
+            "playcount": "589542211"
         },
         {
             "track_name": "Off To The Races",
@@ -3622,7 +3743,8 @@
             "speechiness": 0.0604,
             "tempo": 160.068,
             "time_signature": 4,
-            "valence": 0.126
+            "valence": 0.126,
+            "playcount": "209876779"
         },
         {
             "track_name": "Blue Jeans - Remastered 2011",
@@ -3647,7 +3769,8 @@
             "speechiness": 0.0635,
             "tempo": 117.948,
             "time_signature": 4,
-            "valence": 0.504
+            "valence": 0.504,
+            "playcount": "415287880"
         },
         {
             "track_name": "Video Games",
@@ -3672,7 +3795,8 @@
             "speechiness": 0.0298,
             "tempo": 122.053,
             "time_signature": 4,
-            "valence": 0.181
+            "valence": 0.181,
+            "playcount": "798410614"
         },
         {
             "track_name": "Diet Mountain Dew",
@@ -3697,7 +3821,8 @@
             "speechiness": 0.0858,
             "tempo": 176.09,
             "time_signature": 4,
-            "valence": 0.601
+            "valence": 0.601,
+            "playcount": "416454529"
         },
         {
             "track_name": "National Anthem",
@@ -3722,7 +3847,8 @@
             "speechiness": 0.24,
             "tempo": 84.959,
             "time_signature": 4,
-            "valence": 0.432
+            "valence": 0.432,
+            "playcount": "383023318"
         },
         {
             "track_name": "Dark Paradise",
@@ -3747,7 +3873,8 @@
             "speechiness": 0.0621,
             "tempo": 119.996,
             "time_signature": 4,
-            "valence": 0.411
+            "valence": 0.411,
+            "playcount": "375565257"
         },
         {
             "track_name": "Radio",
@@ -3772,7 +3899,8 @@
             "speechiness": 0.061,
             "tempo": 75.043,
             "time_signature": 4,
-            "valence": 0.196
+            "valence": 0.196,
+            "playcount": "440141121"
         },
         {
             "track_name": "Carmen",
@@ -3797,7 +3925,8 @@
             "speechiness": 0.0303,
             "tempo": 100.029,
             "time_signature": 4,
-            "valence": 0.0377
+            "valence": 0.0377,
+            "playcount": "163233899"
         },
         {
             "track_name": "Million Dollar Man",
@@ -3822,7 +3951,8 @@
             "speechiness": 0.0458,
             "tempo": 197.847,
             "time_signature": 3,
-            "valence": 0.55
+            "valence": 0.55,
+            "playcount": "143440140"
         },
         {
             "track_name": "Summertime Sadness",
@@ -3847,7 +3977,8 @@
             "speechiness": 0.0335,
             "tempo": 111.96,
             "time_signature": 4,
-            "valence": 0.22
+            "valence": 0.22,
+            "playcount": "1186074220"
         },
         {
             "track_name": "This Is What Makes Us Girls",
@@ -3872,7 +4003,8 @@
             "speechiness": 0.101,
             "tempo": 138.023,
             "time_signature": 4,
-            "valence": 0.438
+            "valence": 0.438,
+            "playcount": "137905577"
         },
         {
             "track_name": "Without You",
@@ -3897,7 +4029,8 @@
             "speechiness": 0.0372,
             "tempo": 111.948,
             "time_signature": 4,
-            "valence": 0.595
+            "valence": 0.595,
+            "playcount": "106564963"
         },
         {
             "track_name": "Lolita",
@@ -3922,7 +4055,8 @@
             "speechiness": 0.107,
             "tempo": 136.001,
             "time_signature": 4,
-            "valence": 0.151
+            "valence": 0.151,
+            "playcount": "115959955"
         },
         {
             "track_name": "Lucky Ones",
@@ -3947,7 +4081,8 @@
             "speechiness": 0.0286,
             "tempo": 134.436,
             "time_signature": 4,
-            "valence": 0.319
+            "valence": 0.319,
+            "playcount": "82682956"
         },
         {
             "track_name": "Ride",
@@ -3972,7 +4107,8 @@
             "speechiness": 0.034,
             "tempo": 93.763,
             "time_signature": 4,
-            "valence": 0.189
+            "valence": 0.189,
+            "playcount": "323367799"
         },
         {
             "track_name": "American",
@@ -3997,7 +4133,8 @@
             "speechiness": 0.0359,
             "tempo": 143.983,
             "time_signature": 4,
-            "valence": 0.18
+            "valence": 0.18,
+            "playcount": "89810762"
         },
         {
             "track_name": "Cola",
@@ -4022,7 +4159,8 @@
             "speechiness": 0.0478,
             "tempo": 110.063,
             "time_signature": 4,
-            "valence": 0.121
+            "valence": 0.121,
+            "playcount": "143944124"
         },
         {
             "track_name": "Body Electric",
@@ -4047,7 +4185,8 @@
             "speechiness": 0.0593,
             "tempo": 167.7,
             "time_signature": 3,
-            "valence": 0.104
+            "valence": 0.104,
+            "playcount": "77666202"
         },
         {
             "track_name": "Blue Velvet",
@@ -4072,7 +4211,8 @@
             "speechiness": 0.028,
             "tempo": 84.808,
             "time_signature": 4,
-            "valence": 0.251
+            "valence": 0.251,
+            "playcount": "71851783"
         },
         {
             "track_name": "Gods & Monsters",
@@ -4097,7 +4237,8 @@
             "speechiness": 0.0656,
             "tempo": 189.767,
             "time_signature": 4,
-            "valence": 0.339
+            "valence": 0.339,
+            "playcount": "131888775"
         },
         {
             "track_name": "Yayo",
@@ -4122,7 +4263,8 @@
             "speechiness": 0.0294,
             "tempo": 71.925,
             "time_signature": 4,
-            "valence": 0.145
+            "valence": 0.145,
+            "playcount": "63724054"
         },
         {
             "track_name": "Bel Air",
@@ -4147,7 +4289,8 @@
             "speechiness": 0.0298,
             "tempo": 83.56,
             "time_signature": 4,
-            "valence": 0.303
+            "valence": 0.303,
+            "playcount": "60997367"
         },
         {
             "track_name": "Burning Desire",
@@ -4172,7 +4315,8 @@
             "speechiness": 0.132,
             "tempo": 131.812,
             "time_signature": 4,
-            "valence": 0.161
+            "valence": 0.161,
+            "playcount": "52074846"
         },
         {
             "track_name": "Born To Die",
@@ -4197,7 +4341,8 @@
             "speechiness": 0.0339,
             "tempo": 86.02,
             "time_signature": 4,
-            "valence": 0.379
+            "valence": 0.379,
+            "playcount": "589542211"
         },
         {
             "track_name": "Off To The Races",
@@ -4222,7 +4367,8 @@
             "speechiness": 0.0523,
             "tempo": 160.125,
             "time_signature": 4,
-            "valence": 0.113
+            "valence": 0.113,
+            "playcount": "209876779"
         },
         {
             "track_name": "Blue Jeans",
@@ -4247,7 +4393,8 @@
             "speechiness": 0.0633,
             "tempo": 117.963,
             "time_signature": 4,
-            "valence": 0.488
+            "valence": 0.488,
+            "playcount": "415287880"
         },
         {
             "track_name": "Video Games",
@@ -4272,7 +4419,8 @@
             "speechiness": 0.0348,
             "tempo": 72.847,
             "time_signature": 5,
-            "valence": 0.181
+            "valence": 0.181,
+            "playcount": "798410614"
         },
         {
             "track_name": "Diet Mountain Dew",
@@ -4297,7 +4445,8 @@
             "speechiness": 0.0417,
             "tempo": 88.013,
             "time_signature": 4,
-            "valence": 0.533
+            "valence": 0.533,
+            "playcount": "416454529"
         },
         {
             "track_name": "National Anthem",
@@ -4322,7 +4471,8 @@
             "speechiness": 0.244,
             "tempo": 85.0,
             "time_signature": 4,
-            "valence": 0.436
+            "valence": 0.436,
+            "playcount": "383023318"
         },
         {
             "track_name": "Dark Paradise",
@@ -4347,7 +4497,8 @@
             "speechiness": 0.0594,
             "tempo": 119.994,
             "time_signature": 4,
-            "valence": 0.43
+            "valence": 0.43,
+            "playcount": "375565257"
         },
         {
             "track_name": "Radio",
@@ -4372,7 +4523,8 @@
             "speechiness": 0.0687,
             "tempo": 75.024,
             "time_signature": 4,
-            "valence": 0.196
+            "valence": 0.196,
+            "playcount": "440141121"
         },
         {
             "track_name": "Carmen",
@@ -4397,7 +4549,8 @@
             "speechiness": 0.0297,
             "tempo": 100.024,
             "time_signature": 4,
-            "valence": 0.0379
+            "valence": 0.0379,
+            "playcount": "163233899"
         },
         {
             "track_name": "Million Dollar Man",
@@ -4422,7 +4575,8 @@
             "speechiness": 0.0359,
             "tempo": 65.627,
             "time_signature": 4,
-            "valence": 0.511
+            "valence": 0.511,
+            "playcount": "143440140"
         },
         {
             "track_name": "Summertime Sadness",
@@ -4447,7 +4601,8 @@
             "speechiness": 0.0335,
             "tempo": 111.968,
             "time_signature": 4,
-            "valence": 0.235
+            "valence": 0.235,
+            "playcount": "1186074220"
         },
         {
             "track_name": "This Is What Makes Us Girls",
@@ -4472,7 +4627,8 @@
             "speechiness": 0.0925,
             "tempo": 138.004,
             "time_signature": 4,
-            "valence": 0.441
+            "valence": 0.441,
+            "playcount": "137905577"
         },
         {
             "track_name": "Without You",
@@ -4497,7 +4653,8 @@
             "speechiness": 0.0329,
             "tempo": 111.942,
             "time_signature": 4,
-            "valence": 0.668
+            "valence": 0.668,
+            "playcount": "106564963"
         },
         {
             "track_name": "Lolita",
@@ -4522,7 +4679,8 @@
             "speechiness": 0.124,
             "tempo": 135.955,
             "time_signature": 4,
-            "valence": 0.134
+            "valence": 0.134,
+            "playcount": "115959955"
         },
         {
             "track_name": "Lucky Ones",
@@ -4547,7 +4705,8 @@
             "speechiness": 0.0283,
             "tempo": 134.923,
             "time_signature": 4,
-            "valence": 0.271
+            "valence": 0.271,
+            "playcount": "82682956"
         },
         {
             "track_name": "Ride",
@@ -4572,7 +4731,8 @@
             "speechiness": 0.034,
             "tempo": 93.763,
             "time_signature": 4,
-            "valence": 0.189
+            "valence": 0.189,
+            "playcount": "323367799"
         },
         {
             "track_name": "American",
@@ -4597,7 +4757,8 @@
             "speechiness": 0.0359,
             "tempo": 143.983,
             "time_signature": 4,
-            "valence": 0.18
+            "valence": 0.18,
+            "playcount": "89810762"
         },
         {
             "track_name": "Cola",
@@ -4622,7 +4783,8 @@
             "speechiness": 0.0478,
             "tempo": 110.063,
             "time_signature": 4,
-            "valence": 0.121
+            "valence": 0.121,
+            "playcount": "143944124"
         },
         {
             "track_name": "Body Electric",
@@ -4647,7 +4809,8 @@
             "speechiness": 0.0593,
             "tempo": 167.7,
             "time_signature": 3,
-            "valence": 0.104
+            "valence": 0.104,
+            "playcount": "77666202"
         },
         {
             "track_name": "Blue Velvet",
@@ -4672,7 +4835,8 @@
             "speechiness": 0.028,
             "tempo": 84.809,
             "time_signature": 4,
-            "valence": 0.251
+            "valence": 0.251,
+            "playcount": "71851783"
         },
         {
             "track_name": "Gods & Monsters",
@@ -4697,7 +4861,8 @@
             "speechiness": 0.0656,
             "tempo": 189.767,
             "time_signature": 4,
-            "valence": 0.339
+            "valence": 0.339,
+            "playcount": "131888775"
         },
         {
             "track_name": "Yayo",
@@ -4722,7 +4887,8 @@
             "speechiness": 0.0294,
             "tempo": 71.925,
             "time_signature": 4,
-            "valence": 0.145
+            "valence": 0.145,
+            "playcount": "63724054"
         },
         {
             "track_name": "Bel Air",
@@ -4747,7 +4913,8 @@
             "speechiness": 0.0298,
             "tempo": 83.56,
             "time_signature": 4,
-            "valence": 0.303
+            "valence": 0.303,
+            "playcount": "60997367"
         },
         {
             "track_name": "Born To Die",
@@ -4772,7 +4939,8 @@
             "speechiness": 0.0439,
             "tempo": 75.223,
             "time_signature": 3,
-            "valence": 0.39
+            "valence": 0.39,
+            "playcount": "589542211"
         },
         {
             "track_name": "Off To The Races",
@@ -4797,7 +4965,8 @@
             "speechiness": 0.062,
             "tempo": 160.065,
             "time_signature": 4,
-            "valence": 0.136
+            "valence": 0.136,
+            "playcount": "209876779"
         },
         {
             "track_name": "Blue Jeans - Remastered 2011",
@@ -4822,7 +4991,8 @@
             "speechiness": 0.0589,
             "tempo": 117.956,
             "time_signature": 4,
-            "valence": 0.528
+            "valence": 0.528,
+            "playcount": "415287880"
         },
         {
             "track_name": "Video Games",
@@ -4847,7 +5017,8 @@
             "speechiness": 0.0299,
             "tempo": 122.056,
             "time_signature": 4,
-            "valence": 0.179
+            "valence": 0.179,
+            "playcount": "798410614"
         },
         {
             "track_name": "Diet Mountain Dew",
@@ -4872,7 +5043,8 @@
             "speechiness": 0.0891,
             "tempo": 175.743,
             "time_signature": 4,
-            "valence": 0.592
+            "valence": 0.592,
+            "playcount": "416454529"
         },
         {
             "track_name": "National Anthem",
@@ -4897,7 +5069,8 @@
             "speechiness": 0.234,
             "tempo": 84.929,
             "time_signature": 4,
-            "valence": 0.415
+            "valence": 0.415,
+            "playcount": "383023318"
         },
         {
             "track_name": "Dark Paradise",
@@ -4922,7 +5095,8 @@
             "speechiness": 0.0634,
             "tempo": 120.015,
             "time_signature": 4,
-            "valence": 0.402
+            "valence": 0.402,
+            "playcount": "375565257"
         },
         {
             "track_name": "Radio",
@@ -4947,7 +5121,8 @@
             "speechiness": 0.0846,
             "tempo": 75.112,
             "time_signature": 4,
-            "valence": 0.185
+            "valence": 0.185,
+            "playcount": "440141121"
         },
         {
             "track_name": "Carmen",
@@ -4972,7 +5147,8 @@
             "speechiness": 0.0317,
             "tempo": 100.056,
             "time_signature": 4,
-            "valence": 0.0376
+            "valence": 0.0376,
+            "playcount": "163233899"
         },
         {
             "track_name": "Million Dollar Man",
@@ -4997,7 +5173,8 @@
             "speechiness": 0.0462,
             "tempo": 197.098,
             "time_signature": 3,
-            "valence": 0.53
+            "valence": 0.53,
+            "playcount": "143440140"
         },
         {
             "track_name": "Summertime Sadness",
@@ -5022,7 +5199,8 @@
             "speechiness": 0.0334,
             "tempo": 111.931,
             "time_signature": 4,
-            "valence": 0.216
+            "valence": 0.216,
+            "playcount": "1186074220"
         },
         {
             "track_name": "This Is What Makes Us Girls",
@@ -5047,7 +5225,8 @@
             "speechiness": 0.108,
             "tempo": 137.965,
             "time_signature": 4,
-            "valence": 0.417
+            "valence": 0.417,
+            "playcount": "137905577"
         },
         {
             "track_name": "Without You",
@@ -5072,7 +5251,8 @@
             "speechiness": 0.0368,
             "tempo": 111.939,
             "time_signature": 4,
-            "valence": 0.593
+            "valence": 0.593,
+            "playcount": "106564963"
         },
         {
             "track_name": "Lolita",
@@ -5097,7 +5277,8 @@
             "speechiness": 0.102,
             "tempo": 135.992,
             "time_signature": 4,
-            "valence": 0.148
+            "valence": 0.148,
+            "playcount": "115959955"
         },
         {
             "track_name": "Lucky Ones",
@@ -5122,7 +5303,8 @@
             "speechiness": 0.0358,
             "tempo": 74.221,
             "time_signature": 1,
-            "valence": 0.308
+            "valence": 0.308,
+            "playcount": "82682956"
         },
         {
             "track_name": "Suburban House",
@@ -5148,7 +5330,8 @@
             "speechiness": 0.0308,
             "tempo": 130.941,
             "time_signature": 3,
-            "valence": 0.189
+            "valence": 0.189,
+            "playcount": "6162484"
         },
         {
             "track_name": "Hollywood Bowl",
@@ -5174,7 +5357,8 @@
             "speechiness": 0.0318,
             "tempo": 174.645,
             "time_signature": 3,
-            "valence": 0.398
+            "valence": 0.398,
+            "playcount": "7006778"
         },
         {
             "track_name": "Lost at Sea",
@@ -5200,7 +5384,8 @@
             "speechiness": 0.0344,
             "tempo": 167.87,
             "time_signature": 4,
-            "valence": 0.114
+            "valence": 0.114,
+            "playcount": "10539421"
         },
         {
             "track_name": "Say Yes To Heaven - Dot Major Remix",
@@ -5227,7 +5412,8 @@
             "speechiness": 0.0423,
             "tempo": 127.016,
             "time_signature": 4,
-            "valence": 0.319
+            "valence": 0.319,
+            "playcount": "188425"
         },
         {
             "track_name": "Say Yes To Heaven - Anyma Remix",
@@ -5253,7 +5439,8 @@
             "speechiness": 0.0444,
             "tempo": 127.003,
             "time_signature": 4,
-            "valence": 0.347
+            "valence": 0.347,
+            "playcount": "4822866"
         },
         {
             "track_name": "Say Yes To Heaven - AMANDUS 99 +++ DANZINGER 99 Remix",
@@ -5280,7 +5467,8 @@
             "speechiness": 0.0343,
             "tempo": 132.877,
             "time_signature": 4,
-            "valence": 0.625
+            "valence": 0.625,
+            "playcount": "159370"
         },
         {
             "track_name": "Say Yes To Heaven - sim0ne & Melo Nada Remix",
@@ -5307,7 +5495,8 @@
             "speechiness": 0.06,
             "tempo": 150.999,
             "time_signature": 4,
-            "valence": 0.738
+            "valence": 0.738,
+            "playcount": "6121668"
         },
         {
             "track_name": "Say Yes To Heaven",
@@ -5332,7 +5521,8 @@
             "speechiness": 0.0259,
             "tempo": 99.922,
             "time_signature": 4,
-            "valence": 0.179
+            "valence": 0.179,
+            "playcount": "302407529"
         },
         {
             "track_name": "Say Yes To Heaven",
@@ -5357,7 +5547,8 @@
             "speechiness": 0.0254,
             "tempo": 99.992,
             "time_signature": 4,
-            "valence": 0.166
+            "valence": 0.166,
+            "playcount": "302407529"
         },
         {
             "track_name": "Say Yes To Heaven - Sped Up",
@@ -5382,7 +5573,8 @@
             "speechiness": 0.0287,
             "tempo": 133.891,
             "time_signature": 4,
-            "valence": 0.183
+            "valence": 0.183,
+            "playcount": "31865731"
         },
         {
             "track_name": "Summertime Sadness - Sped Up",
@@ -5408,7 +5600,8 @@
             "speechiness": 0.0441,
             "tempo": 149.907,
             "time_signature": 4,
-            "valence": 0.336
+            "valence": 0.336,
+            "playcount": "55089039"
         },
         {
             "track_name": "Summertime Sadness",
@@ -5433,7 +5626,8 @@
             "speechiness": 0.032,
             "tempo": 111.975,
             "time_signature": 4,
-            "valence": 0.245
+            "valence": 0.245,
+            "playcount": "1186074220"
         },
         {
             "track_name": "Buddy's Rendezvous",
@@ -5459,7 +5653,8 @@
             "speechiness": 0.03,
             "tempo": 77.657,
             "time_signature": 4,
-            "valence": 0.245
+            "valence": 0.245,
+            "playcount": "13556058"
         },
         {
             "track_name": "Goodbye Mr Blue",
@@ -5484,7 +5679,8 @@
             "speechiness": 0.0288,
             "tempo": 104.958,
             "time_signature": 4,
-            "valence": 0.476
+            "valence": 0.476,
+            "playcount": "14524393"
         },
         {
             "track_name": "Kiss Me (I Loved You)",
@@ -5509,7 +5705,8 @@
             "speechiness": 0.0332,
             "tempo": 76.937,
             "time_signature": 4,
-            "valence": 0.412
+            "valence": 0.412,
+            "playcount": "2877237"
         },
         {
             "track_name": "(Everything But) Her Love",
@@ -5534,7 +5731,8 @@
             "speechiness": 0.025,
             "tempo": 111.947,
             "time_signature": 3,
-            "valence": 0.396
+            "valence": 0.396,
+            "playcount": "1584479"
         },
         {
             "track_name": "Chloë",
@@ -5559,7 +5757,8 @@
             "speechiness": 0.0239,
             "tempo": 77.988,
             "time_signature": 4,
-            "valence": 0.541
+            "valence": 0.541,
+            "playcount": "2761946"
         },
         {
             "track_name": "Buddy's Rendezvous",
@@ -5584,7 +5783,8 @@
             "speechiness": 0.0273,
             "tempo": 77.022,
             "time_signature": 4,
-            "valence": 0.272
+            "valence": 0.272,
+            "playcount": "3431344"
         },
         {
             "track_name": "Dayglo Reflection - Orchestral Version",
@@ -5610,7 +5810,8 @@
             "speechiness": 0.0406,
             "tempo": 89.126,
             "time_signature": 4,
-            "valence": 0.251
+            "valence": 0.251,
+            "playcount": "2691704"
         },
         {
             "track_name": "Watercolor Eyes - From “Euphoria” An HBO Original Series",
@@ -5635,7 +5836,8 @@
             "speechiness": 0.0316,
             "tempo": 120.443,
             "time_signature": 4,
-            "valence": 0.121
+            "valence": 0.121,
+            "playcount": "111713859"
         },
         {
             "track_name": "Arcadia",
@@ -5660,7 +5862,8 @@
             "speechiness": 0.0335,
             "tempo": 81.826,
             "time_signature": 4,
-            "valence": 0.191
+            "valence": 0.191,
+            "playcount": "49959271"
         },
         {
             "track_name": "Wildflower Wildfire",
@@ -5685,7 +5888,8 @@
             "speechiness": 0.0323,
             "tempo": 79.592,
             "time_signature": 5,
-            "valence": 0.211
+            "valence": 0.211,
+            "playcount": "35171628"
         },
         {
             "track_name": "Text Book",
@@ -5710,7 +5914,8 @@
             "speechiness": 0.0427,
             "tempo": 119.433,
             "time_signature": 3,
-            "valence": 0.102
+            "valence": 0.102,
+            "playcount": "38629265"
         },
         {
             "track_name": "Blue Banisters",
@@ -5735,7 +5940,8 @@
             "speechiness": 0.0415,
             "tempo": 85.986,
             "time_signature": 3,
-            "valence": 0.177
+            "valence": 0.177,
+            "playcount": "45370561"
         },
         {
             "track_name": "Summertime The Gershwin Version",
@@ -5760,7 +5966,8 @@
             "speechiness": 0.0366,
             "tempo": 189.986,
             "time_signature": 3,
-            "valence": 0.21
+            "valence": 0.21,
+            "playcount": "18608272"
         },
         {
             "track_name": "Hallucinogenics (feat. Lana Del Rey)",
@@ -5786,7 +5993,8 @@
             "speechiness": 0.0527,
             "tempo": 121.843,
             "time_signature": 4,
-            "valence": 0.313
+            "valence": 0.313,
+            "playcount": "50081707"
         },
         {
             "track_name": "Season Of The Witch",
@@ -5811,7 +6019,8 @@
             "speechiness": 0.0399,
             "tempo": 95.984,
             "time_signature": 4,
-            "valence": 0.355
+            "valence": 0.355,
+            "playcount": "61276169"
         },
         {
             "track_name": "Looking For America",
@@ -5836,7 +6045,8 @@
             "speechiness": 0.0373,
             "tempo": 90.075,
             "time_signature": 3,
-            "valence": 0.101
+            "valence": 0.101,
+            "playcount": "19417238"
         },
         {
             "track_name": "Doin' Time",
@@ -5861,7 +6071,8 @@
             "speechiness": 0.0434,
             "tempo": 144.936,
             "time_signature": 4,
-            "valence": 0.446
+            "valence": 0.446,
+            "playcount": "583678806"
         },
         {
             "track_name": "God Save Our Young Blood (with Lana Del Rey)",
@@ -5887,7 +6098,8 @@
             "speechiness": 0.0527,
             "tempo": 130.973,
             "time_signature": 4,
-            "valence": 0.396
+            "valence": 0.396,
+            "playcount": "38013012"
         },
         {
             "track_name": "Summer Bummer - Snakehips Remix",
@@ -5915,7 +6127,8 @@
             "speechiness": 0.223,
             "tempo": 135.026,
             "time_signature": 4,
-            "valence": 0.335
+            "valence": 0.335,
+            "playcount": "4219332"
         },
         {
             "track_name": "Summer Bummer - Clams Casino Remix",
@@ -5943,7 +6156,8 @@
             "speechiness": 0.109,
             "tempo": 34.562,
             "time_signature": 4,
-            "valence": 0.0947
+            "valence": 0.0947,
+            "playcount": "1357225"
         },
         {
             "track_name": "Lust For Life - The Avener Rework",
@@ -5970,7 +6184,8 @@
             "speechiness": 0.0398,
             "tempo": 102.007,
             "time_signature": 4,
-            "valence": 0.455
+            "valence": 0.455,
+            "playcount": "5713257"
         },
         {
             "track_name": "Lust For Life - BloodPop® Remix",
@@ -5997,7 +6212,8 @@
             "speechiness": 0.0319,
             "tempo": 99.991,
             "time_signature": 4,
-            "valence": 0.498
+            "valence": 0.498,
+            "playcount": "9061705"
         },
         {
             "track_name": "Lust for Life (with The Weeknd)",
@@ -6023,7 +6239,8 @@
             "speechiness": 0.0554,
             "tempo": 99.919,
             "time_signature": 4,
-            "valence": 0.267
+            "valence": 0.267,
+            "playcount": "318087450"
         },
         {
             "track_name": "Ultraviolence - Hook N Sling Remix",
@@ -6049,7 +6266,8 @@
             "speechiness": 0.0442,
             "tempo": 128.01,
             "time_signature": 4,
-            "valence": 0.461
+            "valence": 0.461,
+            "playcount": "10311097"
         },
         {
             "track_name": "West Coast",
@@ -6074,7 +6292,8 @@
             "speechiness": 0.039,
             "tempo": 93.05,
             "time_signature": 4,
-            "valence": 0.428
+            "valence": 0.428,
+            "playcount": "566352709"
         },
         {
             "track_name": "West Coast - ZHU Remix",
@@ -6100,7 +6319,8 @@
             "speechiness": 0.0613,
             "tempo": 116.009,
             "time_signature": 4,
-            "valence": 0.368
+            "valence": 0.368,
+            "playcount": "11156126"
         },
         {
             "track_name": "West Coast - Ten Ven Remix",
@@ -6126,7 +6346,8 @@
             "speechiness": 0.0417,
             "tempo": 123.304,
             "time_signature": 4,
-            "valence": 0.487
+            "valence": 0.487,
+            "playcount": "1031283"
         },
         {
             "track_name": "West Coast - The GRADES Icon Mix",
@@ -6152,7 +6373,8 @@
             "speechiness": 0.175,
             "tempo": 110.021,
             "time_signature": 4,
-            "valence": 0.475
+            "valence": 0.475,
+            "playcount": "4412999"
         },
         {
             "track_name": "West Coast - MK Remix",
@@ -6178,7 +6400,8 @@
             "speechiness": 0.0606,
             "tempo": 123.007,
             "time_signature": 4,
-            "valence": 0.405
+            "valence": 0.405,
+            "playcount": "1485054"
         },
         {
             "track_name": "Ultraviolence",
@@ -6203,7 +6426,8 @@
             "speechiness": 0.0324,
             "tempo": 83.994,
             "time_signature": 3,
-            "valence": 0.103
+            "valence": 0.103,
+            "playcount": "232989819"
         },
         {
             "track_name": "Summertime Sadness - Monsieur Adi Remix",
@@ -6229,7 +6453,8 @@
             "speechiness": 0.237,
             "tempo": 122.972,
             "time_signature": 4,
-            "valence": 0.485
+            "valence": 0.485,
+            "playcount": "1469431"
         },
         {
             "track_name": "Shades Of Cool",
@@ -6254,7 +6479,8 @@
             "speechiness": 0.0302,
             "tempo": 137.918,
             "time_signature": 3,
-            "valence": 0.0878
+            "valence": 0.0878,
+            "playcount": "161335436"
         },
         {
             "track_name": "Once Upon a Dream - From \"Maleficent\" / Pop Version",
@@ -6279,7 +6505,8 @@
             "speechiness": 0.0353,
             "tempo": 119.997,
             "time_signature": 3,
-            "valence": 0.167
+            "valence": 0.167,
+            "playcount": "136884234"
         },
         {
             "track_name": "Once Upon a Dream - From “Maleficent”/Young Ruffian Remix",
@@ -6304,7 +6531,8 @@
             "speechiness": 0.0805,
             "tempo": 119.895,
             "time_signature": 3,
-            "valence": 0.229
+            "valence": 0.229,
+            "playcount": "6494844"
         },
         {
             "track_name": "Brooklyn Baby",
@@ -6329,7 +6557,8 @@
             "speechiness": 0.0407,
             "tempo": 107.747,
             "time_signature": 4,
-            "valence": 0.0949
+            "valence": 0.0949,
+            "playcount": "552732411"
         },
         {
             "track_name": "Summertime Sadness - Asadinho Vocal Mix",
@@ -6354,7 +6583,8 @@
             "speechiness": 0.0557,
             "tempo": 118.01,
             "time_signature": 4,
-            "valence": 0.413
+            "valence": 0.413,
+            "playcount": "5465494"
         },
         {
             "track_name": "Summertime Sadness - Asadinho Dub",
@@ -6379,7 +6609,8 @@
             "speechiness": 0.0565,
             "tempo": 118.024,
             "time_signature": 4,
-            "valence": 0.281
+            "valence": 0.281,
+            "playcount": "2350763"
         },
         {
             "track_name": "Summertime Sadness - Asadinho Instrumental",
@@ -6404,7 +6635,8 @@
             "speechiness": 0.0539,
             "tempo": 118.018,
             "time_signature": 4,
-            "valence": 0.293
+            "valence": 0.293,
+            "playcount": "861501"
         },
         {
             "track_name": "Summertime Sadness - Ryan Hemsworth Remix",
@@ -6430,7 +6662,8 @@
             "speechiness": 0.0335,
             "tempo": 123.996,
             "time_signature": 4,
-            "valence": 0.126
+            "valence": 0.126,
+            "playcount": "616026"
         },
         {
             "track_name": "Summertime - Imanbek Remix",
@@ -6456,7 +6689,8 @@
             "speechiness": 0.17,
             "tempo": 121.995,
             "time_signature": 4,
-            "valence": 0.827
+            "valence": 0.827,
+            "playcount": "12878293"
         },
         {
             "track_name": "Dark Paradise - Parov Stelar Remix",
@@ -6482,7 +6716,8 @@
             "speechiness": 0.0391,
             "tempo": 119.992,
             "time_signature": 4,
-            "valence": 0.486
+            "valence": 0.486,
+            "playcount": "13762720"
         },
         {
             "track_name": "Summertime Sadness (Lana Del Rey Vs. Cedric Gervais) - Cedric Gervais Remix",
@@ -6508,7 +6743,8 @@
             "speechiness": 0.0558,
             "tempo": 126.052,
             "time_signature": 4,
-            "valence": 0.11
+            "valence": 0.11,
+            "playcount": "631346028"
         },
         {
             "track_name": "Young And Beautiful",
@@ -6533,7 +6769,8 @@
             "speechiness": 0.0368,
             "tempo": 113.986,
             "time_signature": 4,
-            "valence": 0.151
+            "valence": 0.151,
+            "playcount": "1061034874"
         },
         {
             "track_name": "Ride",
@@ -6558,7 +6795,8 @@
             "speechiness": 0.034,
             "tempo": 93.763,
             "time_signature": 4,
-            "valence": 0.189
+            "valence": 0.189,
+            "playcount": "323367799"
         },
         {
             "track_name": "Ride - Active Child Remix",
@@ -6584,7 +6822,8 @@
             "speechiness": 0.0252,
             "tempo": 140.952,
             "time_signature": 3,
-            "valence": 0.373
+            "valence": 0.373,
+            "playcount": "1009042"
         },
         {
             "track_name": "Blue Velvet - Penguin Prison Remix",
@@ -6610,7 +6849,8 @@
             "speechiness": 0.0478,
             "tempo": 112.004,
             "time_signature": 4,
-            "valence": 0.515
+            "valence": 0.515,
+            "playcount": "533220"
         },
         {
             "track_name": "Blue Velvet - Lindstrom Remix",
@@ -6636,7 +6876,8 @@
             "speechiness": 0.0797,
             "tempo": 120.0,
             "time_signature": 4,
-            "valence": 0.318
+            "valence": 0.318,
+            "playcount": "472973"
         },
         {
             "track_name": "Blue Jeans - Kris Menace Remix",
@@ -6662,7 +6903,8 @@
             "speechiness": 0.0744,
             "tempo": 118.005,
             "time_signature": 4,
-            "valence": 0.569
+            "valence": 0.569,
+            "playcount": "7287544"
         },
         {
             "track_name": "Blue Jeans - Kris Menace Instrumental",
@@ -6688,7 +6930,8 @@
             "speechiness": 0.044,
             "tempo": 117.972,
             "time_signature": 4,
-            "valence": 0.559
+            "valence": 0.559,
+            "playcount": "1549090"
         },
         {
             "track_name": "Blue Jeans - Remastered 2011",
@@ -6713,7 +6956,8 @@
             "speechiness": 0.0615,
             "tempo": 117.973,
             "time_signature": 4,
-            "valence": 0.471
+            "valence": 0.471,
+            "playcount": "415287880"
         },
         {
             "track_name": "Blue Jeans - Gesaffelstein Remix",
@@ -6739,7 +6983,8 @@
             "speechiness": 0.0578,
             "tempo": 118.134,
             "time_signature": 4,
-            "valence": 0.412
+            "valence": 0.412,
+            "playcount": "10904594"
         },
         {
             "track_name": "Blue Jeans - Odd Future's The Internet Mix",
@@ -6767,7 +7012,8 @@
             "speechiness": 0.0352,
             "tempo": 117.971,
             "time_signature": 4,
-            "valence": 0.569
+            "valence": 0.569,
+            "playcount": "602169"
         },
         {
             "track_name": "Blue Jeans - Blood Orange Remix",
@@ -6793,7 +7039,8 @@
             "speechiness": 0.0477,
             "tempo": 117.931,
             "time_signature": 4,
-            "valence": 0.225
+            "valence": 0.225,
+            "playcount": "774843"
         },
         {
             "track_name": "Born To Die",
@@ -6818,7 +7065,8 @@
             "speechiness": 0.0362,
             "tempo": 85.487,
             "time_signature": 4,
-            "valence": 0.402
+            "valence": 0.402,
+            "playcount": "589542211"
         },
         {
             "track_name": "Born To Die - PDP / 13 Remix",
@@ -6844,7 +7092,8 @@
             "speechiness": 0.0827,
             "tempo": 149.999,
             "time_signature": 4,
-            "valence": 0.766
+            "valence": 0.766,
+            "playcount": "957477"
         },
         {
             "track_name": "Born To Die - Woodkid & The Shoes Remix",
@@ -6871,7 +7120,8 @@
             "speechiness": 0.0456,
             "tempo": 93.009,
             "time_signature": 4,
-            "valence": 0.192
+            "valence": 0.192,
+            "playcount": "8236809"
         },
         {
             "track_name": "Born To Die - Clams Casino Remix",
@@ -6897,7 +7147,8 @@
             "speechiness": 0.0621,
             "tempo": 86.007,
             "time_signature": 4,
-            "valence": 0.19
+            "valence": 0.19,
+            "playcount": "673944"
         },
         {
             "track_name": "Video Games - Club Clique For The Bad Girls Remix",
@@ -6923,7 +7174,8 @@
             "speechiness": 0.0413,
             "tempo": 122.478,
             "time_signature": 4,
-            "valence": 0.473
+            "valence": 0.473,
+            "playcount": "3109960"
         },
         {
             "track_name": "Video Games - Jakwob and Etherwood Remix",
@@ -6950,7 +7202,8 @@
             "speechiness": 0.0452,
             "tempo": 155.028,
             "time_signature": 4,
-            "valence": 0.39
+            "valence": 0.39,
+            "playcount": "1714950"
         },
         {
             "track_name": "Video Games - White Lies C-Mix",
@@ -6976,7 +7229,8 @@
             "speechiness": 0.0358,
             "tempo": 122.501,
             "time_signature": 4,
-            "valence": 0.364
+            "valence": 0.364,
+            "playcount": "1274327"
         },
         {
             "track_name": "Video Games - Jamie Woon Remix",
@@ -7002,7 +7256,8 @@
             "speechiness": 0.0867,
             "tempo": 139.959,
             "time_signature": 4,
-            "valence": 0.808
+            "valence": 0.808,
+            "playcount": "1094550"
         },
         {
             "track_name": "Video Games - We Don’t Belong In Pacha Remix",
@@ -7028,7 +7283,8 @@
             "speechiness": 0.0561,
             "tempo": 128.004,
             "time_signature": 4,
-            "valence": 0.615
+            "valence": 0.615,
+            "playcount": "1394377"
         },
         {
             "track_name": "Blue Jeans - Smims & Belle Remix",
@@ -7055,7 +7311,8 @@
             "speechiness": 0.134,
             "tempo": 117.948,
             "time_signature": 4,
-            "valence": 0.501
+            "valence": 0.501,
+            "playcount": "4190832"
         },
         {
             "track_name": "Blue Jeans - Gesaffelstein Remix",
@@ -7081,7 +7338,8 @@
             "speechiness": 0.0547,
             "tempo": 118.153,
             "time_signature": 4,
-            "valence": 0.407
+            "valence": 0.407,
+            "playcount": "10904594"
         },
         {
             "track_name": "Blue Jeans - RAC Mix",
@@ -7107,7 +7365,8 @@
             "speechiness": 0.0524,
             "tempo": 117.968,
             "time_signature": 4,
-            "valence": 0.416
+            "valence": 0.416,
+            "playcount": "20557089"
         },
         {
             "track_name": "Blue Jeans - Club Clique Nothing Is Real Remix",
@@ -7133,7 +7392,8 @@
             "speechiness": 0.0537,
             "tempo": 121.98,
             "time_signature": 4,
-            "valence": 0.832
+            "valence": 0.832,
+            "playcount": "2042593"
         },
         {
             "track_name": "Blue Jeans - Kris Menace Remix",
@@ -7159,7 +7419,8 @@
             "speechiness": 0.104,
             "tempo": 118.007,
             "time_signature": 4,
-            "valence": 0.553
+            "valence": 0.553,
+            "playcount": "7287544"
         },
         {
             "track_name": "Blue Jeans - Penguin Prison Remix",
@@ -7185,7 +7446,8 @@
             "speechiness": 0.0341,
             "tempo": 120.017,
             "time_signature": 4,
-            "valence": 0.744
+            "valence": 0.744,
+            "playcount": "2649276"
         },
         {
             "track_name": "Video Games",
@@ -7210,7 +7472,42 @@
             "speechiness": 0.0324,
             "tempo": 123.856,
             "time_signature": 4,
-            "valence": 0.203
+            "valence": 0.203,
+            "playcount": "798410614"
+        }
+    ],
+    "monthly_listeners": 57028358,
+    "world_rank": 30,
+    "top_cities": [
+        {
+            "numberOfListeners": 821630,
+            "city": "Jakarta",
+            "country": "ID",
+            "region": "JK"
+        },
+        {
+            "numberOfListeners": 801482,
+            "city": "London",
+            "country": "GB",
+            "region": "ENG"
+        },
+        {
+            "numberOfListeners": 696893,
+            "city": "Mexico City",
+            "country": "MX",
+            "region": "CMX"
+        },
+        {
+            "numberOfListeners": 649193,
+            "city": "Istanbul",
+            "country": "TR",
+            "region": "34"
+        },
+        {
+            "numberOfListeners": 625295,
+            "city": "Sydney",
+            "country": "AU",
+            "region": "NSW"
         }
     ]
 }

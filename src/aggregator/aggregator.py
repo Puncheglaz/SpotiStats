@@ -2,7 +2,7 @@ import json
 import time
 import requests
 import datetime
-from auth_credentials import client_id, client_secret, client_headers, client_extensions, token_type, access_token
+from auth_credentials import client_id, client_secret, token_type, access_token
 from classes.artist import Artist
 from classes.album import Album
 from classes.track import Track
@@ -17,9 +17,7 @@ token_data = {
 def main():
     print(f'                                         [T] Time: {datetime.datetime.now()}')
 
-    timeout = 2
-
-    request_count = 0
+    timeout, request_count = 2, 0
 
     headers = {
         'Authorization': f'{token_type}  {access_token}',
@@ -36,7 +34,7 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"                                       [*] Request {request_count} - {response.status_code}]")
+        print(f"                                       [*] [Request {request_count} - {response.status_code}]")
 
         if response.status_code != 200:
             print('Token expired!')
@@ -47,7 +45,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] Request {request_count} - {response.status_code}]")
+            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
 
             headers['Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
 
@@ -58,7 +56,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] Request {request_count} - {response.status_code}]")
+            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
 
         artist_info_data = response.json()
         print(f"Artist ID: {artist_info_data.get('id')}")
@@ -75,34 +73,51 @@ def main():
             artist_info_data.get('genres'),
         )
 
-        # client_params = {
-        #     'operationName': 'queryArtistOverview',
-        #     'variables': '{"uri":"spotify:artist:' + artist_id + '","locale":"","includePrerelease":true}',
-        #     'extensions': client_extensions
-        # }
-        #
-        # 4 request
-        # response = requests.get(
-        #     'https://api-partner.spotify.com/pathfinder/v1/query',
-        #     params=client_params,
-        #     headers=client_headers
-        # )
-        # time.sleep(timeout)
-        # request_count += 1
-        # print(f"                                       [*] Request {request_count} - {response.status_code}]")
-        #
-        # artist_stats_data = response.json().get('data').get('artistUnion').get('stats')
-        # print(f"Monthly Listeners: {artist_stats_data.get('monthlyListeners')}")
-        # print(f"World Rank: {artist_stats_data.get('worldRank')}")
-        # print(f"Cities: {artist_stats_data.get('topCities').get('items')}")
-        # print()
-
         album_params = {
             'include_groups': 'album',
             'limit': 50,
             'offset': 0,
             'market': 'ES'
         }
+
+        # 4 request
+        response = requests.get(
+            f'https://api.spotify.com/v1/artists/{artist_id}/albums',
+            params=album_params,
+            headers=headers
+        )
+        time.sleep(timeout)
+        request_count += 1
+        print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+
+        if response.status_code != 200:
+            print('Token expired!')
+
+            response = requests.post(
+                'https://accounts.spotify.com/api/token',
+                data=token_data
+            )
+            time.sleep(timeout)
+            request_count += 1
+            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+
+            headers['Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
+
+            response = requests.get(
+                f'https://api.spotify.com/v1/artists/{artist_id}/albums',
+                params=album_params,
+                headers=headers
+            )
+            time.sleep(timeout)
+            request_count += 1
+            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+
+        artist_albums_ids = list()
+        artist_albums = response.json().get('items')
+        for album in artist_albums:
+            artist_albums_ids.append(album.get('id'))
+
+        album_params['include_groups'] = 'single'
 
         # 5 request
         response = requests.get(
@@ -112,7 +127,7 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"                                       [*] Request {request_count} - {response.status_code}]")
+        print(f"                                       [*] [Request {request_count} - {response.status_code}]")
 
         if response.status_code != 200:
             print('Token expired!')
@@ -123,7 +138,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] Request {request_count} - {response.status_code}]")
+            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
 
             headers['Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
 
@@ -134,46 +149,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] Request {request_count} - {response.status_code}]")
-
-        artist_albums_ids = list()
-        artist_albums = response.json().get('items')
-        for album in artist_albums:
-            artist_albums_ids.append(album.get('id'))
-
-        album_params['include_groups'] = 'single'
-
-        # 6 request
-        response = requests.get(
-            f'https://api.spotify.com/v1/artists/{artist_id}/albums',
-            params=album_params,
-            headers=headers
-        )
-        time.sleep(timeout)
-        request_count += 1
-        print(f"                                       [*] Request {request_count} - {response.status_code}]")
-
-        if response.status_code != 200:
-            print('Token expired!')
-
-            response = requests.post(
-                'https://accounts.spotify.com/api/token',
-                data=token_data
-            )
-            time.sleep(timeout)
-            request_count += 1
-            print(f"                                       [*] Request {request_count} - {response.status_code}]")
-
-            headers['Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
-
-            response = requests.get(
-                f'https://api.spotify.com/v1/artists/{artist_id}/albums',
-                params=album_params,
-                headers=headers
-            )
-            time.sleep(timeout)
-            request_count += 1
-            print(f"                                       [*] Request {request_count} - {response.status_code}]")
+            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
 
         artist_albums = response.json().get('items')
         for album in artist_albums:
@@ -186,7 +162,7 @@ def main():
             'ids': ''
         }
 
-        # 6 requests above, 54 requests below left
+        # 5 requests above, 55 requests below left
         albums_json = list()
         tracks_json = list()
         id_offset = 20
@@ -200,7 +176,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] Request {request_count} - {response.status_code}]")
+            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
 
             if response.status_code != 200:
                 print('Token expired!')
@@ -211,7 +187,7 @@ def main():
                 )
                 time.sleep(timeout)
                 request_count += 1
-                print(f"                                       [*] Request {request_count} - {response.status_code}]")
+                print(f"                                       [*] [Request {request_count} - {response.status_code}]")
 
                 headers['Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
 
@@ -222,7 +198,7 @@ def main():
                 )
                 time.sleep(timeout)
                 request_count += 1
-                print(f"                                       [*] Request {request_count} - {response.status_code}]")
+                print(f"                                       [*] [Request {request_count} - {response.status_code}]")
 
             album_data = response.json().get('albums')
             for album in album_data:
@@ -413,9 +389,7 @@ def main():
         artist_for_json.albums = albums_json
         artist_for_json.tracks = tracks_json
 
-        # print(artist_for_json)
         json_string = json.dumps(artist_for_json, indent=4, ensure_ascii=False, default=lambda x: x.__dict__)
-        # print(json_string)
         with open(f'resources/artists/artist-{artist_id}.json', 'w', encoding='utf-8') as file:
             file.write(json_string)
 
