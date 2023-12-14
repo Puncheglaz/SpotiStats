@@ -6,7 +6,8 @@ artists_path = "resources/artists"
 
 artists_files = [file for file in listdir(artists_path) if isfile(join(artists_path, file))]
 
-artist_count, albums_count, tracks_count = 0, 0, 0
+artist_count = 0
+albums_list, tracks_list = list(), list()
 for artist_file in artists_files:
     with open(f'resources/artists/{artist_file}', 'r', encoding='utf-8') as artist:
         artist_data = json.load(artist)
@@ -15,11 +16,13 @@ for artist_file in artists_files:
 
         artist_albums = artist_data.get('albums')
         for album in artist_albums:
-            albums_count += 1
+            album_id = album.get('album_id')
+            albums_list.append(album_id)
 
         artist_tracks = artist_data.get('tracks')
         for track in artist_tracks:
-            tracks_count += 1
+            track_id = track.get('track_id')
+            tracks_list.append(track_id)
 
-# Artists: 2005, Albums: 50292, Tracks: 269736
-print(f'Artists: {artist_count}, Albums: {albums_count}, Tracks: {tracks_count}')
+# Artists: 2004, Albums: 49820, Tracks: 268643
+print(f'Artists: {artist_count}, Albums: {len(set(albums_list))}, Tracks: {len(set(tracks_list))}')
