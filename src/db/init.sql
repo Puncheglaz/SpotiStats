@@ -38,7 +38,7 @@ CREATE TABLE album (
 CREATE TABLE track (
   id          SERIAL PRIMARY KEY,
   spotify_id  VARCHAR(24) UNIQUE,
-  name        VARCHAR(256),
+  name        VARCHAR(512),
   duration_ms INTEGER,
   explicit    BOOLEAN,
   popularity  SMALLINT,

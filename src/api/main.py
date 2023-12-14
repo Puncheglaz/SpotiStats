@@ -7,6 +7,7 @@ import traceback
 import action.saveArtist
 import action.getAverageFollowersPerGenres
 import action.getTracksPerYearForGenre
+import action.query
 import config
 
 app = Flask(__name__)
@@ -50,6 +51,12 @@ def getTracksPerYearForGenre():
     if request.method == 'GET':
         genre = request.args.get('genre')
         return action.getTracksPerYearForGenre.execute(conn, genre)
+
+@app.route('/query', methods=['GET'])
+@error_handler
+def getQuery():
+    if request.method == 'GET':
+        return action.query.execute(conn, request.args)
 
 if __name__ == '__main__':
     app.run(debug = True)

@@ -21,7 +21,7 @@ class Artist:
         self.genres = None
 
     @staticmethod
-    def save(conn, spotify_id, name, followers, popularity, monthly_listeners = None, world_rank = None, genres = []):
+    def save(conn, spotify_id, name, followers, popularity, monthly_listeners = None, world_rank = None, genres = [], cities = []):
         try:
             with conn.cursor() as cur:
                 cur.execute(f'''
@@ -43,6 +43,13 @@ class Artist:
                             INSERT INTO {Artist.TABLE_NAME__GENRE} (artist_id, genre_id)
                             VALUES (%s, %s) ON CONFLICT (artist_id, genre_id) DO NOTHING
                         ''', (id, genre_id))
+
+                for city in cities:
+                    city_id = City.get_id(conn, city['city'], city['country'], city['region'])
+                    cur.execute(f'''
+                            INSERT INTO {Artist.TABLE_NAME__CITY} (artist_id, city_id, monthly_plays)
+                            VALUES (%s, %s, %s) ON CONFLICT (artist_id, city_id) DO NOTHING
+                        ''', (id, city_id, city['numberOfListeners']))
 
                 return id
 

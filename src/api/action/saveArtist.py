@@ -11,7 +11,8 @@ def execute(conn, data):
                 data.get('popularity'),
                 data.get('monthly_listeners'),
                 data.get('world_rank'),
-                data.get('genres', [])
+                data.get('genres', []),
+                data.get('top_cities', [])
             )
 
         if 'albums' in data:
