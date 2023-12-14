@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  db:
+    build: db/
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=user
+      - POSTGRES_DB=spotistats
+  api:
+    build: api/
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=192.168.191.64
+      - DB_PORT=5432
+      - DB_NAME=spotistats
+      - DB_USER=user
+      - DB_PASS=user
+volumes:
+  pgdata:
+    driver: local
