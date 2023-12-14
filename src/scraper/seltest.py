@@ -70,7 +70,7 @@ def parser():
     save_cnt = 0
 
     i = 0
-    for artist in os.listdir('artists'):
+    for artist in sorted(os.listdir('artists')):
         i += 1
         print(i, artist)
 
@@ -80,7 +80,7 @@ def parser():
         for album in data['albums']:
             if album['album_id'] not in processed:
                 driver.get('https://open.spotify.com/album/' + album['album_id'])
-                time.sleep(1)
+                time.sleep(2)
                 save_cnt = save_album_data(processed, start_time, save_cnt)
 
 def main():
