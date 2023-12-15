@@ -14,8 +14,5 @@ RUN npm install
 # Copy the rest of the application files to the container
 COPY . .
 
-# Expose the port that your application will run on
-EXPOSE 1234
-
 # Command to run your application
-CMD ["npm", "run", "dev"]
+CMD ["bash", "./run.sh"]
