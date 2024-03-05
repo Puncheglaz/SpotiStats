@@ -15,7 +15,7 @@ token_data = {
 
 
 def main():
-    print(f'                                         [T] Time: {datetime.datetime.now()}')
+    print(f'[T] Time: {datetime.datetime.now()}')
 
     timeout, request_count = 2, 0
 
@@ -23,7 +23,12 @@ def main():
         'Authorization': f'{token_type}  {access_token}',
     }
 
-    with open(f'resources/artists-ids-list.json', 'r', encoding='utf-8') as file:
+    id_file_name = 'artists-ids-list.json'
+    with open(
+            f'resources/{id_file_name}',
+            mode='r',
+            encoding='utf-8'
+    ) as file:
         artists_ids = json.load(file)
 
     for artist_id in artists_ids[773:1001]:
@@ -34,7 +39,7 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+        print(f"[*] [Request {request_count} - {response.status_code}]")
 
         if response.status_code != 200:
             print('Token expired!')
@@ -45,9 +50,12 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+            print(f"[*] [Request {request_count} - {response.status_code}]")
 
-            headers['Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
+            headers['Authorization'] = (
+                f"{response.json().get('token_type')}"
+                f"  {response.json().get('access_token')}"
+            )
 
             # 3 request (potential)
             response = requests.get(
@@ -56,7 +64,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+            print(f"[*] [Request {request_count} - {response.status_code}]")
 
         artist_info_data = response.json()
         print(f"Artist ID: {artist_info_data.get('id')}")
@@ -88,7 +96,7 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+        print(f"[*] [Request {request_count} - {response.status_code}]")
 
         if response.status_code != 200:
             print('Token expired!')
@@ -99,9 +107,12 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+            print(f"[*] [Request {request_count} - {response.status_code}]")
 
-            headers['Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
+            headers['Authorization'] = (
+                f"{response.json().get('token_type')}"
+                f"  {response.json().get('access_token')}"
+            )
 
             response = requests.get(
                 f'https://api.spotify.com/v1/artists/{artist_id}/albums',
@@ -110,7 +121,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+            print(f"[*] [Request {request_count} - {response.status_code}]")
 
         artist_albums_ids = list()
         artist_albums = response.json().get('items')
@@ -127,7 +138,7 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+        print(f"[*] [Request {request_count} - {response.status_code}]")
 
         if response.status_code != 200:
             print('Token expired!')
@@ -138,9 +149,12 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+            print(f"[*] [Request {request_count} - {response.status_code}]")
 
-            headers['Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
+            headers['Authorization'] = (
+                f"{response.json().get('token_type')}"
+                f"  {response.json().get('access_token')}"
+            )
 
             response = requests.get(
                 f'https://api.spotify.com/v1/artists/{artist_id}/albums',
@@ -149,7 +163,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+            print(f"[*] [Request {request_count} - {response.status_code}]")
 
         artist_albums = response.json().get('items')
         for album in artist_albums:
@@ -167,7 +181,9 @@ def main():
         tracks_json = list()
         id_offset = 20
         for i in range(0, total_albums_ids, id_offset):
-            several_albums_params['ids'] = ','.join(artist_albums_ids[i:i + id_offset])
+            several_albums_params['ids'] = (
+                ','.join(artist_albums_ids[i:i + id_offset])
+            )
             # max 100 albums or singles = 5 requests (5 * 20)
             response = requests.get(
                 'https://api.spotify.com/v1/albums',
@@ -176,7 +192,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+            print(f"[*] [Request {request_count} - {response.status_code}]")
 
             if response.status_code != 200:
                 print('Token expired!')
@@ -187,9 +203,12 @@ def main():
                 )
                 time.sleep(timeout)
                 request_count += 1
-                print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+                print(f"[*] [Request {request_count} - {response.status_code}]")
 
-                headers['Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
+                headers['Authorization'] = (
+                    f'{response.json().get("token_type")}'
+                    f'  {response.json().get("access_token")}'
+                )
 
                 response = requests.get(
                     'https://api.spotify.com/v1/albums',
@@ -198,7 +217,7 @@ def main():
                 )
                 time.sleep(timeout)
                 request_count += 1
-                print(f"                                       [*] [Request {request_count} - {response.status_code}]")
+                print(f"[*] [Request {request_count} - {response.status_code}]")
 
             album_data = response.json().get('albums')
             for album in album_data:
@@ -260,7 +279,9 @@ def main():
 
                 track_id_offset = 50
                 for j in range(0, total_tracks_ids, track_id_offset):
-                    several_tracks_params['ids'] = ','.join(album_tracks_ids[j:j + track_id_offset])
+                    several_tracks_params['ids'] = (
+                        ','.join(album_tracks_ids[j:j + track_id_offset])
+                    )
                     # max 100 tracks = 2 requests per album
                     response = requests.get(
                         'https://api.spotify.com/v1/tracks',
@@ -270,7 +291,7 @@ def main():
                     time.sleep(timeout)
                     request_count += 1
                     print(
-                        f"                                       [*] Request {request_count} - {response.status_code}]")
+                        f"[*] Request {request_count} - {response.status_code}]")
 
                     if response.status_code != 200:
                         print('Token expired!')
@@ -282,10 +303,14 @@ def main():
                         time.sleep(timeout)
                         request_count += 1
                         print(
-                            f"                                       [*] Request {request_count} - {response.status_code}]")
+                            f"[*] Request {request_count} - {response.status_code}]")
 
                         headers[
-                            'Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
+                            'Authorization'
+                        ] = (
+                            f"{response.json().get('token_type')}"
+                            f"  {response.json().get('access_token')}"
+                        )
 
                         response = requests.get(
                             'https://api.spotify.com/v1/tracks',
@@ -295,7 +320,7 @@ def main():
                         time.sleep(timeout)
                         request_count += 1
                         print(
-                            f"                                       [*] Request {request_count} - {response.status_code}]")
+                            f"[*] Request {request_count} - {response.status_code}]")
 
                     tracks_data = response.json().get('tracks')
                     for track_obj in tracks_data:
@@ -312,7 +337,9 @@ def main():
 
                 track_features_offset = 100
                 for k in range(0, total_tracks_ids, track_features_offset):
-                    several_features_params['ids'] = ','.join(album_tracks_ids[k: k + track_features_offset])
+                    several_features_params['ids'] = (
+                        ','.join(album_tracks_ids[k: k + track_features_offset])
+                    )
                     # max 100 tracks = 1 request per album
                     response = requests.get(
                         'https://api.spotify.com/v1/audio-features',
@@ -322,7 +349,7 @@ def main():
                     time.sleep(timeout + 1)
                     request_count += 1
                     print(
-                        f"                                       [*] Request {request_count} - {response.status_code}]")
+                        f"[*] Request {request_count} - {response.status_code}]")
 
                     if response.status_code != 200:
                         print('Token expired!')
@@ -334,10 +361,14 @@ def main():
                         time.sleep(timeout)
                         request_count += 1
                         print(
-                            f"                                       [*] Request {request_count} - {response.status_code}]")
+                            f"[*] Request {request_count} - {response.status_code}]")
 
                         headers[
-                            'Authorization'] = f"{response.json().get('token_type')}  {response.json().get('access_token')}"
+                            'Authorization'
+                        ] = (
+                            f"{response.json().get('token_type')}"
+                            f"  {response.json().get('access_token')}"
+                        )
 
                         response = requests.get(
                             'https://api.spotify.com/v1/audio-features',
@@ -347,7 +378,7 @@ def main():
                         time.sleep(timeout)
                         request_count += 1
                         print(
-                            f"                                       [*] Request {request_count} - {response.status_code}]")
+                            f"[*] Request {request_count} - {response.status_code}]")
 
                     features_data = response.json().get('audio_features')
                     for features_track in features_data:
@@ -389,11 +420,20 @@ def main():
         artist_for_json.albums = albums_json
         artist_for_json.tracks = tracks_json
 
-        json_string = json.dumps(artist_for_json, indent=4, ensure_ascii=False, default=lambda x: x.__dict__)
-        with open(f'resources/artists/artist-{artist_id}.json', 'w', encoding='utf-8') as file:
+        json_string = json.dumps(
+            artist_for_json,
+            indent=4,
+            ensure_ascii=False,
+            default=lambda x: x.__dict__
+        )
+        with open(
+                f'resources/artists/artist-{artist_id}.json',
+                mode='w',
+                encoding='utf-8'
+        ) as file:
             file.write(json_string)
 
-        print(f'                                         [T] Time: {datetime.datetime.now()}')
+        print(f'[T] Time: {datetime.datetime.now()}')
 
 
 if __name__ == '__main__':

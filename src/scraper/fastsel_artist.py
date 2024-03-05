@@ -136,8 +136,8 @@ def parser():
 
     start_time = time.time()
     save_cnt = 0
-    prevFailed = False
-    didSomething = False
+    prev_failed = False
+    did_something = False
 
     i = 0
     for artist in sorted(os.listdir('artists')):
@@ -150,20 +150,19 @@ def parser():
             d = fetch_artist(artist_id)
 
             if d == None:
-                if prevFailed:
+                if prev_failed:
                     print('Two fails in a row, resetting session')
-                    return didSomething
-                else:
-                    prevFailed = True
+                    return did_something
+                prev_failed = True
             else:
                 with open(f'artist_stats/{artist_id}.json', 'w') as f:
                     f.write(d)
 
-                didSomething = True
+                did_something = True
                 processed.add(artist_id)
                 save_cnt += 1
                 print(artist_id, save_cnt, (time.time() - start_time)/save_cnt)
-    return didSomething
+    return did_something
 
 def main():
     # input("\n\nSet up VPN & open spotify in the first tab\n\n[Press ENTER to continue]")

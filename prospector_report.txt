@@ -1,0 +1,451 @@
+﻿************* Module src.aggregator.aggregator
+src\aggregator\aggregator.py:4: [wrong-import-order(pylint), None] standard import "import datetime" should be placed before "import requests"
+src\aggregator\aggregator.py:17: [too-many-branches(pylint), main] Too many branches (22/12)
+src\aggregator\aggregator.py:17: [too-many-locals(pylint), main] Too many local variables (44/15)
+src\aggregator\aggregator.py:17: [too-many-statements(pylint), main] Too many statements (196/50)
+src\aggregator\aggregator.py:34: [too-many-nested-blocks(pylint), main] Too many nested blocks (7/5)
+src\aggregator\aggregator.py:34: [too-many-nested-blocks(pylint), main] Too many nested blocks (7/5)
+src\aggregator\aggregator.py:36: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:47: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.post' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:61: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:92: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:104: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.post' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:117: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:126: [use-list-literal(pylint), main] Consider using [] instead of list()
+src\aggregator\aggregator.py:134: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:146: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.post' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:159: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:180: [use-list-literal(pylint), main] Consider using [] instead of list()
+src\aggregator\aggregator.py:181: [use-list-literal(pylint), main] Consider using [] instead of list()
+src\aggregator\aggregator.py:188: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:200: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.post' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:213: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:246: [use-list-literal(pylint), main] Consider using [] instead of list()
+src\aggregator\aggregator.py:255: [use-list-literal(pylint), main] Consider using [] instead of list()
+src\aggregator\aggregator.py:286: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:299: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.post' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:315: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:344: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:357: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.post' can cause your program to hang indefinitely
+src\aggregator\aggregator.py:373: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+************* Module src.aggregator.artist_aggregate
+src\aggregator\artist_aggregate.py:18: [use-list-literal(pylint), get_related_artists] Consider using [] instead of list()
+src\aggregator\artist_aggregate.py:24: [missing-timeout(pylint), get_related_artists] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\artist_aggregate.py:35: [f-string-without-interpolation(pylint), get_related_artists] Using an f-string that does not have any interpolated variables
+src\aggregator\artist_aggregate.py:43: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.post' can cause your program to hang indefinitely
+src\aggregator\artist_aggregate.py:52: [f-string-without-interpolation(pylint), main] Using an f-string that does not have any interpolated variables
+src\aggregator\artist_aggregate.py:52: [E501(pycodestyle), None] line too long (104 > 100 characters)
+src\aggregator\artist_aggregate.py:55: [use-list-literal(pylint), main] Consider using [] instead of list()
+src\aggregator\artist_aggregate.py:77: [f-string-without-interpolation(pylint), main] Using an f-string that does not have any interpolated variables
+************* Module src.aggregator.classes.album
+src\aggregator\classes\album.py:3: [too-many-arguments(pylint), Album.__init__] Too many arguments (8/5)
+************* Module src.aggregator.classes.artist
+src\aggregator\classes\artist.py:1: [too-few-public-methods(pylint), Artist] Too few public methods (1/2)
+src\aggregator\classes\artist.py:3: [too-many-arguments(pylint), Artist.__init__] Too many arguments (8/5)
+************* Module src.aggregator.classes.track
+src\aggregator\classes\track.py:1: [too-few-public-methods(pylint), Track] Too few public methods (1/2)
+src\aggregator\classes\track.py:1: [too-many-instance-attributes(pylint), Track] Too many instance attributes (19/7)
+src\aggregator\classes\track.py:3: [too-many-arguments(pylint), Track.__init__] Too many arguments (20/5)
+src\aggregator\classes\track.py:3: [too-many-locals(pylint), Track.__init__] Too many local variables (20/15)
+src\aggregator\classes\track.py:3: [E501(pycodestyle), None] line too long (120 > 100 characters)
+src\aggregator\classes\track.py:4: [E501(pycodestyle), None] line too long (111 > 100 characters)
+src\aggregator\classes\track.py:27: [E501(pycodestyle), None] line too long (117 > 100 characters)
+src\aggregator\classes\track.py:28: [E501(pycodestyle), None] line too long (116 > 100 characters)
+src\aggregator\classes\track.py:29: [E501(pycodestyle), None] line too long (107 > 100 characters)
+************* Module src.aggregator.get_token
+src\aggregator\get_token.py:10: [missing-timeout(pylint), None] Missing timeout argument for method 'requests.post' can cause your program to hang indefinitely
+************* Module src.aggregator.save_artist
+src\aggregator\save_artist.py:3: [unused-import(pylint), None] Unused import random
+src\aggregator\save_artist.py:20: [missing-timeout(pylint), None] Missing timeout argument for method 'requests.post' can cause your program to hang indefinitely
+************* Module src.aggregator.server_vars
+src\aggregator\server_vars.py:1: [invalid-name(pylint), None] Constant name "server_address" doesn't conform to UPPER_CASE naming style
+src\aggregator\server_vars.py:2: [invalid-name(pylint), None] Constant name "server_port" doesn't conform to UPPER_CASE naming style
+************* Module src.aggregator.stats_from_files
+src\aggregator\stats_from_files.py:4: [wrong-import-order(pylint), None] standard import "import datetime" should be placed before "import requests"
+src\aggregator\stats_from_files.py:6: [wrong-import-order(pylint), None] standard import "from os import listdir" should be placed before "import requests"
+src\aggregator\stats_from_files.py:7: [wrong-import-order(pylint), None] standard import "from os.path import isfile, join" should be placed before "import requests"
+src\aggregator\stats_from_files.py:8: [wrong-import-order(pylint), None] standard import "from collections import OrderedDict" should be placed before "import requests"
+src\aggregator\stats_from_files.py:14: [too-many-locals(pylint), main] Too many local variables (23/15)
+src\aggregator\stats_from_files.py:20: [E501(pycodestyle), None] line too long (121 > 100 characters)
+src\aggregator\stats_from_files.py:27: [E501(pycodestyle), None] line too long (110 > 100 characters)
+src\aggregator\stats_from_files.py:31: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\stats_from_files.py:38: [E501(pycodestyle), None] line too long (124 > 100 characters)
+src\aggregator\stats_from_files.py:42: [E501(pycodestyle), None] line too long (103 > 100 characters)
+src\aggregator\stats_from_files.py:52: [E501(pycodestyle), None] line too long (102 > 100 characters)
+src\aggregator\stats_from_files.py:56: [use-list-literal(pylint), main] Consider using [] instead of list()
+src\aggregator\stats_from_files.py:73: [E501(pycodestyle), None] line too long (115 > 100 characters)
+src\aggregator\stats_from_files.py:85: [E303(pycodestyle), None] too many blank lines (3)
+************* Module src.aggregator.stats_update
+src\aggregator\stats_update.py:4: [wrong-import-order(pylint), None] standard import "import datetime" should be placed before "import requests"
+src\aggregator\stats_update.py:6: [wrong-import-order(pylint), None] standard import "from collections import OrderedDict" should be placed before "import requests"
+src\aggregator\stats_update.py:12: [too-many-locals(pylint), main] Too many local variables (20/15)
+src\aggregator\stats_update.py:23: [E501(pycodestyle), None] line too long (110 > 100 characters)
+src\aggregator\stats_update.py:27: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\stats_update.py:38: [E501(pycodestyle), None] line too long (103 > 100 characters)
+src\aggregator\stats_update.py:48: [E501(pycodestyle), None] line too long (102 > 100 characters)
+src\aggregator\stats_update.py:52: [use-list-literal(pylint), main] Consider using [] instead of list()
+src\aggregator\stats_update.py:60: [E501(pycodestyle), None] line too long (110 > 100 characters)
+src\aggregator\stats_update.py:64: [missing-timeout(pylint), main] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+src\aggregator\stats_update.py:71: [E501(pycodestyle), None] line too long (103 > 100 characters)
+src\aggregator\stats_update.py:80: [E501(pycodestyle), None] line too long (111 > 100 characters)
+************* Module src.aggregator.tracks_count
+src\aggregator\tracks_count.py:5: [invalid-name(pylint), None] Constant name "artists_path" doesn't conform to UPPER_CASE naming style
+src\aggregator\tracks_count.py:9: [invalid-name(pylint), None] Constant name "artist_count" doesn't conform to UPPER_CASE naming style
+src\aggregator\tracks_count.py:10: [use-list-literal(pylint), None] Consider using [] instead of list()
+src\aggregator\tracks_count.py:10: [use-list-literal(pylint), None] Consider using [] instead of list()
+************* Module src.api.action.getAverageFollowersPerGenres
+src\api\action\getAverageFollowersPerGenres.py:1: [invalid-name(pylint), None] Module name "getAverageFollowersPerGenres" doesn't conform to snake_case naming style
+src\api\action\getAverageFollowersPerGenres.py:1: [unused-argument(pylint), execute] Unused argument 'conn'
+src\api\action\getAverageFollowersPerGenres.py:27: [invalid-name(pylint), execute] Variable name "e" doesn't conform to snake_case naming style
+src\api\action\getAverageFollowersPerGenres.py:30: [W292(pycodestyle), None] no newline at end of file
+************* Module src.api.action.getTracksPerYearForGenre
+src\api\action\getTracksPerYearForGenre.py:1: [invalid-name(pylint), None] Module name "getTracksPerYearForGenre" doesn't conform to snake_case naming style
+src\api\action\getTracksPerYearForGenre.py:3: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\api\action\getTracksPerYearForGenre.py:3: [unused-argument(pylint), execute] Unused argument 'conn'
+src\api\action\getTracksPerYearForGenre.py:12: [invalid-name(pylint), execute] Variable name "e" doesn't conform to snake_case naming style
+src\api\action\getTracksPerYearForGenre.py:15: [W292(pycodestyle), None] no newline at end of file
+************* Module src.api.action.query
+src\api\action\query.py:2: [too-many-return-statements(pylint), execute] Too many return statements (12/6)
+src\api\action\query.py:5: [invalid-name(pylint), execute] Variable name "queryType" doesn't conform to snake_case naming style
+src\api\action\query.py:5: [N806(pycodestyle), None] variable 'queryType' in function should be lowercase
+src\api\action\query.py:11: [f-string-without-interpolation(pylint), execute] Using an f-string that does not have any interpolated variables
+src\api\action\query.py:12: [E501(pycodestyle), None] line too long (117 > 100 characters)
+src\api\action\query.py:30: [f-string-without-interpolation(pylint), execute] Using an f-string that does not have any interpolated variables
+src\api\action\query.py:31: [E501(pycodestyle), None] line too long (109 > 100 characters)
+src\api\action\query.py:49: [f-string-without-interpolation(pylint), execute] Using an f-string that does not have any interpolated variables
+src\api\action\query.py:55: [E501(pycodestyle), None] line too long (102 > 100 characters)
+src\api\action\query.py:67: [f-string-without-interpolation(pylint), execute] Using an f-string that does not have any interpolated variables
+src\api\action\query.py:89: [f-string-without-interpolation(pylint), execute] Using an f-string that does not have any interpolated variables
+src\api\action\query.py:104: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\action\query.py:107: [f-string-without-interpolation(pylint), execute] Using an f-string that does not have any interpolated variables
+src\api\action\query.py:128: [f-string-without-interpolation(pylint), execute] Using an f-string that does not have any interpolated variables
+src\api\action\query.py:133: [E501(pycodestyle), None] line too long (107 > 100 characters)
+src\api\action\query.py:142: [E501(pycodestyle), None] line too long (107 > 100 characters)
+src\api\action\query.py:148: [W291(pycodestyle), None] trailing whitespace
+src\api\action\query.py:149: [W291(pycodestyle), None] trailing whitespace
+src\api\action\query.py:150: [W291(pycodestyle), None] trailing whitespace
+src\api\action\query.py:153: [E501(pycodestyle), None] line too long (101 > 100 characters)
+src\api\action\query.py:162: [f-string-without-interpolation(pylint), execute] Using an f-string that does not have any interpolated variables
+src\api\action\query.py:168: [E501(pycodestyle), None] line too long (102 > 100 characters)
+src\api\action\query.py:184: [invalid-name(pylint), execute] Variable name "e" doesn't conform to snake_case naming style
+src\api\action\query.py:187: [W292(pycodestyle), None] no newline at end of file
+************* Module src.api.action.saveArtist
+src\api\action\saveArtist.py:1: [invalid-name(pylint), None] Module name "saveArtist" doesn't conform to snake_case naming style
+src\api\action\saveArtist.py:5: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\api\action\saveArtist.py:8: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:9: [E126(pycodestyle), None] continuation line over-indented for hanging indent
+src\api\action\saveArtist.py:16: [E121(pycodestyle), None] continuation line under-indented for hanging indent
+src\api\action\saveArtist.py:21: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:22: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:23: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:24: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:25: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:26: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:27: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:28: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:29: [E124(pycodestyle), None] closing bracket does not match visual indentation
+src\api\action\saveArtist.py:34: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:35: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:36: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:37: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:38: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:39: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\action\saveArtist.py:55: [E126(pycodestyle), None] continuation line over-indented for hanging indent
+src\api\action\saveArtist.py:58: [E121(pycodestyle), None] continuation line under-indented for hanging indent
+src\api\action\saveArtist.py:63: [invalid-name(pylint), execute] Variable name "e" doesn't conform to snake_case naming style
+src\api\action\saveArtist.py:63: [E303(pycodestyle), None] too many blank lines (2)
+src\api\action\saveArtist.py:66: [W292(pycodestyle), None] no newline at end of file
+************* Module src.api.config
+src\api\config.py:8: [W292(pycodestyle), None] no newline at end of file
+************* Module src.api.entity.album
+src\api\entity\album.py:4: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\api\entity\album.py:11: [too-many-arguments(pylint), Album.__init__] Too many arguments (8/5)
+src\api\entity\album.py:11: [invalid-name(pylint), Album.__init__] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\album.py:11: [redefined-builtin(pylint), Album.__init__] Redefining built-in 'id'
+src\api\entity\album.py:12: [invalid-name(pylint), Album.__init__] Attribute name "id" doesn't conform to snake_case naming style
+src\api\entity\album.py:21: [dangerous-default-value(pylint), Album.save] Dangerous default value [] as argument
+src\api\entity\album.py:21: [too-many-arguments(pylint), Album.save] Too many arguments (9/5)
+src\api\entity\album.py:21: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\entity\album.py:21: [E501(pycodestyle), None] line too long (106 > 100 characters)
+src\api\entity\album.py:27: [E501(pycodestyle), None] line too long (121 > 100 characters)
+src\api\entity\album.py:28: [E501(pycodestyle), None] line too long (104 > 100 characters)
+src\api\entity\album.py:31: [invalid-name(pylint), Album.save] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\album.py:31: [redefined-builtin(pylint), Album.save] Redefining built-in 'id'
+src\api\entity\album.py:33: [singleton-comparison(pylint), Album.save] Comparison 'id == None' should be 'id is None'
+src\api\entity\album.py:34: [E501(pycodestyle), None] line too long (106 > 100 characters)
+src\api\entity\album.py:35: [invalid-name(pylint), Album.save] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\album.py:37: [invalid-name(pylint), Album.save] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\album.py:53: [invalid-name(pylint), Album.save] Variable name "e" doesn't conform to snake_case naming style
+src\api\entity\album.py:53: [broad-exception-caught(pylint), Album.save] Catching too general exception Exception
+src\api\entity\album.py:58: [invalid-name(pylint), Album.get_by_id] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\album.py:58: [redefined-builtin(pylint), Album.get_by_id] Redefining built-in 'id'
+src\api\entity\album.py:59: [E701(pycodestyle), None] multiple statements on one line (colon)
+src\api\entity\album.py:68: [E701(pycodestyle), None] multiple statements on one line (colon)
+src\api\entity\album.py:70: [W292(pycodestyle), None] no newline at end of file
+************* Module src.api.entity.albumType
+src\api\entity\albumType.py:1: [invalid-name(pylint), None] Module name "albumType" doesn't conform to snake_case naming style
+src\api\entity\albumType.py:8: [invalid-name(pylint), AlbumType.__init__] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\albumType.py:8: [redefined-builtin(pylint), AlbumType.__init__] Redefining built-in 'id'
+src\api\entity\albumType.py:9: [invalid-name(pylint), AlbumType.__init__] Attribute name "id" doesn't conform to snake_case naming style
+src\api\entity\albumType.py:17: [invalid-name(pylint), AlbumType.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\albumType.py:17: [redefined-builtin(pylint), AlbumType.get_id] Redefining built-in 'id'
+src\api\entity\albumType.py:18: [singleton-comparison(pylint), AlbumType.get_id] Comparison 'id != None' should be 'id is not None'
+src\api\entity\albumType.py:23: [invalid-name(pylint), AlbumType.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\albumType.py:25: [singleton-comparison(pylint), AlbumType.get_id] Comparison 'id == None' should be 'id is None'
+src\api\entity\albumType.py:28: [E501(pycodestyle), None] line too long (111 > 100 characters)
+src\api\entity\albumType.py:29: [invalid-name(pylint), AlbumType.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\albumType.py:30: [invalid-name(pylint), AlbumType.get_id] Variable name "e" doesn't conform to snake_case naming style
+src\api\entity\albumType.py:30: [broad-exception-caught(pylint), AlbumType.get_id] Catching too general exception Exception
+src\api\entity\albumType.py:34: [invalid-name(pylint), AlbumType.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\albumType.py:42: [invalid-name(pylint), AlbumType.get_name] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\albumType.py:42: [redefined-builtin(pylint), AlbumType.get_name] Redefining built-in 'id'
+src\api\entity\albumType.py:44: [singleton-comparison(pylint), AlbumType.get_name] Comparison 'name != None' should be 'name is not None'
+src\api\entity\albumType.py:51: [singleton-comparison(pylint), AlbumType.get_name] Comparison 'name != None' should be 'name is not None'
+src\api\entity\albumType.py:57: [trailing-newlines(pylint), None] Trailing newlines
+src\api\entity\albumType.py:57: [W391(pycodestyle), None] blank line at end of file
+************* Module src.api.entity.artist
+src\api\entity\artist.py:5: [too-many-instance-attributes(pylint), Artist] Too many instance attributes (8/7)
+src\api\entity\artist.py:5: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\api\entity\artist.py:12: [too-many-arguments(pylint), Artist.__init__] Too many arguments (8/5)
+src\api\entity\artist.py:12: [invalid-name(pylint), Artist.__init__] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\artist.py:12: [redefined-builtin(pylint), Artist.__init__] Redefining built-in 'id'
+src\api\entity\artist.py:12: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\entity\artist.py:12: [E501(pycodestyle), None] line too long (113 > 100 characters)
+src\api\entity\artist.py:13: [invalid-name(pylint), Artist.__init__] Attribute name "id" doesn't conform to snake_case naming style
+src\api\entity\artist.py:24: [dangerous-default-value(pylint), Artist.save] Dangerous default value [] as argument
+src\api\entity\artist.py:24: [dangerous-default-value(pylint), Artist.save] Dangerous default value [] as argument
+src\api\entity\artist.py:24: [too-many-arguments(pylint), Artist.save] Too many arguments (9/5)
+src\api\entity\artist.py:24: [too-many-locals(pylint), Artist.save] Too many local variables (16/15)
+src\api\entity\artist.py:24: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\entity\artist.py:24: [E501(pycodestyle), None] line too long (131 > 100 characters)
+src\api\entity\artist.py:28: [E501(pycodestyle), None] line too long (128 > 100 characters)
+src\api\entity\artist.py:29: [E501(pycodestyle), None] line too long (104 > 100 characters)
+src\api\entity\artist.py:32: [invalid-name(pylint), Artist.save] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\artist.py:32: [redefined-builtin(pylint), Artist.save] Redefining built-in 'id'
+src\api\entity\artist.py:34: [singleton-comparison(pylint), Artist.save] Comparison 'id == None' should be 'id is None'
+src\api\entity\artist.py:35: [E501(pycodestyle), None] line too long (107 > 100 characters)
+src\api\entity\artist.py:36: [invalid-name(pylint), Artist.save] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\artist.py:38: [invalid-name(pylint), Artist.save] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\artist.py:50: [E501(pycodestyle), None] line too long (101 > 100 characters)
+src\api\entity\artist.py:56: [invalid-name(pylint), Artist.save] Variable name "e" doesn't conform to snake_case naming style
+src\api\entity\artist.py:56: [broad-exception-caught(pylint), Artist.save] Catching too general exception Exception
+src\api\entity\artist.py:61: [too-many-arguments(pylint), Artist.update] Too many arguments (6/5)
+src\api\entity\artist.py:61: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\entity\artist.py:61: [E501(pycodestyle), None] line too long (115 > 100 characters)
+src\api\entity\artist.py:73: [invalid-name(pylint), Artist.update] Variable name "e" doesn't conform to snake_case naming style
+src\api\entity\artist.py:73: [broad-exception-caught(pylint), Artist.update] Catching too general exception Exception
+src\api\entity\artist.py:78: [invalid-name(pylint), Artist.get_by_id] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\artist.py:78: [redefined-builtin(pylint), Artist.get_by_id] Redefining built-in 'id'
+src\api\entity\artist.py:79: [E701(pycodestyle), None] multiple statements on one line (colon)
+src\api\entity\artist.py:88: [E701(pycodestyle), None] multiple statements on one line (colon)
+src\api\entity\artist.py:101: [E501(pycodestyle), None] line too long (102 > 100 characters)
+src\api\entity\artist.py:113: [E501(pycodestyle), None] line too long (106 > 100 characters)
+src\api\entity\artist.py:133: [E501(pycodestyle), None] line too long (106 > 100 characters)
+src\api\entity\artist.py:138: [W292(pycodestyle), None] no newline at end of file
+************* Module src.api.entity.city
+src\api\entity\city.py:8: [invalid-name(pylint), City.__init__] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\city.py:8: [redefined-builtin(pylint), City.__init__] Redefining built-in 'id'
+src\api\entity\city.py:9: [invalid-name(pylint), City.__init__] Attribute name "id" doesn't conform to snake_case naming style
+src\api\entity\city.py:24: [invalid-name(pylint), City.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\city.py:24: [redefined-builtin(pylint), City.get_id] Redefining built-in 'id'
+src\api\entity\city.py:25: [singleton-comparison(pylint), City.get_id] Comparison 'id != None' should be 'id is not None'
+src\api\entity\city.py:29: [E501(pycodestyle), None] line too long (109 > 100 characters)
+src\api\entity\city.py:30: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\entity\city.py:31: [invalid-name(pylint), City.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\city.py:33: [singleton-comparison(pylint), City.get_id] Comparison 'id == None' should be 'id is None'
+src\api\entity\city.py:36: [E501(pycodestyle), None] line too long (122 > 100 characters)
+src\api\entity\city.py:37: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\api\entity\city.py:38: [invalid-name(pylint), City.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\city.py:39: [invalid-name(pylint), City.get_id] Variable name "e" doesn't conform to snake_case naming style
+src\api\entity\city.py:39: [broad-exception-caught(pylint), City.get_id] Catching too general exception Exception
+src\api\entity\city.py:43: [invalid-name(pylint), City.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\city.py:51: [invalid-name(pylint), City.get_name] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\city.py:51: [redefined-builtin(pylint), City.get_name] Redefining built-in 'id'
+src\api\entity\city.py:53: [singleton-comparison(pylint), City.get_name] Comparison 'name != None' should be 'name is not None'
+src\api\entity\city.py:60: [singleton-comparison(pylint), City.get_name] Comparison 'name != None' should be 'name is not None'
+src\api\entity\city.py:66: [trailing-newlines(pylint), None] Trailing newlines
+src\api\entity\city.py:66: [W391(pycodestyle), None] blank line at end of file
+************* Module src.api.entity.genre
+src\api\entity\genre.py:8: [invalid-name(pylint), Genre.__init__] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\genre.py:8: [redefined-builtin(pylint), Genre.__init__] Redefining built-in 'id'
+src\api\entity\genre.py:9: [invalid-name(pylint), Genre.__init__] Attribute name "id" doesn't conform to snake_case naming style
+src\api\entity\genre.py:17: [invalid-name(pylint), Genre.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\genre.py:17: [redefined-builtin(pylint), Genre.get_id] Redefining built-in 'id'
+src\api\entity\genre.py:18: [singleton-comparison(pylint), Genre.get_id] Comparison 'id != None' should be 'id is not None'
+src\api\entity\genre.py:23: [invalid-name(pylint), Genre.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\genre.py:25: [singleton-comparison(pylint), Genre.get_id] Comparison 'id == None' should be 'id is None'
+src\api\entity\genre.py:28: [E501(pycodestyle), None] line too long (107 > 100 characters)
+src\api\entity\genre.py:29: [invalid-name(pylint), Genre.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\genre.py:30: [invalid-name(pylint), Genre.get_id] Variable name "e" doesn't conform to snake_case naming style
+src\api\entity\genre.py:30: [broad-exception-caught(pylint), Genre.get_id] Catching too general exception Exception
+src\api\entity\genre.py:34: [invalid-name(pylint), Genre.get_id] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\genre.py:42: [invalid-name(pylint), Genre.get_name] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\genre.py:42: [redefined-builtin(pylint), Genre.get_name] Redefining built-in 'id'
+src\api\entity\genre.py:44: [singleton-comparison(pylint), Genre.get_name] Comparison 'name != None' should be 'name is not None'
+src\api\entity\genre.py:51: [singleton-comparison(pylint), Genre.get_name] Comparison 'name != None' should be 'name is not None'
+src\api\entity\genre.py:57: [trailing-newlines(pylint), None] Trailing newlines
+src\api\entity\genre.py:57: [W391(pycodestyle), None] blank line at end of file
+************* Module src.api.entity.track
+src\api\entity\track.py:5: [too-many-instance-attributes(pylint), Track] Too many instance attributes (8/7)
+src\api\entity\track.py:5: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\api\entity\track.py:9: [dangerous-default-value(pylint), Track.__init__] Dangerous default value {} as argument
+src\api\entity\track.py:9: [too-many-arguments(pylint), Track.__init__] Too many arguments (9/5)
+src\api\entity\track.py:9: [invalid-name(pylint), Track.__init__] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\track.py:9: [redefined-builtin(pylint), Track.__init__] Redefining built-in 'id'
+src\api\entity\track.py:9: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\entity\track.py:9: [E501(pycodestyle), None] line too long (109 > 100 characters)
+src\api\entity\track.py:10: [invalid-name(pylint), Track.__init__] Attribute name "id" doesn't conform to snake_case naming style
+src\api\entity\track.py:20: [dangerous-default-value(pylint), Track.save] Dangerous default value {} as argument
+src\api\entity\track.py:20: [dangerous-default-value(pylint), Track.save] Dangerous default value [] as argument
+src\api\entity\track.py:20: [dangerous-default-value(pylint), Track.save] Dangerous default value [] as argument
+src\api\entity\track.py:20: [too-many-arguments(pylint), Track.save] Too many arguments (10/5)
+src\api\entity\track.py:20: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\entity\track.py:20: [E501(pycodestyle), None] line too long (128 > 100 characters)
+src\api\entity\track.py:24: [E501(pycodestyle), None] line too long (125 > 100 characters)
+src\api\entity\track.py:25: [E501(pycodestyle), None] line too long (108 > 100 characters)
+src\api\entity\track.py:26: [E501(pycodestyle), None] line too long (108 > 100 characters)
+src\api\entity\track.py:27: [invalid-name(pylint), Track.save] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\track.py:27: [redefined-builtin(pylint), Track.save] Redefining built-in 'id'
+src\api\entity\track.py:29: [singleton-comparison(pylint), Track.save] Comparison 'id == None' should be 'id is None'
+src\api\entity\track.py:30: [E501(pycodestyle), None] line too long (106 > 100 characters)
+src\api\entity\track.py:31: [invalid-name(pylint), Track.save] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\track.py:33: [invalid-name(pylint), Track.save] Variable name "id" doesn't conform to snake_case naming style
+src\api\entity\track.py:51: [invalid-name(pylint), Track.save] Variable name "e" doesn't conform to snake_case naming style
+src\api\entity\track.py:51: [broad-exception-caught(pylint), Track.save] Catching too general exception Exception
+src\api\entity\track.py:56: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\entity\track.py:67: [invalid-name(pylint), Track.update] Variable name "e" doesn't conform to snake_case naming style
+src\api\entity\track.py:67: [broad-exception-caught(pylint), Track.update] Catching too general exception Exception
+src\api\entity\track.py:72: [invalid-name(pylint), Track.get_by_id] Argument name "id" doesn't conform to snake_case naming style
+src\api\entity\track.py:72: [redefined-builtin(pylint), Track.get_by_id] Redefining built-in 'id'
+src\api\entity\track.py:73: [E701(pycodestyle), None] multiple statements on one line (colon)
+src\api\entity\track.py:82: [E701(pycodestyle), None] multiple statements on one line (colon)
+src\api\entity\track.py:84: [W292(pycodestyle), None] no newline at end of file
+************* Module src.api.main
+src\api\main.py:3: [import-error(pylint), None] Unable to import 'flask'
+src\api\main.py:4: [import-error(pylint), None] Unable to import 'flask_cors'
+src\api\main.py:5: [import-error(pylint), None] Unable to import 'psycopg2'
+src\api\main.py:6: [wrong-import-order(pylint), None] standard import "import traceback" should be placed before "from flask import Flask, request"
+src\api\main.py:17: [E126(pycodestyle), None] continuation line over-indented for hanging indent
+src\api\main.py:17: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\main.py:18: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\main.py:19: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\main.py:20: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\main.py:21: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\main.py:22: [E121(pycodestyle), None] continuation line under-indented for hanging indent
+src\api\main.py:24: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\api\main.py:25: [invalid-name(pylint), error_handler.Inner_Function] Function name "Inner_Function" doesn't conform to snake_case naming style
+src\api\main.py:25: [N802(pycodestyle), None] function name 'Inner_Function' should be lowercase
+src\api\main.py:28: [invalid-name(pylint), error_handler.Inner_Function] Variable name "e" doesn't conform to snake_case naming style
+src\api\main.py:28: [unused-variable(pylint), error_handler.Inner_Function] Unused variable 'e'
+src\api\main.py:28: [broad-exception-caught(pylint), error_handler.Inner_Function] Catching too general exception Exception
+src\api\main.py:35: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\api\main.py:37: [inconsistent-return-statements(pylint), saveArtist] Either all return statements in a function should return an expression, or none of them should.
+src\api\main.py:37: [invalid-name(pylint), saveArtist] Function name "saveArtist" doesn't conform to snake_case naming style
+src\api\main.py:37: [N802(pycodestyle), None] function name 'saveArtist' should be lowercase
+src\api\main.py:42: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\api\main.py:44: [inconsistent-return-statements(pylint), getAverageFollowersPerGenres] Either all return statements in a function should return an expression, or none of them should.
+src\api\main.py:44: [invalid-name(pylint), getAverageFollowersPerGenres] Function name "getAverageFollowersPerGenres" doesn't conform to snake_case naming style
+src\api\main.py:44: [N802(pycodestyle), None] function name 'getAverageFollowersPerGenres' should be lowercase
+src\api\main.py:48: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\api\main.py:50: [inconsistent-return-statements(pylint), getTracksPerYearForGenre] Either all return statements in a function should return an expression, or none of them should.
+src\api\main.py:50: [invalid-name(pylint), getTracksPerYearForGenre] Function name "getTracksPerYearForGenre" doesn't conform to snake_case naming style
+src\api\main.py:50: [N802(pycodestyle), None] function name 'getTracksPerYearForGenre' should be lowercase
+src\api\main.py:55: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\api\main.py:57: [inconsistent-return-statements(pylint), getQuery] Either all return statements in a function should return an expression, or none of them should.
+src\api\main.py:57: [invalid-name(pylint), getQuery] Function name "getQuery" doesn't conform to snake_case naming style
+src\api\main.py:57: [N802(pycodestyle), None] function name 'getQuery' should be lowercase
+src\api\main.py:61: [E305(pycodestyle), None] expected 2 blank lines after class or function definition, found 1
+src\api\main.py:62: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\api\main.py:65: [W292(pycodestyle), None] no newline at end of file
+************* Module src.scraper.fastsel_album
+src\scraper\fastsel_album.py:4: [wrong-import-order(pylint), None] standard import "import json" should be placed before "from selenium import webdriver"
+src\scraper\fastsel_album.py:5: [wrong-import-order(pylint), None] standard import "import os" should be placed before "from selenium import webdriver"
+src\scraper\fastsel_album.py:6: [wrong-import-order(pylint), None] standard import "import time" should be placed before "from selenium import webdriver"
+src\scraper\fastsel_album.py:29: [E501(pycodestyle), None] line too long (294 > 100 characters)
+src\scraper\fastsel_album.py:62: [E131(pycodestyle), None] continuation line unaligned for hanging indent
+src\scraper\fastsel_album.py:67: [unused-variable(pylint), get_net_data] Unused variable 'data'
+src\scraper\fastsel_album.py:76: [E501(pycodestyle), None] line too long (127 > 100 characters)
+src\scraper\fastsel_album.py:88: [E501(pycodestyle), None] line too long (114 > 100 characters)
+src\scraper\fastsel_album.py:89: [E125(pycodestyle), None] continuation line with same indent as next logical line
+src\scraper\fastsel_album.py:97: [inconsistent-return-statements(pylint), fetch_album] Either all return statements in a function should return an expression, or none of them should.
+src\scraper\fastsel_album.py:99: [invalid-name(pylint), fetch_album] Variable name "r" doesn't conform to snake_case naming style
+src\scraper\fastsel_album.py:99: [unused-variable(pylint), fetch_album] Unused variable 'r'
+src\scraper\fastsel_album.py:100: [E501(pycodestyle), None] line too long (300 > 100 characters)
+src\scraper\fastsel_album.py:125: [invalid-name(pylint), fetch_album] Variable name "lr" doesn't conform to snake_case naming style
+src\scraper\fastsel_album.py:132: [E501(pycodestyle), None] line too long (107 > 100 characters)
+src\scraper\fastsel_album.py:154: [unspecified-encoding(pylint), parser] Using open without explicitly specifying an encoding
+src\scraper\fastsel_album.py:154: [invalid-name(pylint), parser] Variable name "f" doesn't conform to snake_case naming style
+src\scraper\fastsel_album.py:162: [no-else-return(pylint), parser] Unnecessary "else" after "return", remove the "else" and de-indent the code inside it
+src\scraper\fastsel_album.py:168: [unspecified-encoding(pylint), parser] Using open without explicitly specifying an encoding
+src\scraper\fastsel_album.py:168: [invalid-name(pylint), parser] Variable name "f" doesn't conform to snake_case naming style
+src\scraper\fastsel_album.py:187: [E701(pycodestyle), None] multiple statements on one line (colon)
+src\scraper\fastsel_album.py:188: [invalid-name(pylint), main] Variable name "e" doesn't conform to snake_case naming style
+src\scraper\fastsel_album.py:188: [broad-exception-caught(pylint), main] Catching too general exception Exception
+************* Module src.scraper.fastsel_artist
+src\scraper\fastsel_artist.py:4: [wrong-import-order(pylint), None] standard import "import json" should be placed before "from selenium import webdriver"
+src\scraper\fastsel_artist.py:5: [wrong-import-order(pylint), None] standard import "import os" should be placed before "from selenium import webdriver"
+src\scraper\fastsel_artist.py:6: [wrong-import-order(pylint), None] standard import "import time" should be placed before "from selenium import webdriver"
+src\scraper\fastsel_artist.py:18: [unexpected-keyword-arg(pylint), None] Unexpected keyword argument 'chrome_options' in constructor call
+src\scraper\fastsel_artist.py:18: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\scraper\fastsel_artist.py:26: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\scraper\fastsel_artist.py:28: [E501(pycodestyle), None] line too long (305 > 100 characters)
+src\scraper\fastsel_artist.py:53: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\scraper\fastsel_artist.py:65: [unused-variable(pylint), get_net_data] Unused variable 'data'
+src\scraper\fastsel_artist.py:74: [E501(pycodestyle), None] line too long (127 > 100 characters)
+src\scraper\fastsel_artist.py:77: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\scraper\fastsel_artist.py:83: [invalid-name(pylint), get_request_template] Variable name "lr" doesn't conform to snake_case naming style
+src\scraper\fastsel_artist.py:85: [E501(pycodestyle), None] line too long (132 > 100 characters)
+src\scraper\fastsel_artist.py:92: [inconsistent-return-statements(pylint), fetch_artist] Either all return statements in a function should return an expression, or none of them should.
+src\scraper\fastsel_artist.py:92: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\scraper\fastsel_artist.py:94: [invalid-name(pylint), fetch_artist] Variable name "r" doesn't conform to snake_case naming style
+src\scraper\fastsel_artist.py:94: [unused-variable(pylint), fetch_artist] Unused variable 'r'
+src\scraper\fastsel_artist.py:95: [E501(pycodestyle), None] line too long (269 > 100 characters)
+src\scraper\fastsel_artist.py:120: [invalid-name(pylint), fetch_artist] Variable name "lr" doesn't conform to snake_case naming style
+src\scraper\fastsel_artist.py:127: [E501(pycodestyle), None] line too long (107 > 100 characters)
+src\scraper\fastsel_artist.py:128: [invalid-name(pylint), fetch_artist] Variable name "e" doesn't conform to snake_case naming style
+src\scraper\fastsel_artist.py:128: [broad-exception-caught(pylint), fetch_artist] Catching too general exception Exception
+src\scraper\fastsel_artist.py:128: [E701(pycodestyle), None] multiple statements on one line (colon)
+src\scraper\fastsel_artist.py:132: [E303(pycodestyle), None] too many blank lines (3)
+src\scraper\fastsel_artist.py:150: [invalid-name(pylint), parser] Variable name "d" doesn't conform to snake_case naming style
+src\scraper\fastsel_artist.py:152: [singleton-comparison(pylint), parser] Comparison 'd == None' should be 'd is None'
+src\scraper\fastsel_artist.py:158: [unspecified-encoding(pylint), parser] Using open without explicitly specifying an encoding
+src\scraper\fastsel_artist.py:158: [invalid-name(pylint), parser] Variable name "f" doesn't conform to snake_case naming style
+src\scraper\fastsel_artist.py:164: [E226(pycodestyle), None] missing whitespace around arithmetic operator
+src\scraper\fastsel_artist.py:167: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\scraper\fastsel_artist.py:176: [E701(pycodestyle), None] multiple statements on one line (colon)
+src\scraper\fastsel_artist.py:177: [invalid-name(pylint), main] Variable name "e" doesn't conform to snake_case naming style
+src\scraper\fastsel_artist.py:177: [broad-exception-caught(pylint), main] Catching too general exception Exception
+************* Module src.scraper.load_into_db
+src\scraper\load_into_db.py:4: [wrong-import-order(pylint), None] standard import "from datetime import datetime" should be placed before "import requests"
+src\scraper\load_into_db.py:8: [unspecified-encoding(pylint), None] Using open without explicitly specifying an encoding
+src\scraper\load_into_db.py:11: [unspecified-encoding(pylint), None] Using open without explicitly specifying an encoding
+src\scraper\load_into_db.py:25: [unspecified-encoding(pylint), None] Using open without explicitly specifying an encoding
+src\scraper\load_into_db.py:34: [singleton-comparison(pylint), None] Comparison 'album_raw['date'] != None' should be 'album_raw['date'] is not None'
+src\scraper\load_into_db.py:49: [missing-timeout(pylint), None] Missing timeout argument for method 'requests.post' can cause your program to hang indefinitely
+src\scraper\load_into_db.py:50: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\scraper\load_into_db.py:50: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\scraper\load_into_db.py:51: [E128(pycodestyle), None] continuation line under-indented for visual indent
+src\scraper\load_into_db.py:51: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+************* Module src.scraper.seltest
+src\scraper\seltest.py:4: [wrong-import-order(pylint), None] standard import "import json" should be placed before "from selenium import webdriver"
+src\scraper\seltest.py:5: [wrong-import-order(pylint), None] standard import "import os" should be placed before "from selenium import webdriver"
+src\scraper\seltest.py:6: [wrong-import-order(pylint), None] standard import "import time" should be placed before "from selenium import webdriver"
+src\scraper\seltest.py:19: [unexpected-keyword-arg(pylint), None] Unexpected keyword argument 'chrome_options' in constructor call
+src\scraper\seltest.py:19: [E251(pycodestyle), None] unexpected spaces around keyword / parameter equals
+src\scraper\seltest.py:25: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\scraper\seltest.py:44: [E501(pycodestyle), None] line too long (125 > 100 characters)
+src\scraper\seltest.py:45: [invalid-name(pylint), get_net_data] Variable name "e" doesn't conform to snake_case naming style
+src\scraper\seltest.py:45: [broad-exception-caught(pylint), get_net_data] Catching too general exception Exception
+src\scraper\seltest.py:45: [E701(pycodestyle), None] multiple statements on one line (colon)
+src\scraper\seltest.py:47: [E501(pycodestyle), None] line too long (101 > 100 characters)
+src\scraper\seltest.py:51: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\scraper\seltest.py:58: [unspecified-encoding(pylint), save_album_data] Using open without explicitly specifying an encoding
+src\scraper\seltest.py:58: [invalid-name(pylint), save_album_data] Variable name "f" doesn't conform to snake_case naming style
+src\scraper\seltest.py:62: [E226(pycodestyle), None] missing whitespace around arithmetic operator
+src\scraper\seltest.py:66: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\scraper\seltest.py:77: [unspecified-encoding(pylint), parser] Using open without explicitly specifying an encoding
+src\scraper\seltest.py:77: [invalid-name(pylint), parser] Variable name "f" doesn't conform to snake_case naming style
+src\scraper\seltest.py:86: [E302(pycodestyle), None] expected 2 blank lines, found 1
+src\scraper\seltest.py:96: [invalid-name(pylint), main] Variable name "e" doesn't conform to snake_case naming style
+src\scraper\seltest.py:96: [broad-exception-caught(pylint), main] Catching too general exception Exception
+src\scraper\seltest.py:101: [W292(pycodestyle), None] no newline at end of file

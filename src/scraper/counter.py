@@ -10,8 +10,8 @@ for artist in os.listdir('artists'):
     i += 1
     print(i, artist)
 
-    with open('artists/' + artist) as f:
-        data = json.load(f)
+    with open('artists/' + artist, mode='r', encoding='utf-8') as file:
+        data = json.load(file)
 
     for album in data['albums']:
         albums.add(album['album_id'])

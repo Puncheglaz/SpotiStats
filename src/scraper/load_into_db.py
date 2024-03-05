@@ -37,7 +37,7 @@ for artist in sorted(os.listdir('artist_stats')):
             album['release_date'] = datetime.strptime(album['release_date'], '%Y').isoformat()
         else:
             print(album['release_date'])
-            raise Exception
+            raise ValueError("release_date not in album rate")
 
     for track in model['tracks']:
         if track['track_id'] not in tracks_raw:

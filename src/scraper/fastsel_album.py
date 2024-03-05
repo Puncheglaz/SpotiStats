@@ -15,13 +15,14 @@ options.add_argument('--enable-logging')
 options.add_argument('--log-level=0')
 options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
 
-driver = webdriver.Chrome(chrome_options = options)
+driver = webdriver.Chrome(options=options)
 
 template_args = {
     'extension': None,
     'bearer': None,
     'client-token': None
 }
+
 
 def get_js_func(album_id):
     return f'''
@@ -50,6 +51,7 @@ def get_js_func(album_id):
     }});
     '''
 
+
 def get_net_data():
     logs_raw = driver.get_log("performance")
     logs = [json.loads(lr["message"])["message"] for lr in logs_raw]
@@ -57,7 +59,7 @@ def get_net_data():
     def log_filter(log_):
         return (
             # is an actual response
-            log_["method"] == "Network.requestWillBeSent"
+                log_["method"] == "Network.requestWillBeSent"
             # and json
             # and "json" in log_["params"]["response"]["mimeType"]
         )
@@ -74,20 +76,23 @@ def get_net_data():
         #         data.append((resp_url, driver.execute_cdp_cmd("Network.getResponseBody", {"requestId": request_id})['body']))
         #     except Exception as e: print(e)
 
+
 def get_request_template():
     print('Getting request template...')
     driver.get_log("performance")
     driver.get('https://open.spotify.com/album/3VOqo81Nwyx8rcZEc2l379')
     time.sleep(3)
 
-    for lr in driver.get_log("performance"):
-        log = json.loads(lr["message"])["message"]
-        if log["method"] == "Network.requestWillBeSent" and 'operationName=getAlbum&' in log['params']['request']['url']:
+    for log_rate in driver.get_log("performance"):
+        log = json.loads(log_rate["message"])["message"]
+        if log["method"] == "Network.requestWillBeSent" and 'operationName=getAlbum&' in log['params']['request'][
+            'url']:
             template_args['bearer'] = log['params']['request']['headers']['authorization']
             template_args['client-token'] = log['params']['request']['headers']['client-token']
             template_args['extension'] = log['params']['request']['url'].split('&')[-1][11:]
             print(template_args, '\n')
             break
+
 
 def fetch_album(album_id):
     driver.get_log("performance")
@@ -119,14 +124,16 @@ def fetch_album(album_id):
     time.sleep(0.5)
     for lr in driver.get_log("performance"):
         log = json.loads(lr["message"])["message"]
-        if log["method"] == "Network.responseReceived" and\
-                'json' in log["params"]["response"]["mimeType"] and\
+        if log["method"] == "Network.responseReceived" and \
+                'json' in log["params"]["response"]["mimeType"] and \
                 'operationName=getAlbum&' in log['params']['response']['url']:
             request_id = log["params"]["requestId"]
             try:
                 return driver.execute_cdp_cmd("Network.getResponseBody", {"requestId": request_id})['body']
-            except Exception as e: print(e)
-
+            except ValueError as value_error:
+                print(f'A Value Error exception occurred: {value_error}')
+            except TypeError as type_error:
+                print(f'A Type Error exception occurred: {type_error}')
 
 
 def parser():
@@ -136,8 +143,8 @@ def parser():
 
     start_time = time.time()
     save_cnt = 0
-    prevFailed = False
-    didSomething = False
+    prev_failed = False
+    did_something = False
 
     i = 0
     for artist in sorted(os.listdir('artists')):
@@ -149,23 +156,24 @@ def parser():
 
         for album in data['albums']:
             if album['album_id'] not in processed:
-                d = fetch_album(album['album_id'])
+                album_data = fetch_album(album['album_id'])
 
-                if d == None:
-                    if prevFailed:
+                if album_data is None:
+                    if prev_failed:
                         print('Two fails in a row, resetting session')
-                        return didSomething
+                        return did_something
                     else:
-                        prevFailed = True
+                        prev_failed = True
                 else:
                     with open(f'albums/{album["album_id"]}.json', 'w') as f:
-                        f.write(d)
+                        f.write(album_data)
 
-                    didSomething = True
+                    did_something = True
                     processed.add(album["album_id"])
                     save_cnt += 1
-                    print(album["album_id"], save_cnt, (time.time() - start_time)/save_cnt)
-    return didSomething
+                    print(album["album_id"], save_cnt, (time.time() - start_time) / save_cnt)
+    return did_something
+
 
 def main():
     # input("\n\nSet up VPN & open spotify in the first tab\n\n[Press ENTER to continue]")

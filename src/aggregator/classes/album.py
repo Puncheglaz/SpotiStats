@@ -12,3 +12,6 @@ class Album:
     def __str__(self):
         return f'{self.album_name} {self.album_id} {self.album_type}' \
                f' {self.release_date} {self.genres} {self.label} {self.popularity}'
+
+    def get_album_name(self):
+        return self.album_name

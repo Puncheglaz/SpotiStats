@@ -10,6 +10,8 @@ token_data = {
 
 
 def get_related_artists(artists_ids, headers, stage=0):
+    """Function for finding similar artists by their artists_ids,
+    query headers and number of stages are used to access the service"""
     artists_ids = list(set(artists_ids))
     total_artists = len(artists_ids)
 

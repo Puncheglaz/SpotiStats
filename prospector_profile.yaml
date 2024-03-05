@@ -1,0 +1,20 @@
+output-format: pylint
+
+strictness: veryhigh
+
+inherits:
+  - default
+
+ignore-paths:
+  - src\aggregator\auth_credentials.py
+
+pycodestyle:
+  options:
+    max-line-length: 100
+
+autodetect: false
+
+blending: false
+
+mccabe:
+  run: false
