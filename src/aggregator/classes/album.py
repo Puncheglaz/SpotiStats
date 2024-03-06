@@ -1,5 +1,8 @@
-class Album:
+"""Module for album class."""
 
+
+class Album:
+    """Class representing an album."""
     def __init__(self, album_name, album_id, album_type, release_date, genres, label, popularity):
         self.album_name = album_name
         self.album_id = album_id
@@ -14,4 +17,5 @@ class Album:
                f' {self.release_date} {self.genres} {self.label} {self.popularity}'
 
     def get_album_name(self):
+        """Function returns album_name."""
         return self.album_name

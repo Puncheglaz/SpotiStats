@@ -1,8 +1,10 @@
+"""Module for saving an artist in the database."""
 import json
 import time
-import random
+
 import requests
-from server_vars import server_address, server_port
+
+from server_vars import SERVER_ADDRESS, SERVER_PORT
 
 ids = ['00FQb4jTyendYWaN8pK0wa', '0M2HHtY3OOQzIZxrHkbJLT']
 
@@ -18,9 +20,10 @@ for artist_id in ids:
             data
         )
         response = requests.post(
-            f'http://{server_address}:{server_port}/saveArtist',
+            f'http://{SERVER_ADDRESS}:{SERVER_PORT}/saveArtist',
             headers=header,
-            data=json_string
+            data=json_string,
+            timeout=10
         )
         print(f"{response.text} - Status Code: {response.status_code}")
         time.sleep(1)

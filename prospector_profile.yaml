@@ -18,3 +18,9 @@ blending: false
 
 mccabe:
   run: false
+
+mypy:
+  run: true
+  options:
+    ignore-missing-imports: true
+    follow-imports: skip

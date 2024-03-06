@@ -1,18 +1,19 @@
+"""Module for track counting."""
 import json
 from os import listdir
 from os.path import isfile, join
 
-artists_path = "resources/artists"
+ARTISTS_PATH = "resources/artists"
 
-artists_files = [file for file in listdir(artists_path) if isfile(join(artists_path, file))]
+artists_files = [file for file in listdir(ARTISTS_PATH) if isfile(join(ARTISTS_PATH, file))]
 
-artist_count = 0
-albums_list, tracks_list = list(), list()
+ARTIST_COUNT = 0
+albums_list, tracks_list = [], []
 for artist_file in artists_files:
     with open(f'resources/artists/{artist_file}', 'r', encoding='utf-8') as artist:
         artist_data = json.load(artist)
 
-        artist_count += 1
+        ARTIST_COUNT += 1
 
         artist_albums = artist_data.get('albums')
         for album in artist_albums:
@@ -25,4 +26,4 @@ for artist_file in artists_files:
             tracks_list.append(track_id)
 
 # Artists: 2004, Albums: 49820, Tracks: 268643
-print(f'Artists: {artist_count}, Albums: {len(set(albums_list))}, Tracks: {len(set(tracks_list))}')
+print(f'Artists: {ARTIST_COUNT}, Albums: {len(set(albums_list))}, Tracks: {len(set(tracks_list))}')

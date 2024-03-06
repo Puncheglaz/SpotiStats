@@ -1,3 +1,4 @@
+"""Module for albums and tracks counting."""
 import os
 import json
 

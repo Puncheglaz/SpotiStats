@@ -1,10 +1,13 @@
+"""Module aggregator to collect track and artist data from Spotify."""
+import datetime
 import json
 import time
+
 import requests
-import datetime
+
 from auth_credentials import client_id, client_secret, token_type, access_token
-from classes.artist import Artist
 from classes.album import Album
+from classes.artist import Artist
 from classes.track import Track
 
 token_data = {
@@ -15,6 +18,7 @@ token_data = {
 
 
 def main():
+    """Main function for data aggregation."""
     print(f'[T] Time: {datetime.datetime.now()}')
 
     timeout, request_count = 2, 0
@@ -35,7 +39,8 @@ def main():
         # 1 request
         response = requests.get(
             f'https://api.spotify.com/v1/artists/{artist_id}',
-            headers=headers
+            headers=headers,
+            timeout=10
         )
         time.sleep(timeout)
         request_count += 1
@@ -46,7 +51,8 @@ def main():
             # 2 request (potential)
             response = requests.post(
                 'https://accounts.spotify.com/api/token',
-                data=token_data
+                data=token_data,
+                timeout=10
             )
             time.sleep(timeout)
             request_count += 1
@@ -60,7 +66,8 @@ def main():
             # 3 request (potential)
             response = requests.get(
                 f'https://api.spotify.com/v1/artists/{artist_id}',
-                headers=headers
+                headers=headers,
+                timeout=10
             )
             time.sleep(timeout)
             request_count += 1
@@ -92,7 +99,8 @@ def main():
         response = requests.get(
             f'https://api.spotify.com/v1/artists/{artist_id}/albums',
             params=album_params,
-            headers=headers
+            headers=headers,
+            timeout=10
         )
         time.sleep(timeout)
         request_count += 1
@@ -103,7 +111,8 @@ def main():
 
             response = requests.post(
                 'https://accounts.spotify.com/api/token',
-                data=token_data
+                data=token_data,
+                timeout=10
             )
             time.sleep(timeout)
             request_count += 1
@@ -117,13 +126,14 @@ def main():
             response = requests.get(
                 f'https://api.spotify.com/v1/artists/{artist_id}/albums',
                 params=album_params,
-                headers=headers
+                headers=headers,
+                timeout=10
             )
             time.sleep(timeout)
             request_count += 1
             print(f"[*] [Request {request_count} - {response.status_code}]")
 
-        artist_albums_ids = list()
+        artist_albums_ids = []
         artist_albums = response.json().get('items')
         for album in artist_albums:
             artist_albums_ids.append(album.get('id'))
@@ -134,7 +144,8 @@ def main():
         response = requests.get(
             f'https://api.spotify.com/v1/artists/{artist_id}/albums',
             params=album_params,
-            headers=headers
+            headers=headers,
+            timeout=10
         )
         time.sleep(timeout)
         request_count += 1
@@ -145,7 +156,8 @@ def main():
 
             response = requests.post(
                 'https://accounts.spotify.com/api/token',
-                data=token_data
+                data=token_data,
+                timeout=10
             )
             time.sleep(timeout)
             request_count += 1
@@ -159,7 +171,8 @@ def main():
             response = requests.get(
                 f'https://api.spotify.com/v1/artists/{artist_id}/albums',
                 params=album_params,
-                headers=headers
+                headers=headers,
+                timeout=10
             )
             time.sleep(timeout)
             request_count += 1
@@ -177,8 +190,7 @@ def main():
         }
 
         # 5 requests above, 55 requests below left
-        albums_json = list()
-        tracks_json = list()
+        albums_json, tracks_json = [], []
         id_offset = 20
         for i in range(0, total_albums_ids, id_offset):
             several_albums_params['ids'] = (
@@ -188,7 +200,8 @@ def main():
             response = requests.get(
                 'https://api.spotify.com/v1/albums',
                 params=several_albums_params,
-                headers=headers
+                headers=headers,
+                timeout=10
             )
             time.sleep(timeout)
             request_count += 1
@@ -199,7 +212,8 @@ def main():
 
                 response = requests.post(
                     'https://accounts.spotify.com/api/token',
-                    data=token_data
+                    data=token_data,
+                    timeout=10
                 )
                 time.sleep(timeout)
                 request_count += 1
@@ -213,7 +227,8 @@ def main():
                 response = requests.get(
                     'https://api.spotify.com/v1/albums',
                     params=several_albums_params,
-                    headers=headers
+                    headers=headers,
+                    timeout=10
                 )
                 time.sleep(timeout)
                 request_count += 1
@@ -243,7 +258,7 @@ def main():
 
                 albums_json.append(album_for_json)
 
-                album_tracks_ids = list()
+                album_tracks_ids = []
                 album_tracks = album.get('tracks').get('items')
                 for track in album_tracks:
                     print()
@@ -252,7 +267,7 @@ def main():
                     print(f"Track ID: {track_id}")
                     album_tracks_ids.append(track_id)
                     print('Track Artists:')
-                    track_artists = list()
+                    track_artists = []
                     for track_artist in track.get('artists'):
                         track_artists.append(track_artist.get('id'))
                     print(track_artists)
@@ -286,7 +301,8 @@ def main():
                     response = requests.get(
                         'https://api.spotify.com/v1/tracks',
                         params=several_tracks_params,
-                        headers=headers
+                        headers=headers,
+                        timeout=10
                     )
                     time.sleep(timeout)
                     request_count += 1
@@ -298,7 +314,8 @@ def main():
 
                         response = requests.post(
                             'https://accounts.spotify.com/api/token',
-                            data=token_data
+                            data=token_data,
+                            timeout=10
                         )
                         time.sleep(timeout)
                         request_count += 1
@@ -315,7 +332,8 @@ def main():
                         response = requests.get(
                             'https://api.spotify.com/v1/tracks',
                             params=several_tracks_params,
-                            headers=headers
+                            headers=headers,
+                            timeout=10
                         )
                         time.sleep(timeout)
                         request_count += 1
@@ -344,7 +362,8 @@ def main():
                     response = requests.get(
                         'https://api.spotify.com/v1/audio-features',
                         params=several_features_params,
-                        headers=headers
+                        headers=headers,
+                        timeout=10
                     )
                     time.sleep(timeout + 1)
                     request_count += 1
@@ -356,7 +375,8 @@ def main():
 
                         response = requests.post(
                             'https://accounts.spotify.com/api/token',
-                            data=token_data
+                            data=token_data,
+                            timeout=10
                         )
                         time.sleep(timeout)
                         request_count += 1
@@ -373,7 +393,8 @@ def main():
                         response = requests.get(
                             'https://api.spotify.com/v1/audio-features',
                             params=several_features_params,
-                            headers=headers
+                            headers=headers,
+                            timeout=10
                         )
                         time.sleep(timeout)
                         request_count += 1
