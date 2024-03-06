@@ -1,0 +1,12 @@
+﻿Check Information
+=================
+         Started: 2024-03-05 20:07:09.697526
+        Finished: 2024-03-05 20:07:21.332887
+      Time Taken: 11.64 seconds
+       Formatter: text
+        Profiles: prospector_profile.yaml, default, no_doc_warnings, no_test_warnings, no_member_warnings, strictness_veryhigh
+      Strictness: from profile
+  Libraries Used: 
+       Tools Run: dodgy, mypy, profile-validator, pycodestyle, pyflakes, pylint
+  Messages Found: 0
+ External Config: pylint: C:\Users\1\Documents\GitHub\SpotiStats\.pylintrc

@@ -26,7 +26,7 @@ for artist in sorted(os.listdir('artist_stats')):
     model['world_rank'] = data_raw['stats']['worldRank']
     model['top_cities'] = data_raw['stats']['topCities']['items']
 
-    tracks_raw = {}
+    tracks_raw: dict[int, list] = {}
 
     found_albums = []
 

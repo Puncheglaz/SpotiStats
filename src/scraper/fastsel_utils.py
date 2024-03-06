@@ -173,10 +173,9 @@ def parse_object(request_mode, request_id, operation_name, processed_file_name):
                         request_mode=request_mode,
                         object_id=album['album_id'],
                         operation_name=operation_name,
-                        request_options=
-                        'offset%22%3A0%2C%22' +
-                        'limit%22%3A50%2C%22' +
-                        'enableAssociatedVideos%22%3Afalse%7D&'
+                        request_options='offset%22%3A0%2C%22'
+                                        'limit%22%3A50%2C%22'
+                                        'enableAssociatedVideos%22%3Afalse%7D&'
                     )
 
                     if album_data is None:
