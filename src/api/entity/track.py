@@ -1,5 +1,5 @@
 import json
-import entity.artist
+from entity.artist import Artist
 from entity.album import Album
 
 class Track:
@@ -34,8 +34,8 @@ class Track:
 
                 for artist in artists:
                     cur.execute(f'''
-                            INSERT INTO {entity.artist.Artist.TABLE_NAME__TRACK} (artist_id, track_id)
-                            SELECT id, %s FROM {entity.artist.Artist.TABLE_NAME} WHERE spotify_id = %s
+                            INSERT INTO {Artist.TABLE_NAME__TRACK} (artist_id, track_id)
+                            SELECT id, %s FROM {Artist.TABLE_NAME} WHERE spotify_id = %s
                             ON CONFLICT (artist_id, track_id) DO NOTHING
                         ''', (id, artist))
 

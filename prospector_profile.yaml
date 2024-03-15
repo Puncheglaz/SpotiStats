@@ -1,0 +1,27 @@
+output-format: text
+
+strictness: veryhigh
+
+inherits:
+  - default
+
+ignore-paths:
+  - src\aggregator\auth_credentials.py
+  - src\api
+
+pycodestyle:
+  options:
+    max-line-length: 100
+
+autodetect: false
+
+blending: false
+
+mccabe:
+  run: false
+
+mypy:
+  run: true
+  options:
+    ignore-missing-imports: true
+    follow-imports: skip

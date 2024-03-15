@@ -1,5 +1,5 @@
 const server_vars = {
-    address: "192.168.191.64",
+    address: "127.0.0.1",
     port: "5000",
 };
 
