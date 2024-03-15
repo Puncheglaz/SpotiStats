@@ -1,3 +1,4 @@
+"""Module for additional aggregator to collect related artist data from Spotify."""
 import json
 import requests
 from auth_credentials import client_id, client_secret
@@ -10,10 +11,12 @@ token_data = {
 
 
 def get_related_artists(artists_ids, headers, stage=0):
+    """Function for finding similar artists by their artists_ids,
+    query headers and number of stages are used to access the service"""
     artists_ids = list(set(artists_ids))
     total_artists = len(artists_ids)
 
-    artists_ids_list = list()
+    artists_ids_list = []
     artists_ids_list.extend(artists_ids)
     process_num = 0
     for artist_id in artists_ids:
@@ -21,7 +24,8 @@ def get_related_artists(artists_ids, headers, stage=0):
         print(f'Collect {process_num} of {total_artists}')
         response = requests.get(
             f'https://api.spotify.com/v1/artists/{artist_id}/related-artists',
-            headers=headers
+            headers=headers,
+            timeout=10
         )
 
         for artist in response.json().get('artists'):
@@ -30,7 +34,7 @@ def get_related_artists(artists_ids, headers, stage=0):
     print(f'==============STAGE={stage}=============')
     print(f'       Total related artists: {len(artists_ids_list)}')
     print(f'Total unique related artists: {len(set(artists_ids_list))}')
-    print(f'==================================')
+    print('==================================')
 
     artists_ids_list = list(set(artists_ids_list))
 
@@ -38,7 +42,12 @@ def get_related_artists(artists_ids, headers, stage=0):
 
 
 def main():
-    response = requests.post('https://accounts.spotify.com/api/token', data=token_data)
+    """Main function for data aggregation."""
+    response = requests.post(
+        'https://accounts.spotify.com/api/token',
+        data=token_data,
+        timeout=10
+    )
 
     access_token = response.json().get('access_token')
     token_type = response.json().get('token_type')
@@ -47,10 +56,15 @@ def main():
         'Authorization': f'{token_type}  {access_token}',
     }
 
-    with open(f'src/aggregator/resources/spotify-followed-artists.json', 'r', encoding='utf-8') as file:
+    followed_file_name = 'spotify-followed-artists.json'
+    with open(
+            f'src/aggregator/resources/{followed_file_name}',
+            mode='r',
+            encoding='utf-8'
+    ) as file:
         artists_data = json.load(file)
 
-    followed_artists_ids = list()
+    followed_artists_ids = []
     for artist in artists_data.get('artists'):
         followed_artists_ids.append(artist.get('uri').split(':')[2])
 
@@ -72,7 +86,12 @@ def main():
         ensure_ascii=False
     )
 
-    with open(f'src/aggregator/resources/artists-ids-list.json', 'w', encoding='utf-8') as file:
+    id_file_name = 'artists-ids-list.json'
+    with open(
+            f'src/aggregator/resources/{id_file_name}',
+            mode='w',
+            encoding='utf-8'
+    ) as file:
         file.write(json_string)
 
 

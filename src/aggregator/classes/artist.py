@@ -1,5 +1,8 @@
-class Artist:
+"""Module for artist class."""
 
+
+class Artist:
+    """Class representing an artist."""
     def __init__(self, artist_id, name, popularity, followers, genres, albums=None, tracks=None):
         self.artist_id = artist_id
         self.name = name
@@ -12,3 +15,7 @@ class Artist:
     def __str__(self):
         return f'{self.artist_id} {self.name} {self.popularity}' \
                f' {self.followers} {self.genres} {self.albums} {self.tracks}'
+
+    def get_artist_name(self):
+        """Function returns artist's name."""
+        return self.name
