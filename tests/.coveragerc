@@ -1,0 +1,4 @@
+[run]
+omit =
+    */aggregator/auth_credentials.py
+    */aggregator/get_token.py
