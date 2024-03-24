@@ -88,6 +88,6 @@ def artist_aggregate_main(source_file_path, id_file_path):
 
 # if __name__ == '__main__':
 #     artist_aggregate_main(
-#         'tests/resources/followed-artists-test.json',
-#         'tests/resources/expected-artists-ids.json'
+#         'src/aggregator/resources/spotify-followed-artists.json',
+#         'src/aggregator/resources/artists-ids-list.json'
 #     )

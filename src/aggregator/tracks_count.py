@@ -6,19 +6,15 @@ from os.path import isfile, join
 
 
 def tracks_count():
-    if '\\'.join(os.getcwd().split('\\')[-3:]) == "SpotiStats\\src\\aggregator":
-        ARTISTS_PATH = "resources/artists"
-    else:
-        ARTISTS_PATH = "src\\aggregator\\resources\\artists"
-    print('\\'.join(os.getcwd().split('\\')[-3:]))
-    artists_files = [file for file in listdir(ARTISTS_PATH) if isfile(join(ARTISTS_PATH, file))]
-    ARTIST_COUNT = 0
+    artists_path = "src\\aggregator\\resources\\artists"
+    artists_files = [file for file in listdir(artists_path) if isfile(join(artists_path, file))]
+    artist_count = 0
     albums_list, tracks_list = [], []
     for artist_file in artists_files:
-        with open(f'{ARTISTS_PATH}/{artist_file}', 'r', encoding='utf-8') as artist:
+        with open(f'{artists_path}/{artist_file}', 'r', encoding='utf-8') as artist:
             artist_data = json.load(artist)
 
-            ARTIST_COUNT += 1
+            artist_count += 1
 
             artist_albums = artist_data.get('albums')
             for album in artist_albums:
@@ -31,13 +27,13 @@ def tracks_count():
                 tracks_list.append(track_id)
 
     # Artists: 2004, Albums: 49820, Tracks: 268643
-    print(f'Artists: {ARTIST_COUNT}, Albums: {len(set(albums_list))}, Tracks: {len(set(tracks_list))}')
-    return ARTIST_COUNT
+    print(f'Artists: {artist_count}, Albums: {len(set(albums_list))}, Tracks: {len(set(tracks_list))}')
+    return artist_count
 
 
 def main():
     tracks_count()
 
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
