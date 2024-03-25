@@ -27,6 +27,8 @@ class Track:
         self.tempo = tempo
         self.time_signature = time_signature
         self.valence = valence
+        if type(track_name) is not str:
+            raise TypeError("Track name must be string.")
 
     def __str__(self):
         return f'{self.track_name} {self.track_id} {self.artists} {self.albums}' \

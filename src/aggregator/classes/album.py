@@ -11,6 +11,8 @@ class Album:
         self.genres = genres
         self.label = label
         self.popularity = popularity
+        if type(album_name) is not str:
+            raise TypeError("Album name must be string.")
 
     def __str__(self):
         return f'{self.album_name} {self.album_id} {self.album_type}' \

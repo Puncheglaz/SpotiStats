@@ -5,7 +5,7 @@ from collections import OrderedDict
 
 import requests
 
-from auth_credentials import (
+from src.aggregator.auth_credentials import (
     client_headers, get_artist_stats_extensions
 )
 
@@ -99,3 +99,12 @@ def get_artist_response_template(artist_id, timeout, request_count):
     request_count += 1
 
     return response, request_count
+
+
+# if __name__ == '__main__':
+#     response, request_count = get_artist_response_template(
+#         '0M2HHtY3OOQzIZxrHkbJLT',
+#         1,
+#         0
+#     )
+#     print(response)
