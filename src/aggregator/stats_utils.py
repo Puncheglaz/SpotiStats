@@ -10,12 +10,12 @@ from src.aggregator.auth_credentials import (
 )
 
 
-def change_artist_data(response: requests.Response, artist_id):
+def change_artist_data(response: requests.Response, artist_id, file_path):
     """Util function for artists stats data aggregation or updating."""
     artist_stats = response.json().get('data').get('artistUnion').get('stats')
 
     with open(
-            f'resources/artists/artist-{artist_id}.json',
+            f'{file_path}/artist-{artist_id}.json',
             mode='r+',
             encoding='utf-8'
     ) as artist_file:
@@ -35,7 +35,7 @@ def change_artist_data(response: requests.Response, artist_id):
         artist_file.truncate()
 
     with open(
-            f'resources/artists/artist-{artist_id}.json',
+            f'{file_path}/artist-{artist_id}.json',
             mode='r',
             encoding='utf-8'
     ) as artist_file:
@@ -49,7 +49,7 @@ def change_artist_data(response: requests.Response, artist_id):
     return albums_ids
 
 
-def change_track_data(tracks_data, artist_id):
+def change_track_data(tracks_data, artist_id, file_path):
     """Util function for track stats data aggregation or updating."""
     for track in tracks_data:
         track_data = track.get('track')
@@ -57,7 +57,7 @@ def change_track_data(tracks_data, artist_id):
         track_playcount = track_data.get('playcount')
 
         with open(
-                f'resources/artists/artist-{artist_id}.json',
+                f'{file_path}/artist-{artist_id}.json',
                 mode='r+',
                 encoding='utf-8'
         ) as artist_file:

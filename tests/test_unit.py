@@ -1,13 +1,16 @@
 import json
 
 import pytest
+import requests
 
 from src.aggregator.artist_aggregate import get_related_artists, artist_aggregate_main
 from src.aggregator.auth_credentials import access_token, token_type, client_headers
 from src.aggregator.classes.album import Album
 from src.aggregator.classes.artist import Artist
 from src.aggregator.classes.track import Track
-from src.aggregator.stats_utils import get_artist_response_template
+from src.aggregator.stats_utils import (
+    get_artist_response_template, change_artist_data, change_track_data
+)
 
 params_for_get_related = (
     (
@@ -480,3 +483,115 @@ def test_get_artist_template(
 
     assert response.json() == get_artist_json_data
     assert request_count == count_before + 1
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize('artist_id', ['0M2HHtY3OOQzIZxrHkbJLT', '00FQb4jTyendYWaN8pK0wa'])
+def test_change_artist_data(requests_mock, get_artist_json_data, artist_id):
+    requests_mock.get(url='https://localhost:8080', json=get_artist_json_data)
+    response = requests.get(url='https://localhost:8080')
+    actual_ids = change_artist_data(
+        response=response,
+        artist_id=artist_id,
+        file_path="tests/resources"
+    )
+
+    with open(
+        file=f'tests/resources/artist-{artist_id}.json',
+        mode='r',
+        encoding='utf-8'
+    ) as actual_file:
+        actual_data = json.load(actual_file)
+
+    expected_data = get_artist_json_data.get('data').get('artistUnion').get('stats')
+
+    assert actual_data.get('followers') == expected_data.get('followers')
+    assert actual_data.get('monthly_listeners') == expected_data.get('monthlyListeners')
+    assert actual_data.get('world_rank') == expected_data.get('worldRank')
+    assert actual_data.get('top_cities') == expected_data.get('topCities').get('items')
+
+    expected_ids = []
+    for album in actual_data.get('albums'):
+        expected_ids.append(album.get('album_id'))
+
+    assert actual_ids == expected_ids
+
+
+@pytest.mark.unit
+def test_change_artist_data_invalid_exception(requests_mock, get_artist_json_data):
+    requests_mock.get(url='https://localhost', json=get_artist_json_data)
+    response = requests.get(url='https://localhost')
+    with pytest.raises(json.JSONDecodeError) as excinfo:
+        change_artist_data(
+            response=response,
+            artist_id="2kK21234",
+            file_path="tests/resources"
+        )
+    exception_msg = excinfo.value.args[0]
+    assert exception_msg == 'Expecting value: line 1 column 1 (char 0)'
+
+
+@pytest.mark.unit
+def test_change_artist_data_empty_exception(requests_mock, get_artist_json_data):
+    requests_mock.get(url='https://localhost:3030', json=get_artist_json_data)
+    response = requests.get(url='https://localhost:3030')
+    with pytest.raises(FileNotFoundError) as excinfo:
+        change_artist_data(
+            response=response,
+            artist_id="",
+            file_path="tests/resources"
+        )
+    exception_msg = excinfo.value.args[1]
+    assert exception_msg == 'No such file or directory'
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize('artist_id', ['0M2HHtY3OOQzIZxrHkbJLT'])
+def test_change_track_data(get_tracks_json_data, artist_id):
+    tracks_data = get_tracks_json_data.get('data').get('albumUnion').get('tracks').get('items')
+    change_track_data(
+        tracks_data=tracks_data,
+        artist_id=artist_id,
+        file_path='tests/resources'
+    )
+
+    with open(
+            file=f'tests/resources/artist-{artist_id}.json',
+            mode='r',
+            encoding='utf-8'
+    ) as actual_file:
+        actual_data = json.load(actual_file).get('tracks')
+
+    expected_data = get_tracks_json_data.get('data').get('albumUnion').get('tracks').get('items')
+
+    for act_track in actual_data:
+        for exp_track in expected_data:
+            if act_track.get('track_id') == exp_track.get('track').get('uri').split(':')[2]:
+                assert act_track.get('playcount') == exp_track.get('track').get('playcount')
+
+
+@pytest.mark.unit
+def test_change_track_data_invalid_exception(get_tracks_json_data):
+    tracks_data = get_tracks_json_data.get('data').get('albumUnion').get('tracks').get('items')
+    with pytest.raises(json.JSONDecodeError) as excinfo:
+        change_track_data(
+            tracks_data=tracks_data,
+            artist_id="2kK21234",
+            file_path="tests/resources"
+        )
+    exception_msg = excinfo.value.args[0]
+    assert exception_msg == 'Expecting value: line 1 column 1 (char 0)'
+
+
+@pytest.mark.unit
+def test_change_track_data_empty_exception(get_tracks_json_data):
+    tracks_data = get_tracks_json_data.get('data').get('albumUnion').get('tracks').get('items')
+    with pytest.raises(FileNotFoundError) as excinfo:
+        change_track_data(
+            tracks_data=tracks_data,
+            artist_id="",
+            file_path="tests/resources"
+        )
+    exception_msg = excinfo.value.args[1]
+    assert exception_msg == 'No such file or directory'
+

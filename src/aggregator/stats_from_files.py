@@ -42,7 +42,9 @@ def main():
             f" - {response.status_code}] - Number {artist_count}"
         )
 
-        albums_ids = change_artist_data(response, artist_id)
+        albums_ids = change_artist_data(
+            response, artist_id, 'resources/artists'
+        )
 
         for album_id in albums_ids:
             # print(f"Get Album {album_id}")
@@ -58,7 +60,7 @@ def main():
                     'data'
                 ).get('albumUnion').get('tracks').get('items')
 
-                change_track_data(tracks_data, artist_id)
+                change_track_data(tracks_data, artist_id, 'resources/artists')
         artist_count += 1
 
 

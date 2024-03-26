@@ -30,7 +30,9 @@ def main():
         )
         print(f"Artist Stats {artist_id}  - [*] [Request {request_count} - {response.status_code}]")
 
-        albums_ids = change_artist_data(response, artist_id)
+        albums_ids = change_artist_data(
+            response, artist_id, 'resources/artists'
+        )
 
         for album_id in albums_ids:
             get_album_params = {
@@ -54,7 +56,7 @@ def main():
 
             tracks_data = response.json().get('data').get('albumUnion').get('tracks').get('items')
 
-            change_track_data(tracks_data, artist_id)
+            change_track_data(tracks_data, artist_id, 'resources/artists')
 
 
 if __name__ == '__main__':
