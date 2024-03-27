@@ -2015,16 +2015,16 @@
             "region": "IDF"
         },
         {
-            "numberOfListeners": 4031,
-            "city": "Kyiv",
-            "country": "UA",
-            "region": "30"
-        },
-        {
             "numberOfListeners": 3660,
             "city": "London",
             "country": "GB",
             "region": "ENG"
+        },
+        {
+            "numberOfListeners": 3424,
+            "city": "Minsk",
+            "country": "BY",
+            "region": "HM"
         }
     ]
 }

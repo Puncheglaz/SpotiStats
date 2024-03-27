@@ -8,6 +8,7 @@ from src.aggregator.auth_credentials import access_token, token_type, client_hea
 from src.aggregator.classes.album import Album
 from src.aggregator.classes.artist import Artist
 from src.aggregator.classes.track import Track
+from src.aggregator.stats_update import stats_update_main
 from src.aggregator.stats_utils import (
     get_artist_response_template, change_artist_data, change_track_data
 )
@@ -595,3 +596,71 @@ def test_change_track_data_empty_exception(get_tracks_json_data):
     exception_msg = excinfo.value.args[1]
     assert exception_msg == 'No such file or directory'
 
+
+class TestResponseObject:
+    def __init__(self, json_line, status_code):
+        self.json_line = json_line
+        self.status_code = status_code
+
+    def json(self):
+        return self.json_line
+
+
+def get_mock_artist_data():
+    with open(
+            file='tests/resources/artist-data.json',
+            mode='r',
+            encoding='utf-8'
+    ) as file:
+        data = json.load(file)
+    return data
+
+
+def mock_get_response_template(*args, **kwargs):
+    response = TestResponseObject(get_mock_artist_data(), 200)
+    current_count = kwargs.get('request_count') + 1
+    return response, current_count
+
+
+@pytest.mark.unit
+def test_stats_update_main(
+        mocker, requests_mock, get_tracks_json_data, get_artist_json_data
+):
+    artist_id = '0M2HHtY3OOQzIZxrHkbJLT'
+
+    mocker.patch(
+        'src.aggregator.stats_update.get_artist_response_template',
+        side_effect=mock_get_response_template
+    )
+
+    requests_mock.get(
+        url='https://api-partner.spotify.com/pathfinder/v1/query',
+        headers=client_headers,
+        json=get_tracks_json_data
+    )
+
+    stats_update_main(
+        artist_ids=['0M2HHtY3OOQzIZxrHkbJLT'],
+        timeout=0,
+        request_count=0,
+        file_path='tests/resources'
+    )
+
+    with open(
+        file=f'tests/resources/artist-{artist_id}.json'
+    ) as actual_file:
+        actual_data = json.load(actual_file)
+
+    expected_artist_data = get_artist_json_data.get('data').get('artistUnion')
+
+    assert actual_data.get('followers') == expected_artist_data.get('stats').get('followers')
+    assert actual_data.get('monthly_listeners') == expected_artist_data.get('stats').get('monthlyListeners')
+    assert actual_data.get('world_rank') == expected_artist_data.get('stats').get('worldRank')
+    assert actual_data.get('top_cities') == expected_artist_data.get('stats').get('topCities').get('items')
+
+    expected_tracks_data = get_tracks_json_data.get('data').get('albumUnion').get('tracks').get('items')
+
+    for act_track in actual_data.get('tracks'):
+        for exp_track in expected_tracks_data:
+            if act_track.get('track_id') == exp_track.get('track').get('uri').split(':')[2]:
+                assert act_track.get('playcount') == exp_track.get('track').get('playcount')
