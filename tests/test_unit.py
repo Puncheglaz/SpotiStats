@@ -12,6 +12,7 @@ from src.aggregator.stats_update import stats_update_main
 from src.aggregator.stats_utils import (
     get_artist_response_template, change_artist_data, change_track_data
 )
+from tests.util_classes import ResponseObject
 
 params_for_get_related = (
     (
@@ -489,6 +490,7 @@ def test_get_artist_template(
 @pytest.mark.unit
 @pytest.mark.parametrize('artist_id', ['0M2HHtY3OOQzIZxrHkbJLT', '00FQb4jTyendYWaN8pK0wa'])
 def test_change_artist_data(requests_mock, get_artist_json_data, artist_id):
+    """Test change_artist_data function with artist_id parameter of two positive ids."""
     requests_mock.get(url='https://localhost:8080', json=get_artist_json_data)
     response = requests.get(url='https://localhost:8080')
     actual_ids = change_artist_data(
@@ -520,6 +522,7 @@ def test_change_artist_data(requests_mock, get_artist_json_data, artist_id):
 
 @pytest.mark.unit
 def test_change_artist_data_invalid_exception(requests_mock, get_artist_json_data):
+    """Test change_artist_data function with artist_id parameter of invalid id."""
     requests_mock.get(url='https://localhost', json=get_artist_json_data)
     response = requests.get(url='https://localhost')
     with pytest.raises(json.JSONDecodeError) as excinfo:
@@ -534,6 +537,7 @@ def test_change_artist_data_invalid_exception(requests_mock, get_artist_json_dat
 
 @pytest.mark.unit
 def test_change_artist_data_empty_exception(requests_mock, get_artist_json_data):
+    """Test change_artist_data function with artist_id parameter of empty id."""
     requests_mock.get(url='https://localhost:3030', json=get_artist_json_data)
     response = requests.get(url='https://localhost:3030')
     with pytest.raises(FileNotFoundError) as excinfo:
@@ -549,6 +553,7 @@ def test_change_artist_data_empty_exception(requests_mock, get_artist_json_data)
 @pytest.mark.unit
 @pytest.mark.parametrize('artist_id', ['0M2HHtY3OOQzIZxrHkbJLT'])
 def test_change_track_data(get_tracks_json_data, artist_id):
+    """Test change_track_data function with artist_id parameter of one positive id."""
     tracks_data = get_tracks_json_data.get('data').get('albumUnion').get('tracks').get('items')
     change_track_data(
         tracks_data=tracks_data,
@@ -573,6 +578,7 @@ def test_change_track_data(get_tracks_json_data, artist_id):
 
 @pytest.mark.unit
 def test_change_track_data_invalid_exception(get_tracks_json_data):
+    """Test change_track_data function with artist_id parameter of invalid id."""
     tracks_data = get_tracks_json_data.get('data').get('albumUnion').get('tracks').get('items')
     with pytest.raises(json.JSONDecodeError) as excinfo:
         change_track_data(
@@ -586,6 +592,7 @@ def test_change_track_data_invalid_exception(get_tracks_json_data):
 
 @pytest.mark.unit
 def test_change_track_data_empty_exception(get_tracks_json_data):
+    """Test change_track_data function with artist_id parameter of empty id."""
     tracks_data = get_tracks_json_data.get('data').get('albumUnion').get('tracks').get('items')
     with pytest.raises(FileNotFoundError) as excinfo:
         change_track_data(
@@ -597,16 +604,8 @@ def test_change_track_data_empty_exception(get_tracks_json_data):
     assert exception_msg == 'No such file or directory'
 
 
-class TestResponseObject:
-    def __init__(self, json_line, status_code):
-        self.json_line = json_line
-        self.status_code = status_code
-
-    def json(self):
-        return self.json_line
-
-
 def get_mock_artist_data():
+    """Function for returning artist data sample."""
     with open(
             file='tests/resources/artist-data.json',
             mode='r',
@@ -617,7 +616,9 @@ def get_mock_artist_data():
 
 
 def mock_get_response_template(*args, **kwargs):
-    response = TestResponseObject(get_mock_artist_data(), 200)
+    """Mock function for get_artist_response_template
+     with args and kwargs parameters."""
+    response = ResponseObject(get_mock_artist_data(), 200)
     current_count = kwargs.get('request_count') + 1
     return response, current_count
 
@@ -626,6 +627,7 @@ def mock_get_response_template(*args, **kwargs):
 def test_stats_update_main(
         mocker, requests_mock, get_tracks_json_data, get_artist_json_data
 ):
+    """Test stats_update_main function with artist_id parameter of one positive id."""
     artist_id = '0M2HHtY3OOQzIZxrHkbJLT'
 
     mocker.patch(
@@ -640,7 +642,7 @@ def test_stats_update_main(
     )
 
     stats_update_main(
-        artist_ids=['0M2HHtY3OOQzIZxrHkbJLT'],
+        artist_ids=[artist_id],
         timeout=0,
         request_count=0,
         file_path='tests/resources'
@@ -664,3 +666,61 @@ def test_stats_update_main(
         for exp_track in expected_tracks_data:
             if act_track.get('track_id') == exp_track.get('track').get('uri').split(':')[2]:
                 assert act_track.get('playcount') == exp_track.get('track').get('playcount')
+
+
+@pytest.mark.unit
+def test_stats_update_main_invalid_exception(
+        mocker, requests_mock, get_tracks_json_data, get_artist_json_data
+):
+    """Test stats_update_main function with artist_id parameter of invalid id."""
+    artist_id = '2kK21234'
+
+    mocker.patch(
+        'src.aggregator.stats_update.get_artist_response_template',
+        side_effect=mock_get_response_template
+    )
+
+    requests_mock.get(
+        url='https://api-partner.spotify.com/pathfinder/v1/query',
+        headers=client_headers,
+        json=get_tracks_json_data
+    )
+
+    with pytest.raises(json.JSONDecodeError) as excinfo:
+        stats_update_main(
+            artist_ids=[artist_id],
+            timeout=0,
+            request_count=0,
+            file_path='tests/resources'
+        )
+    exception_msg = excinfo.value.args[0]
+    assert exception_msg == 'Expecting value: line 1 column 1 (char 0)'
+
+
+@pytest.mark.unit
+def test_stats_update_main_empty_exception(
+        mocker, requests_mock, get_tracks_json_data, get_artist_json_data
+):
+    """Test stats_update_main function with artist_id parameter of empty id."""
+    artist_id = ''
+
+    mocker.patch(
+        'src.aggregator.stats_update.get_artist_response_template',
+        side_effect=mock_get_response_template
+    )
+
+    requests_mock.get(
+        url='https://api-partner.spotify.com/pathfinder/v1/query',
+        headers=client_headers,
+        json=get_tracks_json_data
+    )
+
+    with pytest.raises(FileNotFoundError) as excinfo:
+        stats_update_main(
+            artist_ids=[artist_id],
+            timeout=0,
+            request_count=0,
+            file_path='tests/resources'
+        )
+    exception_msg = excinfo.value.args[1]
+    assert exception_msg == 'No such file or directory'

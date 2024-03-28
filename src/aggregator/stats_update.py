@@ -55,12 +55,12 @@ def stats_update_main(artist_ids, timeout, request_count, file_path):
             change_track_data(tracks_data, artist_id, file_path)
 
 
-if __name__ == '__main__':
-    stats_update_main(
-        artist_ids=[
-            '0M2HHtY3OOQzIZxrHkbJLT', '4tZwfgrHOc3mvqYlEYSvVi', '00FQb4jTyendYWaN8pK0wa'
-        ],
-        timeout=1,
-        request_count=0,
-        file_path='src/aggregator/resources/artists'
-    )
+# if __name__ == '__main__':
+#     stats_update_main(
+#         artist_ids=[
+#             '0M2HHtY3OOQzIZxrHkbJLT', '4tZwfgrHOc3mvqYlEYSvVi', '00FQb4jTyendYWaN8pK0wa'
+#         ],
+#         timeout=1,
+#         request_count=0,
+#         file_path='src/aggregator/resources/artists'
+#     )
