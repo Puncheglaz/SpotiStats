@@ -10,7 +10,8 @@ def tracks_count():
     artists_files = [
         file for file in listdir(artists_path) if isfile(join(artists_path, file))
     ]
-    artists_files.remove('.DS_Store')
+    if '.DS_Store' in artists_files:
+        artists_files.remove('.DS_Store')
     artist_count = 0
     albums_list, tracks_list = [], []
     for artist_file in artists_files:

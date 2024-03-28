@@ -1,4 +1,6 @@
 import json
+from os import listdir
+from os.path import isfile, join
 
 import pytest
 import requests
@@ -8,6 +10,7 @@ from src.aggregator.auth_credentials import access_token, token_type, client_hea
 from src.aggregator.classes.album import Album
 from src.aggregator.classes.artist import Artist
 from src.aggregator.classes.track import Track
+from src.aggregator.stats_from_files import stats_from_files_main
 from src.aggregator.stats_update import stats_update_main
 from src.aggregator.stats_utils import (
     get_artist_response_template, change_artist_data, change_track_data
@@ -496,13 +499,13 @@ def test_change_artist_data(requests_mock, get_artist_json_data, artist_id):
     actual_ids = change_artist_data(
         response=response,
         artist_id=artist_id,
-        file_path="tests/resources"
+        file_path="tests/resources/artists"
     )
 
     with open(
-        file=f'tests/resources/artist-{artist_id}.json',
-        mode='r',
-        encoding='utf-8'
+            file=f'tests/resources/artists/artist-{artist_id}.json',
+            mode='r',
+            encoding='utf-8'
     ) as actual_file:
         actual_data = json.load(actual_file)
 
@@ -558,11 +561,11 @@ def test_change_track_data(get_tracks_json_data, artist_id):
     change_track_data(
         tracks_data=tracks_data,
         artist_id=artist_id,
-        file_path='tests/resources'
+        file_path='tests/resources/artists'
     )
 
     with open(
-            file=f'tests/resources/artist-{artist_id}.json',
+            file=f'tests/resources/artists/artist-{artist_id}.json',
             mode='r',
             encoding='utf-8'
     ) as actual_file:
@@ -645,11 +648,11 @@ def test_stats_update_main(
         artist_ids=[artist_id],
         timeout=0,
         request_count=0,
-        file_path='tests/resources'
+        file_path='tests/resources/artists'
     )
 
     with open(
-        file=f'tests/resources/artist-{artist_id}.json'
+            file=f'tests/resources/artists/artist-{artist_id}.json'
     ) as actual_file:
         actual_data = json.load(actual_file)
 
@@ -721,6 +724,104 @@ def test_stats_update_main_empty_exception(
             timeout=0,
             request_count=0,
             file_path='tests/resources'
+        )
+    exception_msg = excinfo.value.args[1]
+    assert exception_msg == 'No such file or directory'
+
+
+@pytest.mark.unit
+def test_stats_from_files_main(
+        mocker, get_tracks_json_data, get_artist_json_data
+):
+    """Test stats_from_files_main function with positive artist ids."""
+    mocker.patch(
+        'src.aggregator.stats_from_files.get_artist_response_template',
+        side_effect=mock_get_response_template
+    )
+
+    stats_from_files_main(
+        artists_path="tests/resources/artists",
+        timeout=1,
+        request_count=0,
+        file_path="tests/resources/artists",
+        artist_count=0,
+        albums_path="tests/resources/albums"
+    )
+
+    artists_files_list = listdir("tests/resources/artists")
+    # artists_files_list.remove('.DS_Store')
+    artist_ids = [
+        file.split('.')[0].split('-')[1] for file in artists_files_list if isfile(
+            join(
+                "tests/resources/artists",
+                file
+            )
+        )
+    ]
+
+    for artist_id in artist_ids:
+        with open(
+                file=f'tests/resources/artists/artist-{artist_id}.json'
+        ) as actual_file:
+            actual_data = json.load(actual_file)
+
+        expected_artist_data = get_artist_json_data.get('data').get('artistUnion')
+
+        assert actual_data.get('followers') == expected_artist_data.get('stats').get('followers')
+        assert actual_data.get('monthly_listeners') == expected_artist_data.get('stats').get('monthlyListeners')
+        assert actual_data.get('world_rank') == expected_artist_data.get('stats').get('worldRank')
+        assert actual_data.get('top_cities') == expected_artist_data.get('stats').get('topCities').get('items')
+
+        expected_tracks_data = get_tracks_json_data.get('data').get('albumUnion').get('tracks').get('items')
+
+        for act_track in actual_data.get('tracks'):
+            for exp_track in expected_tracks_data:
+                if act_track.get('track_id') == exp_track.get('track').get('uri').split(':')[2]:
+                    assert act_track.get('playcount') == exp_track.get('track').get('playcount')
+
+
+@pytest.mark.unit
+def test_stats_from_files_main_invalid_exception(
+        mocker, get_tracks_json_data, get_artist_json_data
+):
+    """Test stats_from_files_main function with invalid artist ids."""
+    mocker.patch(
+        'src.aggregator.stats_from_files.get_artist_response_template',
+        side_effect=mock_get_response_template
+    )
+
+    with pytest.raises(json.JSONDecodeError) as excinfo:
+        stats_from_files_main(
+            artists_path="tests/resources/artist-test",
+            timeout=1,
+            request_count=0,
+            file_path="tests/resources/artist-test",
+            artist_count=0,
+            albums_path="tests/resources/album-test"
+        )
+    exception_msg = excinfo.value.args[0]
+    print(exception_msg)
+    assert exception_msg == 'Expecting value: line 1 column 1 (char 0)'
+
+
+@pytest.mark.unit
+def test_stats_from_files_main_empty_exception(
+        mocker, get_tracks_json_data, get_artist_json_data
+):
+    """Test stats_from_files_main function with empty artist ids."""
+    mocker.patch(
+        'src.aggregator.stats_from_files.get_artist_response_template',
+        side_effect=mock_get_response_template
+    )
+
+    with pytest.raises(FileNotFoundError) as excinfo:
+        stats_from_files_main(
+            artists_path="tests/resources/artist",
+            timeout=1,
+            request_count=0,
+            file_path="tests/resources/artist",
+            artist_count=0,
+            albums_path="tests/resources/album"
         )
     exception_msg = excinfo.value.args[1]
     assert exception_msg == 'No such file or directory'
