@@ -1,5 +1,8 @@
 ![spotistats_logo](https://github.com/TheTedLab/SpotiStats/assets/71270225/2fe17957-f07f-4e0b-80b6-2e27943d14d5)
 
+[![unit tests workflow](https://github.com/TheTedLab/SpotiStats/actions/workflows/unit-tests.yaml/badge.svg)](https://github.com/TheTedLab/SpotiStats/actions/workflows/unit-tests.yaml)
+[![coverage status](https://thetedlab.github.io/SpotiStats/coverage.svg)](https://thetedlab.github.io/SpotiStats/index.html)
+
 ## Table of contents
 * [Introduction](https://github.com/TheTedLab/SpotiStats#introduction)
 * [Contributors](https://github.com/TheTedLab/SpotiStats#contributors)

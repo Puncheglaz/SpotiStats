@@ -1,0 +1,16 @@
+{
+  "artists": [
+    {
+      "uri": "spotify:artist:00FQb4jTyendYWaN8pK0wa",
+      "name": "Lana Del Rey",
+      "image_url": "https://i.scdn.co/image/ab67616100005174b99cacf8acd5378206767261",
+      "followers_count": 29710984
+    },
+    {
+      "uri": "spotify:artist:0L8ExT028jH3ddEcZwqJJ5",
+      "name": "Red Hot Chili Peppers",
+      "image_url": "https://i.scdn.co/image/ab67616100005174c33cc15260b767ddec982ce8",
+      "followers_count": 20318842
+    }
+  ]
+}
