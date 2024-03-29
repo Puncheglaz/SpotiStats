@@ -2,7 +2,7 @@
     "artist_id": "0M2HHtY3OOQzIZxrHkbJLT",
     "name": "M|O|O|N",
     "popularity": 44,
-    "followers": 129917,
+    "followers": 133103,
     "genres": [
         "synthwave"
     ],
@@ -1912,7 +1912,7 @@
             "tempo": 99.992,
             "time_signature": 4,
             "valence": 0.161,
-            "playcount": "13992117"
+            "playcount": "14682819"
         },
         {
             "track_name": "Crystals",
@@ -1938,7 +1938,7 @@
             "tempo": 104.998,
             "time_signature": 4,
             "valence": 0.0373,
-            "playcount": "15444222"
+            "playcount": "16249642"
         },
         {
             "track_name": "Hydrogen",
@@ -1964,7 +1964,7 @@
             "tempo": 125.936,
             "time_signature": 4,
             "valence": 0.0447,
-            "playcount": "27351699"
+            "playcount": "28560078"
         },
         {
             "track_name": "Release",
@@ -1990,40 +1990,40 @@
             "tempo": 108.006,
             "time_signature": 4,
             "valence": 0.0735,
-            "playcount": "5882347"
+            "playcount": "6102854"
         }
     ],
-    "monthly_listeners": 382907,
+    "monthly_listeners": 368765,
     "world_rank": 0,
     "top_cities": [
         {
-            "numberOfListeners": 5681,
             "city": "Warsaw",
             "country": "PL",
+            "numberOfListeners": 5318,
             "region": "14"
         },
         {
-            "numberOfListeners": 4342,
             "city": "Santiago",
             "country": "CL",
+            "numberOfListeners": 4169,
             "region": "RM"
         },
         {
-            "numberOfListeners": 4274,
             "city": "Paris",
             "country": "FR",
+            "numberOfListeners": 3979,
             "region": "IDF"
         },
         {
-            "numberOfListeners": 3660,
             "city": "London",
             "country": "GB",
+            "numberOfListeners": 3500,
             "region": "ENG"
         },
         {
-            "numberOfListeners": 3424,
             "city": "Minsk",
             "country": "BY",
+            "numberOfListeners": 3424,
             "region": "HM"
         }
     ]

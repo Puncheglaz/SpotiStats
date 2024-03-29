@@ -1,0 +1,156 @@
+{
+  "data": {
+    "albumUnion": {
+      "tracks": {
+        "items": [
+          {
+            "track": {
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "M|O|O|N"
+                    },
+                    "uri": "spotify:artist:0M2HHtY3OOQzIZxrHkbJLT"
+                  }
+                ]
+              },
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "discNumber": 1,
+              "duration": {
+                "totalMilliseconds": 271200
+              },
+              "name": "Paris",
+              "playability": {
+                "playable": true
+              },
+              "playcount": "14682819",
+              "relinkingInformation": null,
+              "saved": true,
+              "trackNumber": 1,
+              "uri": "spotify:track:5uDzCEn4Tzv9qKWiYNyTaQ"
+            },
+            "uid": "26980fac60e866a354c1"
+          },
+          {
+            "track": {
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "M|O|O|N"
+                    },
+                    "uri": "spotify:artist:0M2HHtY3OOQzIZxrHkbJLT"
+                  }
+                ]
+              },
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "discNumber": 1,
+              "duration": {
+                "totalMilliseconds": 289714
+              },
+              "name": "Crystals",
+              "playability": {
+                "playable": true
+              },
+              "playcount": "16249642",
+              "relinkingInformation": null,
+              "saved": true,
+              "trackNumber": 2,
+              "uri": "spotify:track:3KwzRfEeKhK5ADT9iPFHe2"
+            },
+            "uid": "49bcfa252bde9bee0693"
+          },
+          {
+            "track": {
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "M|O|O|N"
+                    },
+                    "uri": "spotify:artist:0M2HHtY3OOQzIZxrHkbJLT"
+                  }
+                ]
+              },
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "discNumber": 1,
+              "duration": {
+                "totalMilliseconds": 289523
+              },
+              "name": "Hydrogen",
+              "playability": {
+                "playable": true
+              },
+              "playcount": "28560078",
+              "relinkingInformation": null,
+              "saved": true,
+              "trackNumber": 3,
+              "uri": "spotify:track:6vc7GNW3FxMkgKuProVOoB"
+            },
+            "uid": "412f7ff7ebee3d5b65fd"
+          },
+          {
+            "track": {
+              "artists": {
+                "items": [
+                  {
+                    "profile": {
+                      "name": "M|O|O|N"
+                    },
+                    "uri": "spotify:artist:0M2HHtY3OOQzIZxrHkbJLT"
+                  }
+                ]
+              },
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "discNumber": 1,
+              "duration": {
+                "totalMilliseconds": 362222
+              },
+              "name": "Release",
+              "playability": {
+                "playable": true
+              },
+              "playcount": "6102854",
+              "relinkingInformation": null,
+              "saved": true,
+              "trackNumber": 4,
+              "uri": "spotify:track:7IwoJJ2bmzQULYOE89POMU"
+            },
+            "uid": "3866198027f9fc814328"
+          }
+        ],
+        "totalCount": 4
+      }
+    }
+  },
+  "extensions": {}
+}

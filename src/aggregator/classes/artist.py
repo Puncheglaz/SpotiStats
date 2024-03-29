@@ -11,6 +11,8 @@ class Artist:
         self.genres = genres
         self.albums = albums
         self.tracks = tracks
+        if type(name) is not str:
+            raise TypeError("Artist name must be string.")
 
     def __str__(self):
         return f'{self.artist_id} {self.name} {self.popularity}' \

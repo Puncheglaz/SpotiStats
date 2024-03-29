@@ -1,13 +1,7 @@
 """Module for additional aggregator to collect related artist data from Spotify."""
 import json
-import requests
-from auth_credentials import client_id, client_secret
 
-token_data = {
-    'grant_type': 'client_credentials',
-    'client_id': client_id,
-    'client_secret': client_secret,
-}
+import requests
 
 
 def get_related_artists(artists_ids, headers, stage=0):
@@ -41,24 +35,10 @@ def get_related_artists(artists_ids, headers, stage=0):
     return artists_ids_list
 
 
-def main():
+def artist_aggregate_main(source_file_path, id_file_path, headers):
     """Main function for data aggregation."""
-    response = requests.post(
-        'https://accounts.spotify.com/api/token',
-        data=token_data,
-        timeout=10
-    )
-
-    access_token = response.json().get('access_token')
-    token_type = response.json().get('token_type')
-
-    headers = {
-        'Authorization': f'{token_type}  {access_token}',
-    }
-
-    followed_file_name = 'spotify-followed-artists.json'
     with open(
-            f'src/aggregator/resources/{followed_file_name}',
+            source_file_path,
             mode='r',
             encoding='utf-8'
     ) as file:
@@ -86,14 +66,17 @@ def main():
         ensure_ascii=False
     )
 
-    id_file_name = 'artists-ids-list.json'
     with open(
-            f'src/aggregator/resources/{id_file_name}',
+            id_file_path,
             mode='w',
             encoding='utf-8'
     ) as file:
         file.write(json_string)
 
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     artist_aggregate_main(
+#         source_file_path='src/aggregator/resources/spotify-followed-artists.json',
+#         id_file_path='src/aggregator/resources/artists-ids-list.json',
+#         headers={'Authorization': f'{token_type}  {access_token}'}
+#     )

@@ -1,0 +1,47 @@
+{
+  "data": {
+    "artistUnion": {
+      "stats": {
+        "followers": 133103,
+        "monthlyListeners": 368765,
+        "topCities": {
+          "items": [
+            {
+              "city": "Warsaw",
+              "country": "PL",
+              "numberOfListeners": 5318,
+              "region": "14"
+            },
+            {
+              "city": "Santiago",
+              "country": "CL",
+              "numberOfListeners": 4169,
+              "region": "RM"
+            },
+            {
+              "city": "Paris",
+              "country": "FR",
+              "numberOfListeners": 3979,
+              "region": "IDF"
+            },
+            {
+              "city": "London",
+              "country": "GB",
+              "numberOfListeners": 3500,
+              "region": "ENG"
+            },
+            {
+              "city": "Minsk",
+              "country": "BY",
+              "numberOfListeners": 3424,
+              "region": "HM"
+            }
+          ]
+        },
+        "worldRank": 0
+      },
+      "uri": "spotify:artist:0M2HHtY3OOQzIZxrHkbJLT"
+    }
+  },
+  "extensions": {}
+}

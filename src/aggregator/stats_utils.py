@@ -5,17 +5,13 @@ from collections import OrderedDict
 
 import requests
 
-from auth_credentials import (
-    client_headers, get_artist_stats_extensions
-)
 
-
-def change_artist_data(response: requests.Response, artist_id):
+def change_artist_data(response: requests.Response, artist_id, file_path):
     """Util function for artists stats data aggregation or updating."""
     artist_stats = response.json().get('data').get('artistUnion').get('stats')
 
     with open(
-            f'resources/artists/artist-{artist_id}.json',
+            f'{file_path}/artist-{artist_id}.json',
             mode='r+',
             encoding='utf-8'
     ) as artist_file:
@@ -35,7 +31,7 @@ def change_artist_data(response: requests.Response, artist_id):
         artist_file.truncate()
 
     with open(
-            f'resources/artists/artist-{artist_id}.json',
+            f'{file_path}/artist-{artist_id}.json',
             mode='r',
             encoding='utf-8'
     ) as artist_file:
@@ -49,7 +45,7 @@ def change_artist_data(response: requests.Response, artist_id):
     return albums_ids
 
 
-def change_track_data(tracks_data, artist_id):
+def change_track_data(tracks_data, artist_id, file_path):
     """Util function for track stats data aggregation or updating."""
     for track in tracks_data:
         track_data = track.get('track')
@@ -57,7 +53,7 @@ def change_track_data(tracks_data, artist_id):
         track_playcount = track_data.get('playcount')
 
         with open(
-                f'resources/artists/artist-{artist_id}.json',
+                f'{file_path}/artist-{artist_id}.json',
                 mode='r+',
                 encoding='utf-8'
         ) as artist_file:
@@ -79,23 +75,34 @@ def change_track_data(tracks_data, artist_id):
             artist_file.truncate()
 
 
-def get_artist_response_template(artist_id, timeout, request_count):
+def get_artist_response_template(artist_id, timeout, request_count, headers, extensions):
     """Util function for taking artist response template."""
     get_artist_stats_params = {
         'operationName': 'queryArtistOverview',
         'variables': '{"uri":"spotify:artist:' +
                      artist_id +
                      '","locale":"","includePrerelease":true,"enableAssociatedVideos":false}',
-        'extensions': get_artist_stats_extensions,
+        'extensions': extensions,
     }
 
     response = requests.get(
         'https://api-partner.spotify.com/pathfinder/v1/query',
         params=get_artist_stats_params,
-        headers=client_headers,
+        headers=headers,
         timeout=10
     )
     time.sleep(timeout)
     request_count += 1
 
     return response, request_count
+
+
+# if __name__ == '__main__':
+#     response, request_count = get_artist_response_template(
+#         artist_id='0M2HHtY3OOQzIZxrHkbJLT',
+#         timeout=1,
+#         request_count=0,
+#         headers=client_headers,
+#         extensions=get_artist_stats_extensions
+#     )
+#     print(response)
