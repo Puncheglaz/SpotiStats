@@ -3,14 +3,6 @@ import json
 
 import requests
 
-from src.aggregator.auth_credentials import client_id, client_secret, access_token, token_type
-
-token_data = {
-    'grant_type': 'client_credentials',
-    'client_id': client_id,
-    'client_secret': client_secret,
-}
-
 
 def get_related_artists(artists_ids, headers, stage=0):
     """Function for finding similar artists by their artists_ids,
@@ -43,12 +35,8 @@ def get_related_artists(artists_ids, headers, stage=0):
     return artists_ids_list
 
 
-def artist_aggregate_main(source_file_path, id_file_path):
+def artist_aggregate_main(source_file_path, id_file_path, headers):
     """Main function for data aggregation."""
-    headers = {
-        'Authorization': f'{token_type}  {access_token}',
-    }
-
     with open(
             source_file_path,
             mode='r',
@@ -88,6 +76,7 @@ def artist_aggregate_main(source_file_path, id_file_path):
 
 # if __name__ == '__main__':
 #     artist_aggregate_main(
-#         'src/aggregator/resources/spotify-followed-artists.json',
-#         'src/aggregator/resources/artists-ids-list.json'
+#         source_file_path='src/aggregator/resources/spotify-followed-artists.json',
+#         id_file_path='src/aggregator/resources/artists-ids-list.json',
+#         headers={'Authorization': f'{token_type}  {access_token}'}
 #     )

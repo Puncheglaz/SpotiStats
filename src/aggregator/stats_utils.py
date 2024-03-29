@@ -5,10 +5,6 @@ from collections import OrderedDict
 
 import requests
 
-from src.aggregator.auth_credentials import (
-    client_headers, get_artist_stats_extensions
-)
-
 
 def change_artist_data(response: requests.Response, artist_id, file_path):
     """Util function for artists stats data aggregation or updating."""
@@ -79,20 +75,20 @@ def change_track_data(tracks_data, artist_id, file_path):
             artist_file.truncate()
 
 
-def get_artist_response_template(artist_id, timeout, request_count):
+def get_artist_response_template(artist_id, timeout, request_count, headers, extensions):
     """Util function for taking artist response template."""
     get_artist_stats_params = {
         'operationName': 'queryArtistOverview',
         'variables': '{"uri":"spotify:artist:' +
                      artist_id +
                      '","locale":"","includePrerelease":true,"enableAssociatedVideos":false}',
-        'extensions': get_artist_stats_extensions,
+        'extensions': extensions,
     }
 
     response = requests.get(
         'https://api-partner.spotify.com/pathfinder/v1/query',
         params=get_artist_stats_params,
-        headers=client_headers,
+        headers=headers,
         timeout=10
     )
     time.sleep(timeout)
@@ -103,8 +99,10 @@ def get_artist_response_template(artist_id, timeout, request_count):
 
 # if __name__ == '__main__':
 #     response, request_count = get_artist_response_template(
-#         '0M2HHtY3OOQzIZxrHkbJLT',
-#         1,
-#         0
+#         artist_id='0M2HHtY3OOQzIZxrHkbJLT',
+#         timeout=1,
+#         request_count=0,
+#         headers=client_headers,
+#         extensions=get_artist_stats_extensions
 #     )
 #     print(response)

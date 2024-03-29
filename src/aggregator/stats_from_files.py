@@ -13,7 +13,8 @@ from src.aggregator.stats_utils import (
 
 def stats_from_files_main(
         artists_path, timeout, request_count,
-        file_path, artist_count, albums_path
+        file_path, artist_count, albums_path,
+        headers, extensions
 ):
     """Main function for stats data aggregation."""
     print(f'[T] Time: {datetime.datetime.now()}')
@@ -33,7 +34,9 @@ def stats_from_files_main(
         response, request_count = get_artist_response_template(
             artist_id=artist_id,
             timeout=timeout,
-            request_count=request_count
+            request_count=request_count,
+            headers=headers,
+            extensions=extensions
         )
         print(
             f"Artist Stats {artist_id}"
@@ -80,4 +83,6 @@ def stats_from_files_main(
 #         file_path="src/aggregator/resources/artists",
 #         artist_count=0,
 #         albums_path="src/aggregator/resources/albums"
+#         headers=client_headers,
+#         extensions=get_artist_stats_extensions
 #     )

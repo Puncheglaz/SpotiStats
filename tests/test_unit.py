@@ -6,7 +6,6 @@ import pytest
 import requests
 
 from src.aggregator.artist_aggregate import get_related_artists, artist_aggregate_main
-from src.aggregator.auth_credentials import access_token, token_type, client_headers
 from src.aggregator.classes.album import Album
 from src.aggregator.classes.artist import Artist
 from src.aggregator.classes.track import Track
@@ -148,44 +147,32 @@ def mock_get_related_return(*args, **kwargs):
 
     # mock function call args templates
     if args == (followed_ids_one,) and kwargs == {
-        "headers": {
-            'Authorization': f'{token_type}  {access_token}',
-        },
+        "headers": {},
         "stage": 1
     }:
         return test_one_stage_one_ids
     elif args == (test_one_stage_one_ids,) and kwargs == {
-        "headers": {
-            'Authorization': f'{token_type}  {access_token}',
-        },
+        "headers": {},
         "stage": 2
     }:
         return test_one_stage_two_ids
     elif args == (followed_ids_two,) and kwargs == {
-        "headers": {
-            'Authorization': f'{token_type}  {access_token}',
-        },
+        "headers": {},
         "stage": 1
     }:
         return test_two_stage_one_ids
     elif args == (test_two_stage_one_ids,) and kwargs == {
-        "headers": {
-            'Authorization': f'{token_type}  {access_token}',
-        },
+        "headers": {},
         "stage": 2
     }:
         return test_two_stage_two_ids
     elif args == ([],) and kwargs == {
-        "headers": {
-            'Authorization': f'{token_type}  {access_token}',
-        },
+        "headers": {},
         "stage": 1
     }:
         return []
     elif args == ([],) and kwargs == {
-        "headers": {
-            'Authorization': f'{token_type}  {access_token}',
-        },
+        "headers": {},
         "stage": 2
     }:
         return []
@@ -235,7 +222,8 @@ def test_artist_aggregate_main(
     )
     artist_aggregate_main(
         source_file_path=source_file_path,
-        id_file_path=id_file_path
+        id_file_path=id_file_path,
+        headers={}
     )
 
     with open(
@@ -262,7 +250,8 @@ def test_artist_aggregate_main_raises_exception():
     with pytest.raises(json.decoder.JSONDecodeError) as excinfo:
         artist_aggregate_main(
             source_file_path='tests/resources/followed-artists-test-3.json',
-            id_file_path='actual-artists-ids.json'
+            id_file_path='actual-artists-ids.json',
+            headers={}
         )
     exception_msg = excinfo.value.args[0]
     assert exception_msg == 'Expecting value: line 1 column 1 (char 0)'
@@ -475,7 +464,7 @@ def test_get_artist_template(
      empty id and empty id increased count."""
     requests_mock.get(
         url='https://api-partner.spotify.com/pathfinder/v1/query',
-        headers=client_headers,
+        headers={},
         json=get_artist_json_data
     )
 
@@ -483,7 +472,9 @@ def test_get_artist_template(
     response, request_count = get_artist_response_template(
         artist_id=artist_id,
         timeout=0,
-        request_count=request_count
+        request_count=request_count,
+        headers={},
+        extensions=''
     )
 
     assert response.json() == get_artist_json_data
@@ -640,7 +631,7 @@ def test_stats_update_main(
 
     requests_mock.get(
         url='https://api-partner.spotify.com/pathfinder/v1/query',
-        headers=client_headers,
+        headers={},
         json=get_tracks_json_data
     )
 
@@ -648,7 +639,10 @@ def test_stats_update_main(
         artist_ids=[artist_id],
         timeout=0,
         request_count=0,
-        file_path='tests/resources/artists'
+        file_path='tests/resources/artists',
+        headers={},
+        tracks_extensions='',
+        artist_extensions=''
     )
 
     with open(
@@ -685,7 +679,7 @@ def test_stats_update_main_invalid_exception(
 
     requests_mock.get(
         url='https://api-partner.spotify.com/pathfinder/v1/query',
-        headers=client_headers,
+        headers={},
         json=get_tracks_json_data
     )
 
@@ -694,7 +688,10 @@ def test_stats_update_main_invalid_exception(
             artist_ids=[artist_id],
             timeout=0,
             request_count=0,
-            file_path='tests/resources'
+            file_path='tests/resources',
+            headers={},
+            tracks_extensions='',
+            artist_extensions=''
         )
     exception_msg = excinfo.value.args[0]
     assert exception_msg == 'Expecting value: line 1 column 1 (char 0)'
@@ -714,7 +711,7 @@ def test_stats_update_main_empty_exception(
 
     requests_mock.get(
         url='https://api-partner.spotify.com/pathfinder/v1/query',
-        headers=client_headers,
+        headers={},
         json=get_tracks_json_data
     )
 
@@ -723,7 +720,10 @@ def test_stats_update_main_empty_exception(
             artist_ids=[artist_id],
             timeout=0,
             request_count=0,
-            file_path='tests/resources'
+            file_path='tests/resources',
+            headers={},
+            tracks_extensions='',
+            artist_extensions=''
         )
     exception_msg = excinfo.value.args[1]
     assert exception_msg == 'No such file or directory'
@@ -745,7 +745,9 @@ def test_stats_from_files_main(
         request_count=0,
         file_path="tests/resources/artists",
         artist_count=0,
-        albums_path="tests/resources/albums"
+        albums_path="tests/resources/albums",
+        headers={},
+        extensions=''
     )
 
     artists_files_list = listdir("tests/resources/artists")
@@ -797,7 +799,9 @@ def test_stats_from_files_main_invalid_exception(
             request_count=0,
             file_path="tests/resources/artist-test",
             artist_count=0,
-            albums_path="tests/resources/album-test"
+            albums_path="tests/resources/album-test",
+            headers={},
+            extensions=''
         )
     exception_msg = excinfo.value.args[0]
     print(exception_msg)
@@ -821,7 +825,9 @@ def test_stats_from_files_main_empty_exception(
             request_count=0,
             file_path="tests/resources/artist",
             artist_count=0,
-            albums_path="tests/resources/album"
+            albums_path="tests/resources/album",
+            headers={},
+            extensions=''
         )
     exception_msg = excinfo.value.args[1]
     assert exception_msg == 'No such file or directory'

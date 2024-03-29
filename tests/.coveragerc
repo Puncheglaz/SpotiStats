@@ -3,3 +3,4 @@ omit =
     */aggregator/aggregator.py
     */aggregator/auth_credentials.py
     */aggregator/get_token.py
+    */aggregator/server_vars.py

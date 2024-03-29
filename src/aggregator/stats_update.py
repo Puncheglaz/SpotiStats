@@ -4,9 +4,6 @@ import time
 
 import requests
 
-from src.aggregator.auth_credentials import (
-    client_headers, get_tracks_extensions
-)
 from src.aggregator.stats_utils import (
     change_artist_data,
     change_track_data,
@@ -14,7 +11,9 @@ from src.aggregator.stats_utils import (
 )
 
 
-def stats_update_main(artist_ids, timeout, request_count, file_path):
+def stats_update_main(
+        artist_ids, timeout, request_count, file_path,
+        headers, tracks_extensions, artist_extensions):
     """Main function for stats data updating."""
     print(f'[T] Time: {datetime.datetime.now()}')
 
@@ -22,7 +21,9 @@ def stats_update_main(artist_ids, timeout, request_count, file_path):
         response, request_count = get_artist_response_template(
             artist_id=artist_id,
             timeout=timeout,
-            request_count=request_count
+            request_count=request_count,
+            headers=headers,
+            extensions=artist_extensions
         )
         print(f"Artist Stats {artist_id}  - [*] [Request {request_count} - {response.status_code}]")
 
@@ -36,13 +37,13 @@ def stats_update_main(artist_ids, timeout, request_count, file_path):
                 'variables': '{"uri":"spotify:album:' +
                              album_id +
                              '","locale":"","offset":0,"limit":50,"enableAssociatedVideos":false}',
-                'extensions': get_tracks_extensions,
+                'extensions': tracks_extensions,
             }
 
             response = requests.get(
                 'https://api-partner.spotify.com/pathfinder/v1/query',
                 params=get_album_params,
-                headers=client_headers,
+                headers=headers,
                 timeout=10
             )
             time.sleep(timeout)
@@ -62,5 +63,8 @@ def stats_update_main(artist_ids, timeout, request_count, file_path):
 #         ],
 #         timeout=1,
 #         request_count=0,
-#         file_path='src/aggregator/resources/artists'
+#         file_path='src/aggregator/resources/artists',
+#         headers=client_headers,
+#         tracks_extensions=get_tracks_extensions,
+#         artist_extensions=get_artist_stats_extensions
 #     )
