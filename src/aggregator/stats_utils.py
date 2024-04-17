@@ -2,11 +2,13 @@
 import json
 import time
 from collections import OrderedDict
+from os import listdir
+from os.path import isfile, join
 
 import requests
 
 
-def change_artist_data(response: requests.Response, artist_id, file_path):
+def change_artist_data(response, artist_id, file_path):
     """Util function for artists stats data aggregation or updating."""
     artist_stats = response.json().get('data').get('artistUnion').get('stats')
 
@@ -30,23 +32,11 @@ def change_artist_data(response: requests.Response, artist_id, file_path):
         )
         artist_file.truncate()
 
-    with open(
-            f'{file_path}/artist-{artist_id}.json',
-            mode='r',
-            encoding='utf-8'
-    ) as artist_file:
-        data = json.load(artist_file)
 
-    artist_albums = data.get('albums')
-    albums_ids = []
-    for album in artist_albums:
-        albums_ids.append(album.get('album_id'))
-
-    return albums_ids
-
-
-def change_track_data(tracks_data, artist_id, file_path):
+def change_track_data(response, artist_id, file_path):
     """Util function for track stats data aggregation or updating."""
+    tracks_data = response.get('data').get('albumUnion').get('tracks').get('items')
+
     for track in tracks_data:
         track_data = track.get('track')
         track_id = track_data.get('uri').split(':')[2]
@@ -95,6 +85,40 @@ def get_artist_response_template(artist_id, timeout, request_count, headers, ext
     request_count += 1
 
     return response, request_count
+
+
+def get_artist_albums_ids(artist_id, file_path):
+    """Util function for taking artist albums ids."""
+    with open(
+            f'{file_path}/artist-{artist_id}.json',
+            mode='r',
+            encoding='utf-8'
+    ) as artist_file:
+        data = json.load(artist_file)
+
+    artist_albums = data.get('albums')
+    albums_ids = []
+    for album in artist_albums:
+        albums_ids.append(album.get('album_id'))
+
+    return albums_ids
+
+
+def get_ids_from_file_names(files_path):
+    """Util function for taking ids from files names by files path."""
+    files_list = listdir(files_path)
+    if '.DS_Store' in files_list:
+        files_list.remove('.DS_Store')
+    files_ids = [
+        file.split('.')[0].split('-')[1] for file in files_list if isfile(
+            join(
+                files_path,
+                file
+            )
+        )
+    ]
+
+    return files_ids
 
 
 # if __name__ == '__main__':

@@ -27,3 +27,15 @@ for artist_id in ids:
         )
         print(f"{response.text} - Status Code: {response.status_code}")
         time.sleep(1)
+
+        if response.status_code != 200:
+            print(f"Status Code: {response.status_code}, Retrying...")
+            time.sleep(5)
+            response = requests.post(
+                f'http://{SERVER_ADDRESS}:{SERVER_PORT}/saveArtist',
+                headers=header,
+                data=json_string,
+                timeout=10
+            )
+            print(f"{response.text} - Status Code: {response.status_code}")
+            time.sleep(1)
