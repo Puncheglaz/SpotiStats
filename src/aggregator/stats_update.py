@@ -7,7 +7,8 @@ import requests
 from src.aggregator.stats_utils import (
     change_artist_data,
     change_track_data,
-    get_artist_response_template
+    get_artist_response_template,
+    get_artist_albums_ids
 )
 
 
@@ -27,9 +28,9 @@ def stats_update_main(
         )
         print(f"Artist Stats {artist_id}  - [*] [Request {request_count} - {response.status_code}]")
 
-        albums_ids = change_artist_data(
-            response, artist_id, file_path
-        )
+        change_artist_data(response, artist_id, file_path)
+
+        albums_ids = get_artist_albums_ids(artist_id, file_path)
 
         for album_id in albums_ids:
             get_album_params = {
@@ -51,9 +52,7 @@ def stats_update_main(
             print(f"Get Album {album_id}"
                   f"     - [*] [Request {request_count} - {response.status_code}]")
 
-            tracks_data = response.json().get('data').get('albumUnion').get('tracks').get('items')
-
-            change_track_data(tracks_data, artist_id, file_path)
+            change_track_data(response.json(), artist_id, file_path)
 
 
 # if __name__ == '__main__':
