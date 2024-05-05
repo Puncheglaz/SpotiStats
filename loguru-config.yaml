@@ -1,0 +1,30 @@
+handlers:
+  - sink: ext://sys.stdout
+    format: '[{time:DD-MMM-YYYY HH:mm:ss.SSS}] | {level} | {module}:{function}:{line} - {message}'
+    backtrace: true
+  - sink: general.log
+    format: '[{time:DD-MMM-YYYY HH:mm:ss.SSS}] | {level} | {module}:{function}:{line} - {message}'
+    backtrace: true
+    enqueue: true
+  - sink: different_levels_first.log
+    format: '[{time:DD-MMM-YYYY HH:mm:ss.SSS}] | {level} | {module}:{function}:{line} - {message}'
+    filter: {
+      "": "DEBUG",
+      "src.aggregator.aggregator": "INFO",
+      "src.aggregator.artist_aggregate": "WARNING"
+    }
+    backtrace: true
+    enqueue: true
+  - sink: different_levels_second.log
+    format: '[{time:DD-MMM-YYYY HH:mm:ss.SSS}] | {level} | {module}:{function}:{line} - {message}'
+    filter: {
+      "": "WARNING",
+      "src.aggregator.aggregator": "WARNING",
+      "src.aggregator.artist_aggregate": "DEBUG"
+    }
+    backtrace: true
+    enqueue: true
+activation:
+  - [ "", true ]
+  - [ "aggregator", true ]
+  - [ "artist_aggregate", true]
