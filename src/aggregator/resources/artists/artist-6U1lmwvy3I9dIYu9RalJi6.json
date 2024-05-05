@@ -1,0 +1,1774 @@
+{
+    "artist_id": "6U1lmwvy3I9dIYu9RalJi6",
+    "name": "Horse Jumper of Love",
+    "popularity": 40,
+    "followers": 72020,
+    "genres": [
+        "american shoegaze",
+        "boston indie",
+        "countrygaze",
+        "new england emo",
+        "nu gaze",
+        "shoegaze",
+        "small room"
+    ],
+    "albums": [
+        {
+            "album_name": "Heartbreak Rules",
+            "album_id": "0y3TjjJpd1DtO5fgY8OQX2",
+            "album_type": "album",
+            "release_date": "2023-05-19",
+            "genres": [],
+            "label": "Run For Cover Records",
+            "popularity": 26
+        },
+        {
+            "album_name": "Natural Part",
+            "album_id": "0ozxNaOvwaEpFcQDd8kRHd",
+            "album_type": "album",
+            "release_date": "2022-06-17",
+            "genres": [],
+            "label": "Run For Cover Records",
+            "popularity": 21
+        },
+        {
+            "album_name": "Demo Anthology",
+            "album_id": "4IMuFDKJ2i37J01kb0Bw8S",
+            "album_type": "album",
+            "release_date": "2021",
+            "genres": [],
+            "label": "Horse Jumper of Love",
+            "popularity": 35
+        },
+        {
+            "album_name": "So Divine",
+            "album_id": "6sWAB0wSgyGzcc30MgtLc0",
+            "album_type": "album",
+            "release_date": "2019-06-28",
+            "genres": [],
+            "label": "Run For Cover Records",
+            "popularity": 36
+        },
+        {
+            "album_name": "Horse Jumper of Love",
+            "album_id": "6deqa9Ep8kRZA1xiKbj1jc",
+            "album_type": "album",
+            "release_date": "2017-04-21",
+            "genres": [],
+            "label": "Joy Void",
+            "popularity": 43
+        },
+        {
+            "album_name": "Gates of Heaven / Snake Eyes (again)",
+            "album_id": "6Ek7TQ6Halv6mbhuzRuvcZ",
+            "album_type": "single",
+            "release_date": "2024-03-11",
+            "genres": [],
+            "label": "Run For Cover Records",
+            "popularity": 31
+        },
+        {
+            "album_name": "Horse Jumper of Love | Far Out",
+            "album_id": "7AAvQXsMPd8gfRKGKIlxlp",
+            "album_type": "single",
+            "release_date": "2023-09-13",
+            "genres": [],
+            "label": "Audiotree Music",
+            "popularity": 8
+        },
+        {
+            "album_name": "Horse Jumper of Love on Audiotree Live",
+            "album_id": "0h9o0EOAM6rtkDecubdaNS",
+            "album_type": "single",
+            "release_date": "2017-03-28",
+            "genres": [],
+            "label": "Audiotree Music",
+            "popularity": 8
+        }
+    ],
+    "tracks": [
+        {
+            "track_name": "A Tune Drifts Out the Window",
+            "track_id": "5ZT9r9LUvhLeKmQbF5EKWJ",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 125320,
+            "explicit": false,
+            "popularity": 22,
+            "acousticness": 0.573,
+            "danceability": 0.462,
+            "energy": 0.324,
+            "instrumentalness": 0.688,
+            "key": 10,
+            "liveness": 0.13,
+            "loudness": -10.505,
+            "mode": 1,
+            "speechiness": 0.0248,
+            "tempo": 72.078,
+            "time_signature": 3,
+            "valence": 0.0956
+        },
+        {
+            "track_name": "Heartbreak Rules",
+            "track_id": "7Jwq7xvTuh2LrxwyKoTaZa",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 126506,
+            "explicit": false,
+            "popularity": 30,
+            "acousticness": 0.262,
+            "danceability": 0.421,
+            "energy": 0.688,
+            "instrumentalness": 0.148,
+            "key": 7,
+            "liveness": 0.416,
+            "loudness": -8.396,
+            "mode": 1,
+            "speechiness": 0.0301,
+            "tempo": 140.023,
+            "time_signature": 4,
+            "valence": 0.187
+        },
+        {
+            "track_name": "Snake Eyes",
+            "track_id": "6MGXZcHYfHqABhfuqlzlAI",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 109013,
+            "explicit": false,
+            "popularity": 24,
+            "acousticness": 0.362,
+            "danceability": 0.455,
+            "energy": 0.717,
+            "instrumentalness": 6.59e-06,
+            "key": 10,
+            "liveness": 0.296,
+            "loudness": -6.341,
+            "mode": 1,
+            "speechiness": 0.0258,
+            "tempo": 96.645,
+            "time_signature": 4,
+            "valence": 0.675
+        },
+        {
+            "track_name": "Spirit of the Guitar",
+            "track_id": "2XgAsSbDMNyfa3J8E4npOc",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 131160,
+            "explicit": true,
+            "popularity": 20,
+            "acousticness": 0.811,
+            "danceability": 0.476,
+            "energy": 0.494,
+            "instrumentalness": 0.000555,
+            "key": 5,
+            "liveness": 0.115,
+            "loudness": -11.1,
+            "mode": 1,
+            "speechiness": 0.0319,
+            "tempo": 146.077,
+            "time_signature": 3,
+            "valence": 0.483
+        },
+        {
+            "track_name": "Queenie's Necklace",
+            "track_id": "1iarttVdK9Yw1AV37QHybC",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 215840,
+            "explicit": false,
+            "popularity": 17,
+            "acousticness": 0.452,
+            "danceability": 0.437,
+            "energy": 0.482,
+            "instrumentalness": 0.153,
+            "key": 3,
+            "liveness": 0.0844,
+            "loudness": -7.978,
+            "mode": 1,
+            "speechiness": 0.0261,
+            "tempo": 69.944,
+            "time_signature": 3,
+            "valence": 0.233
+        },
+        {
+            "track_name": "Act of No Substance",
+            "track_id": "3k7xoA82TigWYGBEyi0oZi",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 184986,
+            "explicit": false,
+            "popularity": 16,
+            "acousticness": 0.549,
+            "danceability": 0.465,
+            "energy": 0.502,
+            "instrumentalness": 0.38,
+            "key": 5,
+            "liveness": 0.121,
+            "loudness": -8.57,
+            "mode": 1,
+            "speechiness": 0.0268,
+            "tempo": 96.266,
+            "time_signature": 4,
+            "valence": 0.26
+        },
+        {
+            "track_name": "Pendulum",
+            "track_id": "5P8X5Kw1lPlYtWX0udF147",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 141813,
+            "explicit": false,
+            "popularity": 15,
+            "acousticness": 0.919,
+            "danceability": 0.351,
+            "energy": 0.22,
+            "instrumentalness": 0.000572,
+            "key": 3,
+            "liveness": 0.146,
+            "loudness": -10.722,
+            "mode": 1,
+            "speechiness": 0.0468,
+            "tempo": 81.174,
+            "time_signature": 4,
+            "valence": 0.161
+        },
+        {
+            "track_name": "Singing by the Sink",
+            "track_id": "58szAqnw5G61dHPkSV2Dk4",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 170000,
+            "explicit": false,
+            "popularity": 21,
+            "acousticness": 0.729,
+            "danceability": 0.594,
+            "energy": 0.593,
+            "instrumentalness": 0.611,
+            "key": 6,
+            "liveness": 0.0832,
+            "loudness": -9.253,
+            "mode": 1,
+            "speechiness": 0.0287,
+            "tempo": 139.927,
+            "time_signature": 3,
+            "valence": 0.727
+        },
+        {
+            "track_name": "I Poured Sugar In Your Shoes - Last Night Version",
+            "track_id": "5PokASM2VgVo1vUJ3GuvqE",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 166382,
+            "explicit": false,
+            "popularity": 28,
+            "acousticness": 0.791,
+            "danceability": 0.477,
+            "energy": 0.388,
+            "instrumentalness": 0.0269,
+            "key": 10,
+            "liveness": 0.214,
+            "loudness": -10.161,
+            "mode": 1,
+            "speechiness": 0.0309,
+            "tempo": 135.253,
+            "time_signature": 4,
+            "valence": 0.488
+        },
+        {
+            "track_name": "Chariots - Acoustic",
+            "track_id": "04huYbrGY8q29I7rrqaRIa",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 225413,
+            "explicit": false,
+            "popularity": 13,
+            "acousticness": 0.761,
+            "danceability": 0.564,
+            "energy": 0.229,
+            "instrumentalness": 0.45,
+            "key": 7,
+            "liveness": 0.127,
+            "loudness": -10.934,
+            "mode": 1,
+            "speechiness": 0.0282,
+            "tempo": 91.972,
+            "time_signature": 4,
+            "valence": 0.0369
+        },
+        {
+            "track_name": "Luna",
+            "track_id": "6MzFzJRQ3j4dFcX46PJ6ui",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0y3TjjJpd1DtO5fgY8OQX2"
+            ],
+            "duration_ms": 222413,
+            "explicit": false,
+            "popularity": 14,
+            "acousticness": 0.515,
+            "danceability": 0.295,
+            "energy": 0.41,
+            "instrumentalness": 0.762,
+            "key": 7,
+            "liveness": 0.122,
+            "loudness": -11.827,
+            "mode": 1,
+            "speechiness": 0.0395,
+            "tempo": 92.612,
+            "time_signature": 4,
+            "valence": 0.294
+        },
+        {
+            "track_name": "Snakeskin",
+            "track_id": "5XWgQ53O2sB0XgEeyf9HhL",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 177533,
+            "explicit": false,
+            "popularity": 15,
+            "acousticness": 0.431,
+            "danceability": 0.546,
+            "energy": 0.368,
+            "instrumentalness": 0.365,
+            "key": 10,
+            "liveness": 0.317,
+            "loudness": -9.031,
+            "mode": 1,
+            "speechiness": 0.0253,
+            "tempo": 84.896,
+            "time_signature": 4,
+            "valence": 0.501
+        },
+        {
+            "track_name": "Ding Dong Ditch",
+            "track_id": "0H1HzSuaTWP8a8xVX5NBmE",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 162026,
+            "explicit": false,
+            "popularity": 17,
+            "acousticness": 0.0125,
+            "danceability": 0.507,
+            "energy": 0.588,
+            "instrumentalness": 0.33,
+            "key": 1,
+            "liveness": 0.109,
+            "loudness": -7.749,
+            "mode": 1,
+            "speechiness": 0.0273,
+            "tempo": 92.072,
+            "time_signature": 4,
+            "valence": 0.415
+        },
+        {
+            "track_name": "I Poured Sugar in Your Shoes",
+            "track_id": "3tcDk25n035G2UKtKnSomR",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 164373,
+            "explicit": false,
+            "popularity": 21,
+            "acousticness": 0.0486,
+            "danceability": 0.461,
+            "energy": 0.714,
+            "instrumentalness": 0.00318,
+            "key": 0,
+            "liveness": 0.335,
+            "loudness": -5.992,
+            "mode": 1,
+            "speechiness": 0.0334,
+            "tempo": 139.969,
+            "time_signature": 4,
+            "valence": 0.403
+        },
+        {
+            "track_name": "The Natural Part",
+            "track_id": "1XscnK3qdkcBBKVPNFyUto",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 106360,
+            "explicit": false,
+            "popularity": 21,
+            "acousticness": 0.635,
+            "danceability": 0.65,
+            "energy": 0.395,
+            "instrumentalness": 0.223,
+            "key": 2,
+            "liveness": 0.253,
+            "loudness": -10.375,
+            "mode": 1,
+            "speechiness": 0.0268,
+            "tempo": 104.071,
+            "time_signature": 4,
+            "valence": 0.229
+        },
+        {
+            "track_name": "Under the House (Skunks)",
+            "track_id": "1ODFsNjnnyT60s8ZHZDhZG",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 140786,
+            "explicit": false,
+            "popularity": 20,
+            "acousticness": 0.257,
+            "danceability": 0.537,
+            "energy": 0.469,
+            "instrumentalness": 0.936,
+            "key": 1,
+            "liveness": 0.0638,
+            "loudness": -8.957,
+            "mode": 0,
+            "speechiness": 0.0262,
+            "tempo": 100.998,
+            "time_signature": 4,
+            "valence": 0.242
+        },
+        {
+            "track_name": "Sitting on the Porch at Night",
+            "track_id": "2ffEogvWWYSe0X84EiLZks",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 179920,
+            "explicit": false,
+            "popularity": 19,
+            "acousticness": 0.00227,
+            "danceability": 0.585,
+            "energy": 0.532,
+            "instrumentalness": 0.845,
+            "key": 2,
+            "liveness": 0.123,
+            "loudness": -7.419,
+            "mode": 1,
+            "speechiness": 0.0253,
+            "tempo": 86.6,
+            "time_signature": 3,
+            "valence": 0.579
+        },
+        {
+            "track_name": "Chariots",
+            "track_id": "3N58uzDwV2yFwXleh9lKjZ",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 208533,
+            "explicit": false,
+            "popularity": 14,
+            "acousticness": 0.482,
+            "danceability": 0.523,
+            "energy": 0.307,
+            "instrumentalness": 0.0514,
+            "key": 7,
+            "liveness": 0.122,
+            "loudness": -9.319,
+            "mode": 1,
+            "speechiness": 0.0285,
+            "tempo": 98.995,
+            "time_signature": 3,
+            "valence": 0.121
+        },
+        {
+            "track_name": "I Put a Crown on You",
+            "track_id": "3XIvEEbz8MQE920Aa3Z1Dz",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 103346,
+            "explicit": false,
+            "popularity": 18,
+            "acousticness": 0.75,
+            "danceability": 0.439,
+            "energy": 0.564,
+            "instrumentalness": 0.0184,
+            "key": 0,
+            "liveness": 0.335,
+            "loudness": -8.929,
+            "mode": 1,
+            "speechiness": 0.0299,
+            "tempo": 141.938,
+            "time_signature": 3,
+            "valence": 0.427
+        },
+        {
+            "track_name": "Mask",
+            "track_id": "2TBjbsH2EhmFeZlP8tjNY5",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 91893,
+            "explicit": false,
+            "popularity": 16,
+            "acousticness": 0.674,
+            "danceability": 0.718,
+            "energy": 0.2,
+            "instrumentalness": 0.827,
+            "key": 2,
+            "liveness": 0.11,
+            "loudness": -13.51,
+            "mode": 1,
+            "speechiness": 0.0414,
+            "tempo": 84.038,
+            "time_signature": 4,
+            "valence": 0.129
+        },
+        {
+            "track_name": "Velcro",
+            "track_id": "1smy5pNnAvlH5BIBt1fIJf",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 237680,
+            "explicit": false,
+            "popularity": 12,
+            "acousticness": 0.182,
+            "danceability": 0.312,
+            "energy": 0.318,
+            "instrumentalness": 0.0833,
+            "key": 11,
+            "liveness": 0.0924,
+            "loudness": -9.319,
+            "mode": 1,
+            "speechiness": 0.0728,
+            "tempo": 203.617,
+            "time_signature": 4,
+            "valence": 0.248
+        },
+        {
+            "track_name": "Bucket of Gold",
+            "track_id": "6y30srJP4WR2xTIVC1LTRj",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "0ozxNaOvwaEpFcQDd8kRHd"
+            ],
+            "duration_ms": 274720,
+            "explicit": false,
+            "popularity": 12,
+            "acousticness": 0.523,
+            "danceability": 0.808,
+            "energy": 0.448,
+            "instrumentalness": 0.58,
+            "key": 8,
+            "liveness": 0.0977,
+            "loudness": -9.982,
+            "mode": 1,
+            "speechiness": 0.0383,
+            "tempo": 118.061,
+            "time_signature": 4,
+            "valence": 0.169
+        },
+        {
+            "track_name": "86.",
+            "track_id": "37pB5oJSTwGTBVFiWplYE0",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 131500,
+            "explicit": false,
+            "popularity": 26,
+            "acousticness": 0.927,
+            "danceability": 0.223,
+            "energy": 0.367,
+            "instrumentalness": 0.806,
+            "key": 2,
+            "liveness": 0.153,
+            "loudness": -12.098,
+            "mode": 1,
+            "speechiness": 0.0313,
+            "tempo": 72.4,
+            "time_signature": 3,
+            "valence": 0.199
+        },
+        {
+            "track_name": "It’s Nice",
+            "track_id": "3Cd4ujCfSA4nkwKWRCvAgh",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 84000,
+            "explicit": false,
+            "popularity": 34,
+            "acousticness": 0.741,
+            "danceability": 0.625,
+            "energy": 0.39,
+            "instrumentalness": 0.786,
+            "key": 1,
+            "liveness": 0.112,
+            "loudness": -13.861,
+            "mode": 1,
+            "speechiness": 0.0335,
+            "tempo": 95.277,
+            "time_signature": 4,
+            "valence": 0.0553
+        },
+        {
+            "track_name": "Hole",
+            "track_id": "5UEki0pjyTarz6wCRrNtf1",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 73791,
+            "explicit": false,
+            "popularity": 45,
+            "acousticness": 0.729,
+            "danceability": 0.471,
+            "energy": 0.397,
+            "instrumentalness": 0.00201,
+            "key": 7,
+            "liveness": 0.103,
+            "loudness": -9.292,
+            "mode": 1,
+            "speechiness": 0.0335,
+            "tempo": 146.544,
+            "time_signature": 4,
+            "valence": 0.199
+        },
+        {
+            "track_name": "Dirt",
+            "track_id": "2r6sjer5NtCqUDrewzGm58",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 185374,
+            "explicit": false,
+            "popularity": 20,
+            "acousticness": 0.947,
+            "danceability": 0.495,
+            "energy": 0.0796,
+            "instrumentalness": 0.861,
+            "key": 5,
+            "liveness": 0.112,
+            "loudness": -19.295,
+            "mode": 0,
+            "speechiness": 0.0411,
+            "tempo": 128.306,
+            "time_signature": 4,
+            "valence": 0.178
+        },
+        {
+            "track_name": "Untitled 2",
+            "track_id": "73IeHYmUhzpMG9YLqqopog",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 99250,
+            "explicit": false,
+            "popularity": 18,
+            "acousticness": 0.916,
+            "danceability": 0.263,
+            "energy": 0.101,
+            "instrumentalness": 0.819,
+            "key": 10,
+            "liveness": 0.299,
+            "loudness": -25.374,
+            "mode": 1,
+            "speechiness": 0.0385,
+            "tempo": 133.125,
+            "time_signature": 5,
+            "valence": 0.338
+        },
+        {
+            "track_name": "Community College Suicide",
+            "track_id": "51jUcHnHuvzgTy3ATimN8h",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 40062,
+            "explicit": false,
+            "popularity": 20,
+            "acousticness": 0.759,
+            "danceability": 0.173,
+            "energy": 0.366,
+            "instrumentalness": 0.869,
+            "key": 7,
+            "liveness": 0.112,
+            "loudness": -21.589,
+            "mode": 0,
+            "speechiness": 0.105,
+            "tempo": 155.856,
+            "time_signature": 3,
+            "valence": 0.142
+        },
+        {
+            "track_name": "Graveyard Harmony",
+            "track_id": "2ukF1XFS5TIIglEvyechu0",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 162718,
+            "explicit": false,
+            "popularity": 17,
+            "acousticness": 0.897,
+            "danceability": 0.534,
+            "energy": 0.267,
+            "instrumentalness": 0.889,
+            "key": 2,
+            "liveness": 0.112,
+            "loudness": -14.301,
+            "mode": 1,
+            "speechiness": 0.027,
+            "tempo": 105.392,
+            "time_signature": 4,
+            "valence": 0.205
+        },
+        {
+            "track_name": "Ur Real Life Dress",
+            "track_id": "4KDBf5Rz3x0k9pWoLbJRVX",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 146687,
+            "explicit": false,
+            "popularity": 14,
+            "acousticness": 0.844,
+            "danceability": 0.623,
+            "energy": 0.233,
+            "instrumentalness": 4.47e-06,
+            "key": 7,
+            "liveness": 0.216,
+            "loudness": -14.053,
+            "mode": 1,
+            "speechiness": 0.0321,
+            "tempo": 84.903,
+            "time_signature": 4,
+            "valence": 0.483
+        },
+        {
+            "track_name": "Nose Bleeder",
+            "track_id": "2izPYdik8wrfMaLM7FkaiO",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 119250,
+            "explicit": false,
+            "popularity": 17,
+            "acousticness": 0.876,
+            "danceability": 0.695,
+            "energy": 0.119,
+            "instrumentalness": 0,
+            "key": 2,
+            "liveness": 0.114,
+            "loudness": -15.689,
+            "mode": 1,
+            "speechiness": 0.0434,
+            "tempo": 110.726,
+            "time_signature": 4,
+            "valence": 0.194
+        },
+        {
+            "track_name": "Bagel Breath",
+            "track_id": "5fQz9XgD2Bbf3020X1a8oI",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 133906,
+            "explicit": false,
+            "popularity": 16,
+            "acousticness": 0.465,
+            "danceability": 0.526,
+            "energy": 0.239,
+            "instrumentalness": 0.588,
+            "key": 3,
+            "liveness": 0.214,
+            "loudness": -11.851,
+            "mode": 1,
+            "speechiness": 0.029,
+            "tempo": 95.012,
+            "time_signature": 4,
+            "valence": 0.133
+        },
+        {
+            "track_name": "Orange Peeler - Make-Out Version",
+            "track_id": "1ccKGPdktCrUY7HgmlXJuJ",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 218000,
+            "explicit": false,
+            "popularity": 19,
+            "acousticness": 0.943,
+            "danceability": 0.143,
+            "energy": 0.176,
+            "instrumentalness": 0.866,
+            "key": 4,
+            "liveness": 0.0827,
+            "loudness": -24.446,
+            "mode": 0,
+            "speechiness": 0.0365,
+            "tempo": 67.579,
+            "time_signature": 4,
+            "valence": 0.136
+        },
+        {
+            "track_name": "Stray Dog Song",
+            "track_id": "4e6VXHd2EsvaTOjT14EKqi",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 114937,
+            "explicit": false,
+            "popularity": 28,
+            "acousticness": 0.807,
+            "danceability": 0.394,
+            "energy": 0.22,
+            "instrumentalness": 0.512,
+            "key": 2,
+            "liveness": 0.346,
+            "loudness": -16.683,
+            "mode": 1,
+            "speechiness": 0.0747,
+            "tempo": 138.815,
+            "time_signature": 4,
+            "valence": 0.325
+        },
+        {
+            "track_name": "Recoveries",
+            "track_id": "4e8TApbNL5BT6YnjMTGnI1",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 254000,
+            "explicit": false,
+            "popularity": 14,
+            "acousticness": 0.843,
+            "danceability": 0.46,
+            "energy": 0.187,
+            "instrumentalness": 0.698,
+            "key": 6,
+            "liveness": 0.0939,
+            "loudness": -17.385,
+            "mode": 1,
+            "speechiness": 0.0368,
+            "tempo": 107.708,
+            "time_signature": 1,
+            "valence": 0.3
+        },
+        {
+            "track_name": "I Am an Ugly Brunette… I Want to Have a Lonely Child",
+            "track_id": "0lOYvHdDjUKAbTCRbg4Ajo",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 153158,
+            "explicit": false,
+            "popularity": 28,
+            "acousticness": 0.925,
+            "danceability": 0.445,
+            "energy": 0.0711,
+            "instrumentalness": 0.84,
+            "key": 1,
+            "liveness": 0.237,
+            "loudness": -22.786,
+            "mode": 0,
+            "speechiness": 0.0532,
+            "tempo": 138.239,
+            "time_signature": 4,
+            "valence": 0.197
+        },
+        {
+            "track_name": "Nature",
+            "track_id": "2SsSQhXljTPJAfGKOwAYTl",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "4IMuFDKJ2i37J01kb0Bw8S"
+            ],
+            "duration_ms": 174583,
+            "explicit": false,
+            "popularity": 12,
+            "acousticness": 2.67e-06,
+            "danceability": 0.469,
+            "energy": 0.379,
+            "instrumentalness": 0.815,
+            "key": 11,
+            "liveness": 0.0848,
+            "loudness": -9.026,
+            "mode": 1,
+            "speechiness": 0.0311,
+            "tempo": 129.917,
+            "time_signature": 4,
+            "valence": 0.392
+        },
+        {
+            "track_name": "Airport",
+            "track_id": "1Faksuh8OOs9XTwvtrppzn",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 221030,
+            "explicit": false,
+            "popularity": 20,
+            "acousticness": 0.0238,
+            "danceability": 0.337,
+            "energy": 0.453,
+            "instrumentalness": 0.744,
+            "key": 10,
+            "liveness": 0.0778,
+            "loudness": -7.327,
+            "mode": 1,
+            "speechiness": 0.0308,
+            "tempo": 162.262,
+            "time_signature": 3,
+            "valence": 0.139
+        },
+        {
+            "track_name": "Volcano",
+            "track_id": "1tLgvAiWsrIoEvNKMsjlH0",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 212969,
+            "explicit": false,
+            "popularity": 28,
+            "acousticness": 0.00913,
+            "danceability": 0.555,
+            "energy": 0.473,
+            "instrumentalness": 0.708,
+            "key": 10,
+            "liveness": 0.154,
+            "loudness": -7.516,
+            "mode": 0,
+            "speechiness": 0.0276,
+            "tempo": 112.478,
+            "time_signature": 4,
+            "valence": 0.221
+        },
+        {
+            "track_name": "Cops",
+            "track_id": "1puKCFXNkdhJ8eZwMRTurN",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 98166,
+            "explicit": false,
+            "popularity": 21,
+            "acousticness": 0.0321,
+            "danceability": 0.48,
+            "energy": 0.657,
+            "instrumentalness": 0.132,
+            "key": 7,
+            "liveness": 0.119,
+            "loudness": -6.833,
+            "mode": 1,
+            "speechiness": 0.038,
+            "tempo": 106.611,
+            "time_signature": 4,
+            "valence": 0.214
+        },
+        {
+            "track_name": "Aliens",
+            "track_id": "082qUMaZi126AjgkKplsB6",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 88468,
+            "explicit": false,
+            "popularity": 18,
+            "acousticness": 0.671,
+            "danceability": 0.325,
+            "energy": 0.323,
+            "instrumentalness": 0.00238,
+            "key": 8,
+            "liveness": 0.432,
+            "loudness": -15.452,
+            "mode": 1,
+            "speechiness": 0.055,
+            "tempo": 96.159,
+            "time_signature": 3,
+            "valence": 0.307
+        },
+        {
+            "track_name": "Poison",
+            "track_id": "1WfgLMqsTHpnSlkDX1RwIx",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 205717,
+            "explicit": false,
+            "popularity": 19,
+            "acousticness": 0.667,
+            "danceability": 0.312,
+            "energy": 0.259,
+            "instrumentalness": 0.0477,
+            "key": 6,
+            "liveness": 0.112,
+            "loudness": -9.906,
+            "mode": 1,
+            "speechiness": 0.0415,
+            "tempo": 88.775,
+            "time_signature": 4,
+            "valence": 0.126
+        },
+        {
+            "track_name": "Twist Cone",
+            "track_id": "65s1uCnfmWsugThlXe4GzA",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 55200,
+            "explicit": false,
+            "popularity": 48,
+            "acousticness": 0.953,
+            "danceability": 0.203,
+            "energy": 0.131,
+            "instrumentalness": 0.991,
+            "key": 9,
+            "liveness": 0.107,
+            "loudness": -21.557,
+            "mode": 1,
+            "speechiness": 0.033,
+            "tempo": 98.215,
+            "time_signature": 3,
+            "valence": 0.364
+        },
+        {
+            "track_name": "Ur Real Life",
+            "track_id": "7rsOx2Y0IRQsFHS9gmZRAI",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 195448,
+            "explicit": false,
+            "popularity": 22,
+            "acousticness": 0.354,
+            "danceability": 0.47,
+            "energy": 0.473,
+            "instrumentalness": 0.000136,
+            "key": 1,
+            "liveness": 0.11,
+            "loudness": -6.418,
+            "mode": 0,
+            "speechiness": 0.0312,
+            "tempo": 83.659,
+            "time_signature": 4,
+            "valence": 0.494
+        },
+        {
+            "track_name": "John Song",
+            "track_id": "7JjcqwYYFch2PmNjnHRD6e",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 158920,
+            "explicit": false,
+            "popularity": 18,
+            "acousticness": 0.496,
+            "danceability": 0.368,
+            "energy": 0.24,
+            "instrumentalness": 0.0994,
+            "key": 9,
+            "liveness": 0.105,
+            "loudness": -9.205,
+            "mode": 1,
+            "speechiness": 0.0316,
+            "tempo": 118.022,
+            "time_signature": 4,
+            "valence": 0.232
+        },
+        {
+            "track_name": "Stray Dog",
+            "track_id": "4nJTMwvpoWNgFW9ZBrZqLV",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 143592,
+            "explicit": false,
+            "popularity": 24,
+            "acousticness": 0.556,
+            "danceability": 0.469,
+            "energy": 0.297,
+            "instrumentalness": 0,
+            "key": 4,
+            "liveness": 0.101,
+            "loudness": -13.145,
+            "mode": 1,
+            "speechiness": 0.0355,
+            "tempo": 114.498,
+            "time_signature": 4,
+            "valence": 0.24
+        },
+        {
+            "track_name": "Nature",
+            "track_id": "0NmNRl2Zw1M14dUyZZi5gZ",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 213441,
+            "explicit": false,
+            "popularity": 16,
+            "acousticness": 0.0246,
+            "danceability": 0.445,
+            "energy": 0.46,
+            "instrumentalness": 0.784,
+            "key": 4,
+            "liveness": 0.115,
+            "loudness": -9.49,
+            "mode": 1,
+            "speechiness": 0.029,
+            "tempo": 130.564,
+            "time_signature": 4,
+            "valence": 0.503
+        },
+        {
+            "track_name": "Heaven",
+            "track_id": "0C4uxXcZSetfaZIvf7AJV6",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6sWAB0wSgyGzcc30MgtLc0"
+            ],
+            "duration_ms": 170220,
+            "explicit": false,
+            "popularity": 14,
+            "acousticness": 0.885,
+            "danceability": 0.259,
+            "energy": 0.285,
+            "instrumentalness": 0.856,
+            "key": 9,
+            "liveness": 0.0929,
+            "loudness": -20.503,
+            "mode": 1,
+            "speechiness": 0.075,
+            "tempo": 63.979,
+            "time_signature": 4,
+            "valence": 0.0998
+        },
+        {
+            "track_name": "Ugly Brunette",
+            "track_id": "0fUV4Y51wN8lnG75rkDDwg",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6deqa9Ep8kRZA1xiKbj1jc"
+            ],
+            "duration_ms": 176703,
+            "explicit": false,
+            "popularity": 51,
+            "acousticness": 0.178,
+            "danceability": 0.411,
+            "energy": 0.602,
+            "instrumentalness": 0.00719,
+            "key": 7,
+            "liveness": 0.0929,
+            "loudness": -7.988,
+            "mode": 1,
+            "speechiness": 0.036,
+            "tempo": 78.842,
+            "time_signature": 4,
+            "valence": 0.366
+        },
+        {
+            "track_name": "July 5th",
+            "track_id": "5ih6yCydK8hS8CBDJGt5WD",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6deqa9Ep8kRZA1xiKbj1jc"
+            ],
+            "duration_ms": 66757,
+            "explicit": false,
+            "popularity": 33,
+            "acousticness": 0.707,
+            "danceability": 0.188,
+            "energy": 0.428,
+            "instrumentalness": 0.0853,
+            "key": 0,
+            "liveness": 0.137,
+            "loudness": -13.668,
+            "mode": 1,
+            "speechiness": 0.0362,
+            "tempo": 85.873,
+            "time_signature": 4,
+            "valence": 0.145
+        },
+        {
+            "track_name": "Bagel Breath",
+            "track_id": "2cWRBkicX036U9FlrtL98P",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6deqa9Ep8kRZA1xiKbj1jc"
+            ],
+            "duration_ms": 182218,
+            "explicit": false,
+            "popularity": 35,
+            "acousticness": 0.00445,
+            "danceability": 0.499,
+            "energy": 0.438,
+            "instrumentalness": 0.627,
+            "key": 0,
+            "liveness": 0.0929,
+            "loudness": -8.744,
+            "mode": 1,
+            "speechiness": 0.0517,
+            "tempo": 105.755,
+            "time_signature": 5,
+            "valence": 0.362
+        },
+        {
+            "track_name": "Spaceman",
+            "track_id": "3TMVbLbp0m9UDvItt0KqJe",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6deqa9Ep8kRZA1xiKbj1jc"
+            ],
+            "duration_ms": 219010,
+            "explicit": false,
+            "popularity": 36,
+            "acousticness": 0.0677,
+            "danceability": 0.533,
+            "energy": 0.387,
+            "instrumentalness": 0.636,
+            "key": 10,
+            "liveness": 0.13,
+            "loudness": -9.97,
+            "mode": 0,
+            "speechiness": 0.0277,
+            "tempo": 119.841,
+            "time_signature": 4,
+            "valence": 0.164
+        },
+        {
+            "track_name": "I Want to Paint Horses... And to Have A Horse",
+            "track_id": "5Fgu8sB0eK8obF7F8vfY0W",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6deqa9Ep8kRZA1xiKbj1jc"
+            ],
+            "duration_ms": 107415,
+            "explicit": false,
+            "popularity": 28,
+            "acousticness": 0.00508,
+            "danceability": 0.314,
+            "energy": 0.438,
+            "instrumentalness": 0.93,
+            "key": 8,
+            "liveness": 0.297,
+            "loudness": -16.919,
+            "mode": 1,
+            "speechiness": 0.0463,
+            "tempo": 92.929,
+            "time_signature": 4,
+            "valence": 0.167
+        },
+        {
+            "track_name": "DIRT",
+            "track_id": "4VgRRrTNP4O1p4oLzvLZ3b",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6deqa9Ep8kRZA1xiKbj1jc"
+            ],
+            "duration_ms": 261758,
+            "explicit": false,
+            "popularity": 34,
+            "acousticness": 0.0748,
+            "danceability": 0.374,
+            "energy": 0.276,
+            "instrumentalness": 3.65e-05,
+            "key": 2,
+            "liveness": 0.092,
+            "loudness": -10.43,
+            "mode": 1,
+            "speechiness": 0.0322,
+            "tempo": 95.348,
+            "time_signature": 4,
+            "valence": 0.19
+        },
+        {
+            "track_name": "Sun Poisoning",
+            "track_id": "2hf4mCFyl2t5jq7qjkJV0w",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6deqa9Ep8kRZA1xiKbj1jc"
+            ],
+            "duration_ms": 349320,
+            "explicit": false,
+            "popularity": 38,
+            "acousticness": 0.000447,
+            "danceability": 0.249,
+            "energy": 0.469,
+            "instrumentalness": 0.146,
+            "key": 11,
+            "liveness": 0.146,
+            "loudness": -9.627,
+            "mode": 1,
+            "speechiness": 0.0319,
+            "tempo": 114.607,
+            "time_signature": 3,
+            "valence": 0.18
+        },
+        {
+            "track_name": "i love you very much forever",
+            "track_id": "2kdyH2yGcuVPSQcXvPIUSn",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6deqa9Ep8kRZA1xiKbj1jc"
+            ],
+            "duration_ms": 196333,
+            "explicit": false,
+            "popularity": 41,
+            "acousticness": 0.496,
+            "danceability": 0.479,
+            "energy": 0.372,
+            "instrumentalness": 0.565,
+            "key": 3,
+            "liveness": 0.168,
+            "loudness": -17.259,
+            "mode": 1,
+            "speechiness": 0.0411,
+            "tempo": 115.55,
+            "time_signature": 4,
+            "valence": 0.244
+        },
+        {
+            "track_name": "Orange Peeler",
+            "track_id": "2xszK31YunQhW7skDLq8XA",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6deqa9Ep8kRZA1xiKbj1jc"
+            ],
+            "duration_ms": 388493,
+            "explicit": false,
+            "popularity": 43,
+            "acousticness": 9.26e-05,
+            "danceability": 0.345,
+            "energy": 0.537,
+            "instrumentalness": 0.772,
+            "key": 2,
+            "liveness": 0.151,
+            "loudness": -10.642,
+            "mode": 1,
+            "speechiness": 0.0313,
+            "tempo": 114.092,
+            "time_signature": 4,
+            "valence": 0.143
+        },
+        {
+            "track_name": "Gates of Heaven",
+            "track_id": "21S8jPbABB05vCFFwuyXGS",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6Ek7TQ6Halv6mbhuzRuvcZ"
+            ],
+            "duration_ms": 142480,
+            "explicit": false,
+            "popularity": 43,
+            "acousticness": 0.00588,
+            "danceability": 0.465,
+            "energy": 0.677,
+            "instrumentalness": 0.923,
+            "key": 4,
+            "liveness": 0.0855,
+            "loudness": -6.666,
+            "mode": 1,
+            "speechiness": 0.032,
+            "tempo": 73.486,
+            "time_signature": 4,
+            "valence": 0.436
+        },
+        {
+            "track_name": "Snake Eyes (again)",
+            "track_id": "1Hkx2RQA79iG4jiip6bE3N",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6"
+            ],
+            "albums": [
+                "6Ek7TQ6Halv6mbhuzRuvcZ"
+            ],
+            "duration_ms": 180786,
+            "explicit": false,
+            "popularity": 31,
+            "acousticness": 0.00114,
+            "danceability": 0.376,
+            "energy": 0.898,
+            "instrumentalness": 0.903,
+            "key": 0,
+            "liveness": 0.108,
+            "loudness": -4.498,
+            "mode": 1,
+            "speechiness": 0.0462,
+            "tempo": 95.026,
+            "time_signature": 4,
+            "valence": 0.426
+        },
+        {
+            "track_name": "Snake Eyes",
+            "track_id": "2H09wHH4zjYxKAWeJoYzOZ",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6",
+                "1j8QyWpOJKAe6Iw2KvEg2j"
+            ],
+            "albums": [
+                "7AAvQXsMPd8gfRKGKIlxlp"
+            ],
+            "duration_ms": 196157,
+            "explicit": false,
+            "popularity": 13,
+            "acousticness": 0.179,
+            "danceability": 0.294,
+            "energy": 0.545,
+            "instrumentalness": 0.753,
+            "key": 2,
+            "liveness": 0.118,
+            "loudness": -9.79,
+            "mode": 0,
+            "speechiness": 0.0319,
+            "tempo": 185.284,
+            "time_signature": 4,
+            "valence": 0.294
+        },
+        {
+            "track_name": "Heartbreak Rules",
+            "track_id": "7iuyRTNdJ7wkytfN6m0WNw",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6",
+                "1j8QyWpOJKAe6Iw2KvEg2j"
+            ],
+            "albums": [
+                "7AAvQXsMPd8gfRKGKIlxlp"
+            ],
+            "duration_ms": 163513,
+            "explicit": false,
+            "popularity": 17,
+            "acousticness": 0.192,
+            "danceability": 0.412,
+            "energy": 0.594,
+            "instrumentalness": 0.825,
+            "key": 7,
+            "liveness": 0.0536,
+            "loudness": -11.465,
+            "mode": 1,
+            "speechiness": 0.0343,
+            "tempo": 135.559,
+            "time_signature": 4,
+            "valence": 0.232
+        },
+        {
+            "track_name": "Ugly Brunette - Audiotree Live Version",
+            "track_id": "2CdYbFOvJ8ypTMuGql2FQi",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6",
+                "1j8QyWpOJKAe6Iw2KvEg2j"
+            ],
+            "albums": [
+                "0h9o0EOAM6rtkDecubdaNS"
+            ],
+            "duration_ms": 181660,
+            "explicit": false,
+            "popularity": 13,
+            "acousticness": 0.199,
+            "danceability": 0.44,
+            "energy": 0.691,
+            "instrumentalness": 0.809,
+            "key": 2,
+            "liveness": 0.109,
+            "loudness": -8.439,
+            "mode": 1,
+            "speechiness": 0.0314,
+            "tempo": 74.478,
+            "time_signature": 4,
+            "valence": 0.327
+        },
+        {
+            "track_name": "Spaceman - Audiotree Live Version",
+            "track_id": "1KQrbBHEtMYLo3VfFUtHaf",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6",
+                "1j8QyWpOJKAe6Iw2KvEg2j"
+            ],
+            "albums": [
+                "0h9o0EOAM6rtkDecubdaNS"
+            ],
+            "duration_ms": 262332,
+            "explicit": false,
+            "popularity": 9,
+            "acousticness": 0.603,
+            "danceability": 0.549,
+            "energy": 0.311,
+            "instrumentalness": 0.305,
+            "key": 9,
+            "liveness": 0.119,
+            "loudness": -9.818,
+            "mode": 0,
+            "speechiness": 0.0229,
+            "tempo": 96.812,
+            "time_signature": 4,
+            "valence": 0.058
+        },
+        {
+            "track_name": "Bagel Breath - Audiotree Live Version",
+            "track_id": "6RzLEWW2AGzIXXFfrnH1kQ",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6",
+                "1j8QyWpOJKAe6Iw2KvEg2j"
+            ],
+            "albums": [
+                "0h9o0EOAM6rtkDecubdaNS"
+            ],
+            "duration_ms": 186275,
+            "explicit": false,
+            "popularity": 7,
+            "acousticness": 0.15,
+            "danceability": 0.497,
+            "energy": 0.514,
+            "instrumentalness": 0.201,
+            "key": 5,
+            "liveness": 0.125,
+            "loudness": -7.709,
+            "mode": 1,
+            "speechiness": 0.0397,
+            "tempo": 103.143,
+            "time_signature": 4,
+            "valence": 0.249
+        },
+        {
+            "track_name": "Poison - Audiotree Live Version",
+            "track_id": "0UV05raQIjGO4sg249s1Vm",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6",
+                "1j8QyWpOJKAe6Iw2KvEg2j"
+            ],
+            "albums": [
+                "0h9o0EOAM6rtkDecubdaNS"
+            ],
+            "duration_ms": 208145,
+            "explicit": false,
+            "popularity": 7,
+            "acousticness": 0.78,
+            "danceability": 0.35,
+            "energy": 0.192,
+            "instrumentalness": 9.85e-05,
+            "key": 6,
+            "liveness": 0.11,
+            "loudness": -9.643,
+            "mode": 1,
+            "speechiness": 0.033,
+            "tempo": 89.636,
+            "time_signature": 4,
+            "valence": 0.126
+        },
+        {
+            "track_name": "Volcano - Audiotree Live Version",
+            "track_id": "7puSoFMg5EVMT8UIvXgF2V",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6",
+                "1j8QyWpOJKAe6Iw2KvEg2j"
+            ],
+            "albums": [
+                "0h9o0EOAM6rtkDecubdaNS"
+            ],
+            "duration_ms": 221131,
+            "explicit": false,
+            "popularity": 7,
+            "acousticness": 0.213,
+            "danceability": 0.336,
+            "energy": 0.679,
+            "instrumentalness": 0.172,
+            "key": 6,
+            "liveness": 0.108,
+            "loudness": -7.157,
+            "mode": 0,
+            "speechiness": 0.0349,
+            "tempo": 108.434,
+            "time_signature": 4,
+            "valence": 0.177
+        },
+        {
+            "track_name": "Cops - Audiotree Live Version",
+            "track_id": "23h5rccMhsYncYE4WrrNzX",
+            "artists": [
+                "6U1lmwvy3I9dIYu9RalJi6",
+                "1j8QyWpOJKAe6Iw2KvEg2j"
+            ],
+            "albums": [
+                "0h9o0EOAM6rtkDecubdaNS"
+            ],
+            "duration_ms": 100728,
+            "explicit": false,
+            "popularity": 5,
+            "acousticness": 0.187,
+            "danceability": 0.456,
+            "energy": 0.67,
+            "instrumentalness": 0.961,
+            "key": 7,
+            "liveness": 0.232,
+            "loudness": -7.677,
+            "mode": 1,
+            "speechiness": 0.0398,
+            "tempo": 102.101,
+            "time_signature": 4,
+            "valence": 0.085
+        }
+    ]
+}

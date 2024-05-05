@@ -4,11 +4,12 @@ import json
 import time
 
 import requests
+from loguru import logger
 
-from auth_credentials import client_id, client_secret, token_type, access_token
-from classes.album import Album
-from classes.artist import Artist
-from classes.track import Track
+from src.aggregator.auth_credentials import client_id, client_secret, token_type, access_token
+from src.aggregator.classes.album import Album
+from src.aggregator.classes.artist import Artist
+from src.aggregator.classes.track import Track
 
 token_data = {
     'grant_type': 'client_credentials',
@@ -17,9 +18,9 @@ token_data = {
 }
 
 
-def main():
+def aggregate(low, high):
     """Main function for data aggregation."""
-    print(f'[T] Time: {datetime.datetime.now()}')
+    logger.info(f'[T] Time: {datetime.datetime.now()}')
 
     timeout, request_count = 2, 0
 
@@ -29,13 +30,13 @@ def main():
 
     id_file_name = 'artists-ids-list.json'
     with open(
-            f'resources/{id_file_name}',
+            f'src/aggregator/resources/{id_file_name}',
             mode='r',
             encoding='utf-8'
     ) as file:
         artists_ids = json.load(file)
 
-    for artist_id in artists_ids[773:1001]:
+    for artist_id in artists_ids[low:high]:
         # 1 request
         response = requests.get(
             f'https://api.spotify.com/v1/artists/{artist_id}',
@@ -44,10 +45,10 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"[*] [Request {request_count} - {response.status_code}]")
+        logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
         if response.status_code != 200:
-            print('Token expired!')
+            logger.warning('Token expired!')
             # 2 request (potential)
             response = requests.post(
                 'https://accounts.spotify.com/api/token',
@@ -56,7 +57,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"[*] [Request {request_count} - {response.status_code}]")
+            logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
             headers['Authorization'] = (
                 f"{response.json().get('token_type')}"
@@ -71,14 +72,15 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"[*] [Request {request_count} - {response.status_code}]")
+            logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
         artist_info_data = response.json()
-        print(f"Artist ID: {artist_info_data.get('id')}")
-        print(f"Artist Name: {artist_info_data.get('name')}")
-        print(f"Artist Popularity: {artist_info_data.get('popularity')}")
-        print(f"Artist Genres: {artist_info_data.get('genres')}")
-        print(f"Artist Followers: {artist_info_data.get('followers').get('total')}")
+        logger.info(f"Get {artist_id} data")
+        logger.debug(f"Artist ID: {artist_info_data.get('id')}")
+        logger.debug(f"Artist Name: {artist_info_data.get('name')}")
+        logger.debug(f"Artist Popularity: {artist_info_data.get('popularity')}")
+        logger.debug(f"Artist Genres: {artist_info_data.get('genres')}")
+        logger.debug(f"Artist Followers: {artist_info_data.get('followers').get('total')}")
 
         artist_for_json = Artist(
             artist_id,
@@ -104,10 +106,10 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"[*] [Request {request_count} - {response.status_code}]")
+        logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
         if response.status_code != 200:
-            print('Token expired!')
+            logger.warning('Token expired!')
 
             response = requests.post(
                 'https://accounts.spotify.com/api/token',
@@ -116,7 +118,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"[*] [Request {request_count} - {response.status_code}]")
+            logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
             headers['Authorization'] = (
                 f"{response.json().get('token_type')}"
@@ -131,12 +133,14 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"[*] [Request {request_count} - {response.status_code}]")
+            logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
         artist_albums_ids = []
         artist_albums = response.json().get('items')
         for album in artist_albums:
             artist_albums_ids.append(album.get('id'))
+
+        logger.info(f"Get {artist_id} albums")
 
         album_params['include_groups'] = 'single'
 
@@ -149,10 +153,10 @@ def main():
         )
         time.sleep(timeout)
         request_count += 1
-        print(f"[*] [Request {request_count} - {response.status_code}]")
+        logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
         if response.status_code != 200:
-            print('Token expired!')
+            logger.warning('Token expired!')
 
             response = requests.post(
                 'https://accounts.spotify.com/api/token',
@@ -161,7 +165,7 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"[*] [Request {request_count} - {response.status_code}]")
+            logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
             headers['Authorization'] = (
                 f"{response.json().get('token_type')}"
@@ -176,14 +180,16 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"[*] [Request {request_count} - {response.status_code}]")
+            logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
         artist_albums = response.json().get('items')
         for album in artist_albums:
             artist_albums_ids.append(album.get('id'))
 
+        logger.info(f"Get {artist_id} singles")
+
         total_albums_ids = len(artist_albums_ids)
-        print(f'Total albums: {total_albums_ids}')
+        logger.info(f'Total albums & singles: {total_albums_ids}')
 
         several_albums_params = {
             'ids': ''
@@ -205,10 +211,10 @@ def main():
             )
             time.sleep(timeout)
             request_count += 1
-            print(f"[*] [Request {request_count} - {response.status_code}]")
+            logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
             if response.status_code != 200:
-                print('Token expired!')
+                logger.warning('Token expired!')
 
                 response = requests.post(
                     'https://accounts.spotify.com/api/token',
@@ -217,7 +223,7 @@ def main():
                 )
                 time.sleep(timeout)
                 request_count += 1
-                print(f"[*] [Request {request_count} - {response.status_code}]")
+                logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
                 headers['Authorization'] = (
                     f'{response.json().get("token_type")}'
@@ -232,19 +238,20 @@ def main():
                 )
                 time.sleep(timeout)
                 request_count += 1
-                print(f"[*] [Request {request_count} - {response.status_code}]")
+                logger.info(f"[*] [Request {request_count} - {response.status_code}]")
 
             album_data = response.json().get('albums')
             for album in album_data:
-                print()
-                print(f"Album Name: {album.get('name')}")
+                logger.info(f"Get Album {album.get('id')}")
+                logger.debug("")
+                logger.debug(f"Album Name: {album.get('name')}")
                 album_id = album.get('id')
-                print(f"Album ID: {album_id}")
-                print(f"Album Type: {album.get('album_type')}")
-                print(f"Album Date: {album.get('release_date')}")
-                print(f"Album Genres: {album.get('genres')}")
-                print(f"Album Label: {album.get('label')}")
-                print(f"Album Popularity: {album.get('popularity')}")
+                logger.debug(f"Album ID: {album_id}")
+                logger.debug(f"Album Type: {album.get('album_type')}")
+                logger.debug(f"Album Date: {album.get('release_date')}")
+                logger.debug(f"Album Genres: {album.get('genres')}")
+                logger.debug(f"Album Label: {album.get('label')}")
+                logger.debug(f"Album Popularity: {album.get('popularity')}")
 
                 album_for_json = Album(
                     album.get('name'),
@@ -261,19 +268,20 @@ def main():
                 album_tracks_ids = []
                 album_tracks = album.get('tracks').get('items')
                 for track in album_tracks:
-                    print()
-                    print(f"Track Name: {track.get('name')}")
+                    logger.info(f"Get Track {track.get('id')}")
+                    logger.debug("")
+                    logger.debug(f"Track Name: {track.get('name')}")
                     track_id = track.get('id')
-                    print(f"Track ID: {track_id}")
+                    logger.debug(f"Track ID: {track_id}")
                     album_tracks_ids.append(track_id)
-                    print('Track Artists:')
+                    logger.debug('Track Artists:')
                     track_artists = []
                     for track_artist in track.get('artists'):
                         track_artists.append(track_artist.get('id'))
-                    print(track_artists)
-                    print(f"Track Album ID: {[album_id]}")
-                    print(f"Track Duration: {track.get('duration_ms')}")
-                    print(f"Track Explicit: {track.get('explicit')}")
+                    logger.debug(track_artists)
+                    logger.debug(f"Track Album ID: {[album_id]}")
+                    logger.debug(f"Track Duration: {track.get('duration_ms')}")
+                    logger.debug(f"Track Explicit: {track.get('explicit')}")
 
                     track_for_json = Track(
                         track.get('name'),
@@ -286,7 +294,7 @@ def main():
                     tracks_json.append(track_for_json)
 
                 total_tracks_ids = len(album_tracks_ids)
-                print(f'Total tracks: {total_tracks_ids}')
+                logger.info(f'Total tracks: {total_tracks_ids}')
 
                 several_tracks_params = {
                     'ids': ''
@@ -306,11 +314,11 @@ def main():
                     )
                     time.sleep(timeout)
                     request_count += 1
-                    print(
-                        f"[*] Request {request_count} - {response.status_code}]")
+                    logger.info(
+                        f"[*] [Request {request_count} - {response.status_code}]")
 
                     if response.status_code != 200:
-                        print('Token expired!')
+                        logger.warning('Token expired!')
 
                         response = requests.post(
                             'https://accounts.spotify.com/api/token',
@@ -319,8 +327,8 @@ def main():
                         )
                         time.sleep(timeout)
                         request_count += 1
-                        print(
-                            f"[*] Request {request_count} - {response.status_code}]")
+                        logger.info(
+                            f"[*] [Request {request_count} - {response.status_code}]")
 
                         headers[
                             'Authorization'
@@ -337,13 +345,15 @@ def main():
                         )
                         time.sleep(timeout)
                         request_count += 1
-                        print(
-                            f"[*] Request {request_count} - {response.status_code}]")
+                        logger.info(
+                            f"[*] [Request {request_count} - {response.status_code}]")
+
+                    logger.info(f"Get tracks popularity")
 
                     tracks_data = response.json().get('tracks')
                     for track_obj in tracks_data:
-                        print(f"Track ID: {track_obj.get('id')}")
-                        print(f"Track Popularity: {track_obj.get('popularity')}")
+                        logger.debug(f"Track ID: {track_obj.get('id')}")
+                        logger.debug(f"Track Popularity: {track_obj.get('popularity')}")
 
                         for tracks_i in tracks_json:
                             if tracks_i.track_id == track_obj.get('id'):
@@ -367,11 +377,11 @@ def main():
                     )
                     time.sleep(timeout + 1)
                     request_count += 1
-                    print(
-                        f"[*] Request {request_count} - {response.status_code}]")
+                    logger.info(
+                        f"[*] [Request {request_count} - {response.status_code}]")
 
                     if response.status_code != 200:
-                        print('Token expired!')
+                        logger.warning('Token expired!')
 
                         response = requests.post(
                             'https://accounts.spotify.com/api/token',
@@ -380,8 +390,8 @@ def main():
                         )
                         time.sleep(timeout)
                         request_count += 1
-                        print(
-                            f"[*] Request {request_count} - {response.status_code}]")
+                        logger.info(
+                            f"[*] [Request {request_count} - {response.status_code}]")
 
                         headers[
                             'Authorization'
@@ -398,29 +408,33 @@ def main():
                         )
                         time.sleep(timeout)
                         request_count += 1
-                        print(
-                            f"[*] Request {request_count} - {response.status_code}]")
+                        logger.info(
+                            f"[*] [Request {request_count} - {response.status_code}]")
+
+                    logger.info(f"Get tracks audio features")
 
                     features_data = response.json().get('audio_features')
                     for features_track in features_data:
                         try:
                             features_track.get('id')
                         except AttributeError:
+                            logger.error('AttributeError')
                             continue
 
-                        print(f"Track ID: {features_track.get('id')}")
-                        print(f"Track Acousticness: {features_track.get('acousticness')}")
-                        print(f"Track Danceability: {features_track.get('danceability')}")
-                        print(f"Track Energy: {features_track.get('energy')}")
-                        print(f"Track Instrumentalness: {features_track.get('instrumentalness')}")
-                        print(f"Track Key: {features_track.get('key')}")
-                        print(f"Track Liveness: {features_track.get('liveness')}")
-                        print(f"Track Loudness: {features_track.get('loudness')}")
-                        print(f"Track Mode: {features_track.get('mode')}")
-                        print(f"Track Speechiness: {features_track.get('speechiness')}")
-                        print(f"Track Tempo: {features_track.get('tempo')}")
-                        print(f"Track Time signature: {features_track.get('time_signature')}")
-                        print(f"Track Valence: {features_track.get('valence')}")
+                        logger.info(f"Get Track {features_track.get('id')} features")
+                        logger.debug(f"Track ID: {features_track.get('id')}")
+                        logger.debug(f"Track Acousticness: {features_track.get('acousticness')}")
+                        logger.debug(f"Track Danceability: {features_track.get('danceability')}")
+                        logger.debug(f"Track Energy: {features_track.get('energy')}")
+                        logger.debug(f"Track Instrumentalness: {features_track.get('instrumentalness')}")
+                        logger.debug(f"Track Key: {features_track.get('key')}")
+                        logger.debug(f"Track Liveness: {features_track.get('liveness')}")
+                        logger.debug(f"Track Loudness: {features_track.get('loudness')}")
+                        logger.debug(f"Track Mode: {features_track.get('mode')}")
+                        logger.debug(f"Track Speechiness: {features_track.get('speechiness')}")
+                        logger.debug(f"Track Tempo: {features_track.get('tempo')}")
+                        logger.debug(f"Track Time signature: {features_track.get('time_signature')}")
+                        logger.debug(f"Track Valence: {features_track.get('valence')}")
 
                         for tracks_j in tracks_json:
                             if tracks_j.track_id == features_track.get('id'):
@@ -436,7 +450,6 @@ def main():
                                 tracks_j.tempo = features_track.get('tempo')
                                 tracks_j.time_signature = features_track.get('time_signature')
                                 tracks_j.valence = features_track.get('valence')
-                                # To Do: Track Playcount
 
         artist_for_json.albums = albums_json
         artist_for_json.tracks = tracks_json
@@ -448,14 +461,12 @@ def main():
             default=lambda x: x.__dict__
         )
         with open(
-                f'resources/artists/artist-{artist_id}.json',
+                f'src/aggregator/resources/artists/artist-{artist_id}.json',
                 mode='w',
                 encoding='utf-8'
         ) as file:
             file.write(json_string)
 
-        print(f'[T] Time: {datetime.datetime.now()}')
+        logger.info(f"Get Artist {artist_id}")
 
-
-if __name__ == '__main__':
-    main()
+        logger.info(f'[T] Time: {datetime.datetime.now()}')
