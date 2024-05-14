@@ -36,6 +36,7 @@ def change_artist_data(response, artist_id, file_path):
 def change_track_data(response, artist_id, file_path):
     """Util function for track stats data aggregation or updating."""
     tracks_data = response.get('data').get('albumUnion').get('tracks').get('items')
+    path = f'{file_path}/artist-{artist_id}.json'
 
     for track in tracks_data:
         track_data = track.get('track')
@@ -43,7 +44,7 @@ def change_track_data(response, artist_id, file_path):
         track_playcount = track_data.get('playcount')
 
         with open(
-                f'{file_path}/artist-{artist_id}.json',
+                file=path,
                 mode='r+',
                 encoding='utf-8'
         ) as artist_file:
