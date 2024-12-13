@@ -1,6 +1,6 @@
 from entity.city import City
 from entity.genre import Genre
-from entity.track import Track
+import entity.track
 
 class Artist:
 
@@ -121,18 +121,18 @@ class Artist:
         with conn.cursor() as cur:
             cur.execute(f'''
                     SELECT
-                        {Track.TABLE_NAME}.id,
-                        {Track.TABLE_NAME}.spotify_id,
-                        {Track.TABLE_NAME}.name,
-                        {Track.TABLE_NAME}.duration_ms,
-                        {Track.TABLE_NAME}.explicit,
-                        {Track.TABLE_NAME}.popularity,
-                        {Track.TABLE_NAME}.features,
-                        {Track.TABLE_NAME}.plays
+                        {entity.track.Track.TABLE_NAME}.id,
+                        {entity.track.Track.TABLE_NAME}.spotify_id,
+                        {entity.track.Track.TABLE_NAME}.name,
+                        {entity.track.Track.TABLE_NAME}.duration_ms,
+                        {entity.track.Track.TABLE_NAME}.explicit,
+                        {entity.track.Track.TABLE_NAME}.popularity,
+                        {entity.track.Track.TABLE_NAME}.features,
+                        {entity.track.Track.TABLE_NAME}.plays
                     FROM {Artist.TABLE_NAME__TRACK}
-                    JOIN {Track.TABLE_NAME} ON {Artist.TABLE_NAME__TRACK}.track_id = {Track.TABLE_NAME}.id
+                    JOIN {entity.track.Track.TABLE_NAME} ON {Artist.TABLE_NAME__TRACK}.track_id = {entity.track.Track.TABLE_NAME}.id
                     WHERE {Artist.TABLE_NAME__TRACK}.artist_id = %s
                 ''', (self.id,))
-            result = [Track(*entry) for entry in cur.fetchall()]
+            result = [entity.track.Track(*entry) for entry in cur.fetchall()]
 
         return result

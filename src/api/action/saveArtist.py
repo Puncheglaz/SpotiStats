@@ -1,10 +1,10 @@
-from entity.album import Album
-from entity.artist import Artist
-from entity.track import Track
+import entity.album
+import entity.track
+import entity.artist
 
 def execute(conn, data):
     try:
-        artist_id = Artist.save(conn,
+        artist_id = entity.artist.Artist.save(conn,
                 data['artist_id'],  # spotify_id
                 data['name'],
                 data.get('followers'),
@@ -17,7 +17,7 @@ def execute(conn, data):
 
         if 'albums' in data:
             for album in data['albums']:
-                Album.save(conn,
+                entity.album.Album.save(conn,
                         album['album_id'],  # spotify_id
                         album['album_name'],
                         album.get('album_type'),
@@ -30,7 +30,7 @@ def execute(conn, data):
 
         if 'tracks' in data:
             for track in data['tracks']:
-                Track.save(conn,
+                entity.track.Track.save(conn,
                         track['track_id'],  # spotify_id
                         track['track_name'],
                         track.get('duration_ms'),
